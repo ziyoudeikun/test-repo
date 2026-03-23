@@ -1,0 +1,39 @@
+name: Build and Package C++ Program
+
+# 触发条件：推送代码到任意分支，或手动触发
+on:
+  push:
+    branches: [ '**' ]       # 所有分支的 push 都会触发
+  workflow_dispatch:         # 允许在 Actions 页面手动运行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest   # 使用 Ubuntu 环境
+
+    steps:
+      # 1. 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 安装编译器（Ubuntu 已预装 g++，这步可选，但为了明确列出）
+      - name: Install g++
+        run: sudo apt-get update && sudo apt-get install -y g++
+
+      # 3. 编译 C++ 程序
+      - name: Compile
+        run: g++ -o hello_world main.cpp   # 假设源代码文件名为 main.cpp
+
+      # 4. 打包成 zip 和 tar.gz
+      - name: Create archives
+        run: |
+          zip hello_world.zip hello_world
+          tar -czvf hello_world.tar.gz hello_world
+
+      # 5. 上传压缩包作为 Artifact
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output       # Artifact 的名称
+          path: |
+            hello_world.zip
+            hello_world.tar.gz
