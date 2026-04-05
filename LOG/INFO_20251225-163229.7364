@@ -1,0 +1,25 @@
+Log file created at: 2025/12/25 16:32:29
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251225 16:32:29.668509  7364 main.cpp:44] main begin
+I20251225 16:32:29.668747  7364 main.cpp:55] Server started on port 8080
+I20251225 16:32:29.669021  7364 main.cpp:62] begin
+W20251225 16:32:34.671468  7364 main.cpp:69] Shutting down server...
+I20251225 16:32:34.671751  7364 MainReactor.hpp:142] now at stop in main
+W20251225 16:32:34.695236  7364 main.cpp:71] main is closed
+I20251225 16:32:34.993103  7364 MainReactor.hpp:28] at ~MainReactor()
+I20251225 16:32:34.993214  7364 MainReactor.hpp:142] now at stop in main
+I20251225 16:32:34.993260  7364 MySqlCppConn.cpp:13] conn is ~()
+I20251225 16:32:34.994078  7364 MySqlCppConn.cpp:13] conn is ~()
+I20251225 16:32:34.995010  7364 MySqlCppConn.cpp:13] conn is ~()
+I20251225 16:32:34.995822  7364 MySqlCppConn.cpp:13] conn is ~()
+I20251225 16:32:34.996624  7364 MySqlCppConn.cpp:13] conn is ~()
+I20251225 16:32:34.997548  7364 MySqlCppConn.cpp:13] conn is ~()
+I20251225 16:32:34.998327  7364 MySqlCppConn.cpp:13] conn is ~()
+I20251225 16:32:34.999244  7364 MySqlCppConn.cpp:13] conn is ~()
+I20251225 16:32:35.000010  7364 MySqlCppConn.cpp:13] conn is ~()
+I20251225 16:32:35.000774  7364 MySqlCppConn.cpp:13] conn is ~()
+W20251225 16:32:35.007233  7364 main.cpp:79] Server stopped
+W20251225 16:32:35.007369  7364 main.cpp:80] main end()
+I20251225 16:32:35.007398  7364 GlobalMoudle.cpp:8] just only one class is ~()

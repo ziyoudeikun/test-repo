@@ -1,0 +1,46 @@
+Log file created at: 2025/12/17 16:30:49
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251217 16:30:49.757042  6383 main.cpp:37] main begin
+I20251217 16:30:49.757562  6383 main.cpp:48] Server started on port 8080
+I20251217 16:30:49.757848  6383 main.cpp:55] begin
+I20251217 16:30:52.615348  6396 MainReactor.hpp:116] new connection
+I20251217 16:30:52.615573  6396 SubReactor.hpp:55] new fd:10
+I20251217 16:30:52.615592  6396 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 16:30:52.615598  6396 MainReactor.hpp:177] Accepted connection from 192.168.29.1:64383
+W20251217 16:30:52.697994  6384 ConnectionHandler.hpp:53] URL: /index.html
+I20251217 16:30:52.698593  6384 Router.hpp:109] Read 8505 bytes from ../source/index.html
+I20251217 16:30:52.698240  6384 ConnectionHandler.hpp:75] 1
+W20251217 16:30:52.698874  6384 ConnectionHandler.hpp:77] 8658
+I20251217 16:30:52.698925  6384 SubReactor.hpp:60] old fd:10
+I20251217 16:30:52.700105  6386 SubReactor.hpp:60] old fd:10
+I20251217 16:30:52.708004  6396 MainReactor.hpp:116] new connection
+I20251217 16:30:52.708212  6396 SubReactor.hpp:55] new fd:12
+I20251217 16:30:52.708249  6396 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251217 16:30:52.708258  6396 MainReactor.hpp:177] Accepted connection from 192.168.29.1:50652
+W20251217 16:30:54.308370  6385 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251217 16:30:54.308954  6385 Router.hpp:109] Read 67386 bytes from ../source//hlsparse.html
+I20251217 16:30:54.308486  6385 ConnectionHandler.hpp:75] 1
+W20251217 16:30:54.309940  6385 ConnectionHandler.hpp:77] 67540
+I20251217 16:30:54.309993  6385 SubReactor.hpp:60] old fd:10
+I20251217 16:30:54.316198  6387 SubReactor.hpp:60] old fd:10
+W20251217 16:30:55.708271  6388 ConnectionHandler.hpp:53] URL: /video
+I20251217 16:30:55.708638  6388 Router.hpp:54] {
+"id":"56"
+}
+I20251217 16:30:55.708715  6388 Router.hpp:54] {
+"id":"57"
+}
+I20251217 16:30:55.708372  6388 ConnectionHandler.hpp:75] 1
+W20251217 16:30:55.708823  6388 ConnectionHandler.hpp:77] 182
+I20251217 16:30:55.708854  6388 SubReactor.hpp:60] old fd:10
+I20251217 16:30:55.709265  6390 SubReactor.hpp:60] old fd:10
+W20251217 16:31:18.771176  6383 main.cpp:62] Shutting down server...
+I20251217 16:31:18.771283  6383 MainReactor.hpp:142] now at stop in main
+W20251217 16:31:18.833144  6383 main.cpp:64] main is closed
+I20251217 16:31:19.094758  6383 MainReactor.hpp:28] at ~MainReactor()
+I20251217 16:31:19.094884  6383 MainReactor.hpp:142] now at stop in main
+W20251217 16:31:19.094923  6383 main.cpp:72] Server stopped
+W20251217 16:31:19.094956  6383 main.cpp:73] main end()
+I20251217 16:31:19.095294  6383 GlobalMoudle.cpp:8] just only one class is ~()

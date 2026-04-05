@@ -1,0 +1,64 @@
+Log file created at: 2025/12/22 10:57:32
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:09
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251222 10:57:32.884770  7171 ConnectionHandler.hpp:134] URL: /
+W20251222 10:57:32.885572  7171 ConnectionHandler.hpp:166] 28450
+W20251222 10:57:33.319840  7173 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:57:33.320477  7173 ConnectionHandler.hpp:166] 28353
+W20251222 10:57:33.353021  7175 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251222 10:57:33.353415  7175 ConnectionHandler.hpp:166] 3197
+W20251222 10:57:39.713068  7177 ConnectionHandler.hpp:134] URL: /
+W20251222 10:57:39.713748  7177 ConnectionHandler.hpp:166] 28450
+W20251222 10:57:39.758380  7171 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:57:39.758944  7171 ConnectionHandler.hpp:166] 28353
+W20251222 10:57:45.269171  7173 ConnectionHandler.hpp:134] URL: /
+W20251222 10:57:45.269897  7173 ConnectionHandler.hpp:166] 28450
+W20251222 10:57:45.314175  7175 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:57:45.314823  7175 ConnectionHandler.hpp:166] 28353
+W20251222 10:58:09.026301  7177 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:58:09.026988  7177 ConnectionHandler.hpp:166] 28353
+W20251222 10:58:09.057966  7171 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251222 10:58:09.058264  7171 ConnectionHandler.hpp:166] 3197
+W20251222 10:58:24.763588  7173 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 10:58:24.764187  7173 ConnectionHandler.hpp:166] 28450
+W20251222 10:58:24.807260  7175 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:58:24.808001  7175 ConnectionHandler.hpp:166] 28353
+W20251222 10:59:43.640990  7178 ConnectionHandler.hpp:134] URL: /
+W20251222 10:59:43.641714  7178 ConnectionHandler.hpp:166] 28450
+W20251222 10:59:43.686911  7172 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:59:43.687986  7172 ConnectionHandler.hpp:166] 28353
+W20251222 11:03:33.510811  7175 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 11:03:33.511565  7175 ConnectionHandler.hpp:166] 28353
+W20251222 11:03:33.537397  7177 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251222 11:03:33.537928  7177 ConnectionHandler.hpp:166] 3197
+W20251222 11:03:40.761941  7171 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 11:03:40.762508  7171 ConnectionHandler.hpp:166] 28353
+W20251222 11:03:42.271276  7173 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251222 11:03:42.271524  7173 ConnectionHandler.hpp:166] 3197
+W20251222 11:03:47.242449  7175 ConnectionHandler.hpp:134] URL: /
+W20251222 11:03:47.243220  7175 ConnectionHandler.hpp:166] 28495
+W20251222 11:03:47.285795  7177 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 11:03:47.286726  7177 ConnectionHandler.hpp:166] 28353
+W20251222 11:05:35.628353  7171 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 11:05:35.629186  7171 ConnectionHandler.hpp:166] 28495
+W20251222 11:06:17.140518  7174 ConnectionHandler.hpp:134] URL: /login
+W20251222 11:06:17.140724  7174 ConnectionHandler.hpp:166] 0
+W20251222 11:11:59.966746  7177 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 11:11:59.967378  7177 ConnectionHandler.hpp:166] 28825
+W20251222 11:12:00.009702  7171 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251222 11:12:00.013245  7171 ConnectionHandler.hpp:166] 3197
+W20251222 11:22:36.727607  7175 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 11:22:36.728518  7175 ConnectionHandler.hpp:166] 33246
+W20251222 11:22:36.776197  7177 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251222 11:22:36.776731  7177 ConnectionHandler.hpp:166] 3197
+W20251222 11:22:48.799768  7172 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 11:22:48.800505  7172 ConnectionHandler.hpp:166] 33246
+W20251222 11:22:48.835314  7173 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251222 11:22:48.835829  7173 ConnectionHandler.hpp:166] 3197
+W20251222 11:22:55.003468  7175 ConnectionHandler.hpp:134] URL: /login
+W20251222 11:22:55.003675  7175 ConnectionHandler.hpp:166] 0
+W20251222 11:23:29.951733  7170 main.cpp:62] Shutting down server...
+W20251222 11:23:29.954010  7170 main.cpp:64] main is closed
+W20251222 11:23:30.159221  7170 main.cpp:72] Server stopped
+W20251222 11:23:30.159262  7170 main.cpp:73] main end()

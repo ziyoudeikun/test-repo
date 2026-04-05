@@ -1,0 +1,58 @@
+Log file created at: 2025/12/22 10:37:39
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:08
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251222 10:37:39.119046  6726 ConnectionHandler.hpp:134] URL: /
+W20251222 10:37:39.119771  6726 ConnectionHandler.hpp:166] 19440
+W20251222 10:37:39.175133  6728 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:37:39.176359  6728 ConnectionHandler.hpp:166] 28353
+W20251222 10:38:04.297430  6730 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:38:04.298219  6730 ConnectionHandler.hpp:166] 28353
+W20251222 10:38:04.329593  6732 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251222 10:38:04.329897  6732 ConnectionHandler.hpp:166] 3197
+W20251222 10:38:08.736140  6726 ConnectionHandler.hpp:134] URL: /tsparse.html
+W20251222 10:38:08.738549  6726 ConnectionHandler.hpp:166] 43162
+W20251222 10:38:11.580554  6728 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:38:11.581105  6728 ConnectionHandler.hpp:166] 28353
+W20251222 10:38:12.782234  6730 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251222 10:38:12.786624  6730 ConnectionHandler.hpp:166] 67821
+W20251222 10:38:15.367715  6732 ConnectionHandler.hpp:134] URL: /video
+W20251222 10:38:15.370255  6732 ConnectionHandler.hpp:166] 1766
+W20251222 10:38:17.343400  6726 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:38:17.343860  6726 ConnectionHandler.hpp:166] 28353
+W20251222 10:38:20.346170  6728 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251222 10:38:20.347365  6728 ConnectionHandler.hpp:166] 67821
+W20251222 10:38:21.954049  6730 ConnectionHandler.hpp:134] URL: /video
+W20251222 10:38:21.954420  6730 ConnectionHandler.hpp:166] 1766
+W20251222 10:38:24.699478  6732 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:38:24.700095  6732 ConnectionHandler.hpp:166] 28353
+W20251222 10:38:25.850384  6726 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251222 10:38:25.851454  6726 ConnectionHandler.hpp:166] 67821
+W20251222 10:38:26.914227  6728 ConnectionHandler.hpp:134] URL: /video
+W20251222 10:38:26.914718  6728 ConnectionHandler.hpp:166] 1766
+W20251222 10:38:27.874714  6730 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251222 10:38:27.875965  6730 ConnectionHandler.hpp:166] 4058
+W20251222 10:38:27.895274  6732 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+W20251222 10:38:27.904287  6732 ConnectionHandler.hpp:166] 405577
+W20251222 10:38:27.940632  6727 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_001.ts
+W20251222 10:38:27.996721  6727 ConnectionHandler.hpp:166] 1923866
+W20251222 10:38:28.057255  6729 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_002.ts
+W20251222 10:38:28.077560  6729 ConnectionHandler.hpp:166] 937241
+W20251222 10:38:28.109846  6731 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_003.ts
+W20251222 10:38:28.117442  6731 ConnectionHandler.hpp:166] 160613
+W20251222 10:38:28.132436  6733 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_004.ts
+W20251222 10:38:28.150328  6733 ConnectionHandler.hpp:166] 801317
+W20251222 10:38:30.554899  6728 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:38:30.555552  6728 ConnectionHandler.hpp:166] 28353
+W20251222 10:38:31.344980  6729 ConnectionHandler.hpp:134] URL: /m3u8parse.html
+W20251222 10:38:31.345765  6729 ConnectionHandler.hpp:166] 50201
+W20251222 10:38:32.998495  6731 ConnectionHandler.hpp:134] URL: /index.html
+W20251222 10:38:32.999897  6731 ConnectionHandler.hpp:166] 28353
+W20251222 10:39:59.477900  6726 ConnectionHandler.hpp:134] URL: /
+W20251222 10:39:59.478729  6726 ConnectionHandler.hpp:166] 19440
+W20251222 10:40:05.026528  6728 ConnectionHandler.hpp:134] URL: /login
+W20251222 10:40:05.026681  6728 ConnectionHandler.hpp:166] 0
+W20251222 10:40:31.042595  6725 main.cpp:62] Shutting down server...
+W20251222 10:40:31.076764  6725 main.cpp:64] main is closed
+W20251222 10:40:31.283345  6725 main.cpp:72] Server stopped
+W20251222 10:40:31.283378  6725 main.cpp:73] main end()

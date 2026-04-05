@@ -1,0 +1,10 @@
+Log file created at: 2025/12/17 19:08:11
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251217 19:08:11.118443 16023 main.cpp:37] main begin
+E20251217 19:08:11.118793 16023 MainReactor.hpp:56] Failed to bind socket
+E20251217 19:08:11.119597 16023 main.cpp:44] Failed to initialize main reactor
+I20251217 19:08:11.119632 16023 MainReactor.hpp:28] at ~MainReactor()
+I20251217 19:08:11.119638 16023 MainReactor.hpp:142] now at stop in main
+I20251217 19:08:11.119657 16023 GlobalMoudle.cpp:8] just only one class is ~()

@@ -1,0 +1,83 @@
+Log file created at: 2025/12/22 11:27:52
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251222 11:27:52.587411  8407 main.cpp:37] main begin
+I20251222 11:27:52.588586  8407 main.cpp:48] Server started on port 8080
+I20251222 11:27:52.588956  8407 main.cpp:55] begin
+I20251222 11:27:59.582720  8420 MainReactor.hpp:116] new connection
+I20251222 11:27:59.582929  8420 SubReactor.hpp:55] new fd:10
+I20251222 11:27:59.582958  8420 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251222 11:27:59.582968  8420 MainReactor.hpp:177] Accepted connection from 192.168.29.1:54305
+W20251222 11:27:59.588935  8408 ConnectionHandler.hpp:134] URL: /login.html
+I20251222 11:27:59.590377  8408 ConnectionHandler.hpp:156] GET
+I20251222 11:27:59.590442  8408 ConnectionHandler.hpp:157] /login.html
+I20251222 11:27:59.591003  8408 Router.hpp:111] Read 32811 bytes from ../source/login.html
+I20251222 11:27:59.591151  8408 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 32811
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251222 11:27:59.590474  8408 ConnectionHandler.hpp:164] 1
+W20251222 11:27:59.591846  8408 ConnectionHandler.hpp:166] 33246
+I20251222 11:27:59.591948  8408 SubReactor.hpp:60] old fd:10
+I20251222 11:27:59.592129  8409 ConnectionHandler.hpp:185] handle_write called, buffer size: 33246
+I20251222 11:27:59.592432  8409 ConnectionHandler.hpp:198] Attempted to send 33246 bytes, actually sent: 33246
+I20251222 11:27:59.592470  8409 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251222 11:27:59.592483  8409 ConnectionHandler.hpp:239] All data sent successfully
+I20251222 11:27:59.592497  8409 SubReactor.hpp:60] old fd:10
+I20251222 11:27:59.598991  8420 MainReactor.hpp:116] new connection
+I20251222 11:27:59.599665  8420 SubReactor.hpp:55] new fd:12
+I20251222 11:27:59.599818  8420 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251222 11:27:59.599942  8420 MainReactor.hpp:177] Accepted connection from 192.168.29.1:51771
+W20251222 11:27:59.626044  8410 ConnectionHandler.hpp:134] URL: /favicon.ico
+I20251222 11:27:59.626288  8410 ConnectionHandler.hpp:156] GET
+I20251222 11:27:59.626343  8410 ConnectionHandler.hpp:157] /favicon.ico
+I20251222 11:27:59.626720  8410 Router.hpp:111] Read 2763 bytes from ../source/favicon.ico
+I20251222 11:27:59.626837  8410 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 2763
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251222 11:27:59.626356  8410 ConnectionHandler.hpp:164] 1
+W20251222 11:27:59.626910  8410 ConnectionHandler.hpp:166] 3197
+I20251222 11:27:59.626941  8410 SubReactor.hpp:60] old fd:10
+I20251222 11:27:59.627086  8411 ConnectionHandler.hpp:185] handle_write called, buffer size: 3197
+I20251222 11:27:59.627790  8411 ConnectionHandler.hpp:198] Attempted to send 3197 bytes, actually sent: 3197
+I20251222 11:27:59.627892  8411 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251222 11:27:59.627905  8411 ConnectionHandler.hpp:239] All data sent successfully
+I20251222 11:27:59.627947  8411 SubReactor.hpp:60] old fd:10
+W20251222 11:28:02.984323  8412 ConnectionHandler.hpp:134] URL: /login
+I20251222 11:28:02.984426  8412 ConnectionHandler.hpp:156] POST
+I20251222 11:28:02.984433  8412 ConnectionHandler.hpp:157] /login
+I20251222 11:28:02.984448  8412 Router.hpp:451] now post login
+I20251222 11:28:02.984440  8412 ConnectionHandler.hpp:164] 1
+W20251222 11:28:02.984479  8412 ConnectionHandler.hpp:166] 0
+I20251222 11:28:02.984490  8412 SubReactor.hpp:60] old fd:10
+I20251222 11:28:02.984659  8413 ConnectionHandler.hpp:185] handle_write called, buffer size: 0
+I20251222 11:28:02.984761  8413 ConnectionHandler.hpp:188] Write buffer is empty, disabling write event
+I20251222 11:28:02.984781  8413 SubReactor.hpp:60] old fd:10
+W20251222 11:31:15.698235  8407 main.cpp:62] Shutting down server...
+I20251222 11:31:15.698469  8407 MainReactor.hpp:142] now at stop in main
+W20251222 11:31:15.739373  8407 main.cpp:64] main is closed
+I20251222 11:31:15.868479  8407 MainReactor.hpp:28] at ~MainReactor()
+I20251222 11:31:15.868575  8407 MainReactor.hpp:142] now at stop in main
+W20251222 11:31:15.868614  8407 main.cpp:72] Server stopped
+W20251222 11:31:15.868630  8407 main.cpp:73] main end()
+I20251222 11:31:15.868927  8407 GlobalMoudle.cpp:8] just only one class is ~()

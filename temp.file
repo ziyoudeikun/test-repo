@@ -1,0 +1,24 @@
+these are some api request and reponse
+1.post /api/login 
+request:
+{
+  "url": "http://localhost:8080/api/login",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer 9d9f97c26c3e8eb807f9f766023a1212e2a664b6cb48cb5b030f145b10f0656a"
+  },
+  "body": {
+    "username": "admin11",
+    "password": "pwd11"
+  }
+}
+reponse:
+{
+  "success": true,
+  "token": "9d9f97c26c3e8eb807f9f766023a1212e2a664b6cb48cb5b030f145b10f0656a",
+  "user": {
+    "id": 11,
+    "username": "tester11"
+  }
+}

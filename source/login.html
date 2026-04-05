@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLS高级工具箱 | 登录</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入CryptoJS库用于生成MD5签名 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #3a86ff;
+            --secondary-color: #8338ec;
+            --accent-color: #ff006e;
+            --success-color: #06d6a0;
+            --warning-color: #ffd166;
+            --danger-color: #ef476f;
+            --dark-bg: #0d1b2a;
+            --medium-bg: #1b263b;
+            --light-bg: #415a77;
+            --text-color: #e0e1dd;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --border-radius: 12px;
+            --neon-glow: 0 0 15px rgba(58, 134, 255, 0.7);
+            --neon-glow-error: 0 0 15px rgba(239, 71, 111, 0.7);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* 改为flex-start，允许滚动 */
+            line-height: 1.6;
+            position: relative;
+            overflow-y: auto; /* 允许垂直滚动 */
+            padding: 20px 0; /* 添加上下内边距 */
+        }
+        
+        /* 科幻背景特效 */
+        .sci-fi-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .grid-line {
+            position: absolute;
+            background: rgba(58, 134, 255, 0.05);
+        }
+        
+        .grid-line.horizontal {
+            width: 100%;
+            height: 1px;
+        }
+        
+        .grid-line.vertical {
+            height: 100%;
+            width: 1px;
+        }
+        
+        .floating-element {
+            position: absolute;
+            background: radial-gradient(circle, rgba(58, 134, 255, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(100px, 100px) rotate(360deg); }
+        }
+        
+        /* 登录容器 */
+        .login-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            z-index: 10;
+            min-height: auto; /* 移除固定高度 */
+        }
+        
+        .login-card {
+            background: rgba(27, 38, 59, 0.85);
+            border-radius: var(--border-radius);
+            padding: 40px 35px;
+            box-shadow: var(--card-shadow);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(58, 134, 255, 0.2);
+            transition: all 0.3s ease;
+            max-height: 90vh; /* 限制最大高度 */
+            overflow-y: auto; /* 允许卡片内部滚动 */
+        }
+        
+        .login-card:hover {
+            box-shadow: var(--neon-glow);
+            border-color: var(--primary-color);
+        }
+        
+        /* 自定义滚动条 */
+        .login-card::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .login-card::-webkit-scrollbar-track {
+            background: rgba(13, 27, 42, 0.5);
+            border-radius: 4px;
+        }
+        
+        .login-card::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+        
+        .login-card::-webkit-scrollbar-thumb:hover {
+            background: #2a75ff;
+        }
+        
+        .logo-area {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo-icon {
+            font-size: 4rem;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #a0a0c0;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        /* 表单样式 */
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+        
+        .input-with-icon {
+            position: relative;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 16px 20px 16px 55px;
+            background: rgba(13, 27, 42, 0.7);
+            border: 1px solid rgba(58, 134, 255, 0.3);
+            border-radius: 8px;
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 10px rgba(58, 134, 255, 0.5);
+        }
+        
+        .form-input.error {
+            border-color: var(--danger-color);
+            box-shadow: 0 0 10px rgba(239, 71, 111, 0.5);
+        }
+        
+        .input-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(58, 134, 255, 0.7);
+            font-size: 1.2rem;
+        }
+        
+        .default-credential {
+            font-size: 0.85rem;
+            color: #a0a0c0;
+            margin-top: 5px;
+            padding-left: 5px;
+        }
+        
+        .default-credential i {
+            color: var(--success-color);
+            margin-right: 5px;
+        }
+        
+        /* 安全参数显示区域 */
+        .security-params {
+            background: rgba(13, 27, 42, 0.5);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px solid rgba(58, 134, 255, 0.2);
+            font-size: 0.8rem;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .security-params.show {
+            max-height: 250px;
+            opacity: 1;
+            padding: 15px;
+            margin-bottom: 10px;
+            overflow-y: auto; /* 安全参数区域内部滚动 */
+        }
+        
+        /* 安全参数区域滚动条 */
+        .security-params::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .security-params::-webkit-scrollbar-track {
+            background: rgba(13, 27, 42, 0.3);
+            border-radius: 3px;
+        }
+        
+        .security-params::-webkit-scrollbar-thumb {
+            background: var(--secondary-color);
+            border-radius: 3px;
+        }
+        
+        .security-params h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: sticky;
+            top: 0;
+            background: rgba(13, 27, 42, 0.8);
+            padding: 5px 0;
+            z-index: 1;
+        }
+        
+        .param-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .param-label {
+            color: #a0a0c0;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+        
+        .param-value {
+            color: var(--text-color);
+            font-family: monospace;
+            word-break: break-all;
+            text-align: right;
+            max-width: 70%;
+            font-size: 0.75rem;
+        }
+        
+        .toggle-security {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            font-size: 0.8rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 15px 0;
+            padding: 8px 5px;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+            width: 100%;
+            justify-content: center;
+            border: 1px solid rgba(58, 134, 255, 0.2);
+        }
+        
+        .toggle-security:hover {
+            color: #fff;
+            background: rgba(58, 134, 255, 0.1);
+            border-color: var(--primary-color);
+        }
+        
+        /* 登录按钮 */
+        .login-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position: relative;
+            z-index: 2; /* 确保按钮在最上层 */
+        }
+        
+        .login-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(58, 134, 255, 0.4);
+        }
+        
+        .login-btn:active {
+            transform: translateY(0);
+        }
+        
+        .login-btn.loading {
+            background: linear-gradient(90deg, #1b263b, #415a77);
+            cursor: not-allowed;
+        }
+        
+        .login-btn.loading i {
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* 底部固定区域 */
+        .bottom-fixed {
+            position: sticky;
+            bottom: 0;
+            background: rgba(27, 38, 59, 0.9);
+            padding-top: 10px;
+            margin-top: 10px;
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(58, 134, 255, 0.2);
+        }
+        
+        /* 通知消息 */
+        .notification {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: rgba(27, 38, 59, 0.95);
+            border: 1px solid rgba(239, 71, 111, 0.3);
+            border-radius: 8px;
+            padding: 20px 25px;
+            z-index: 9999;
+            backdrop-filter: blur(15px);
+            box-shadow: var(--neon-glow-error);
+            transform: translateX(100px);
+            opacity: 0;
+            transition: all 0.3s ease;
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .notification.show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+        .notification-icon {
+            font-size: 1.8rem;
+            color: var(--danger-color);
+        }
+        
+        .notification-content h4 {
+            color: white;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        .notification-content p {
+            color: #a0a0c0;
+            font-size: 0.95rem;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px 0;
+                align-items: flex-start;
+            }
+            
+            .login-container {
+                padding: 10px;
+            }
+            
+            .login-card {
+                padding: 30px 25px;
+                max-height: 85vh;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .logo-icon {
+                font-size: 3rem;
+            }
+            
+            .security-params.show {
+                max-height: 200px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .login-card {
+                padding: 25px 20px;
+                max-height: 80vh;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .form-input {
+                padding: 14px 20px 14px 50px;
+            }
+            
+            .login-btn {
+                padding: 16px;
+            }
+            
+            .security-params.show {
+                max-height: 180px;
+            }
+        }
+        
+        @media (max-height: 700px) {
+            .login-card {
+                max-height: 85vh;
+            }
+            
+            .logo-area {
+                margin-bottom: 20px;
+            }
+            
+            .logo-icon {
+                font-size: 3rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .form-group {
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-height: 600px) {
+            .login-card {
+                max-height: 90vh;
+            }
+            
+            .logo-icon {
+                font-size: 2.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 科幻背景特效 -->
+    <div class="sci-fi-bg" id="sciFiBg"></div>
+    
+    <!-- 登录表单 -->
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo-area">
+                <i class="fas fa-tools logo-icon"></i>
+                <h1>HLS高级工具箱</h1>
+                <p class="subtitle">专业的HLS流媒体分析与测试工具套件</p>
+                <p class="subtitle">请登录以使用完整功能</p>
+            </div>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label class="form-label" for="username">
+                        <i class="fas fa-user"></i> 账号
+                    </label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user input-icon"></i>
+                        <input 
+                            type="text" 
+                            id="username" 
+                            class="form-input" 
+                            placeholder="请输入用户名"
+                            value="admin"
+                            required
+                        >
+                    </div>
+                    <p class="default-credential">
+                        <i class="fas fa-info-circle"></i> 默认账号: admin
+                    </p>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="password">
+                        <i class="fas fa-lock"></i> 密码
+                    </label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            class="form-input" 
+                            placeholder="请输入密码"
+                            value="pwd"
+                            required
+                        >
+                    </div>
+                    <p class="default-credential">
+                        <i class="fas fa-info-circle"></i> 默认密码: pwd
+                    </p>
+                </div>
+                
+                <!-- 安全参数区域 -->
+                <div class="security-params" id="securityParams">
+                    <h4><i class="fas fa-shield-alt"></i> 安全参数</h4>
+                    <div class="param-item">
+                        <span class="param-label">时间戳:</span>
+                        <span class="param-value" id="timestampValue">0</span>
+                    </div>
+                    <div class="param-item">
+                        <span class="param-label">随机数(64位):</span>
+                        <span class="param-value" id="nonceValue">0</span>
+                    </div>
+                    <div class="param-item">
+                        <span class="param-label">签名:</span>
+                        <span class="param-value" id="signValue">未生成</span>
+                    </div>
+                </div>
+                
+                <button type="button" class="toggle-security" id="toggleSecurity">
+                    <i class="fas fa-eye"></i> 显示安全参数
+                </button>
+                
+                <!-- 底部固定区域，确保按钮始终可见 -->
+                <div class="bottom-fixed">
+                    <button type="submit" class="login-btn" id="loginBtn">
+                        <i class="fas fa-sign-in-alt"></i> 登录系统
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- 错误通知 -->
+    <div class="notification" id="errorNotification">
+        <i class="fas fa-exclamation-triangle notification-icon"></i>
+        <div class="notification-content">
+            <h4 id="errorTitle">登录失败</h4>
+            <p id="errorMessage">账号或密码错误，请重试</p>
+        </div>
+    </div>
+
+    <script>
+        // 安全相关配置
+        const SECURITY_CONFIG = {
+            // 应用ID (实际应由后端分配)
+            appId: "hls_toolbox_web",
+            // 应用密钥 (实际应由后端分配，这里仅作演示)
+            appSecret: "hls_toolbox_2023_secret_key_demo",
+            // 签名算法 (可使用MD5、SHA256等，根据后端要求选择)
+            signAlgorithm: "MD5",
+            // 时间戳有效期 (秒)
+            timestampExpiry: 300,
+            // 随机数长度 (64位=16个十六进制字符，实际使用32位已足够，但64位更安全)
+            nonceLength: 16
+        };
+        
+        // 创建科幻背景特效
+        function createSciFiBackground() {
+            const bg = document.getElementById('sciFiBg');
+            
+            // 创建网格线
+            for (let i = 0; i < 20; i++) {
+                const horizontalLine = document.createElement('div');
+                horizontalLine.className = 'grid-line horizontal';
+                horizontalLine.style.top = `${i * 5}%`;
+                bg.appendChild(horizontalLine);
+                
+                const verticalLine = document.createElement('div');
+                verticalLine.className = 'grid-line vertical';
+                verticalLine.style.left = `${i * 5}%`;
+                bg.appendChild(verticalLine);
+            }
+            
+            // 创建浮动元素
+            for (let i = 0; i < 10; i++) {
+                const element = document.createElement('div');
+                element.className = 'floating-element';
+                element.style.width = `${Math.random() * 100 + 50}px`;
+                element.style.height = element.style.width;
+                element.style.left = `${Math.random() * 100}%`;
+                element.style.top = `${Math.random() * 100}%`;
+                element.style.animationDuration = `${Math.random() * 30 + 20}s`;
+                element.style.animationDelay = `${Math.random() * 5}s`;
+                bg.appendChild(element);
+            }
+        }
+        
+        // 生成随机数 (64位 = 16个十六进制字符)
+        function generateNonce(length = SECURITY_CONFIG.nonceLength) {
+            const chars = '0123456789abcdef';
+            let result = '';
+            for (let i = 0; i < length; i++) {
+                result += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return result;
+        }
+        
+        // 获取当前时间戳 (秒级，后端通常使用秒级时间戳)
+        function getTimestamp() {
+            return Math.floor(Date.now() / 1000);
+        }
+        
+        // 生成签名
+        function generateSignature(params, secret = SECURITY_CONFIG.appSecret) {
+            // 1. 对参数按照键名进行排序
+            const sortedKeys = Object.keys(params).sort();
+            
+            // 2. 拼接键值对
+            let signString = '';
+            sortedKeys.forEach(key => {
+                signString += `${key}=${params[key]}&`;
+            });
+            
+            // 3. 移除末尾的'&'并添加密钥
+            signString = signString.slice(0, -1) + secret;
+            
+            // 4. 使用指定算法生成签名
+            let signature = '';
+            if (SECURITY_CONFIG.signAlgorithm === 'MD5') {
+                signature = CryptoJS.MD5(signString).toString();
+            } else if (SECURITY_CONFIG.signAlgorithm === 'SHA256') {
+                signature = CryptoJS.SHA256(signString).toString();
+            } else {
+                // 默认使用MD5
+                signature = CryptoJS.MD5(signString).toString();
+            }
+            
+            return signature;
+        }
+        
+        // 更新安全参数显示
+        function updateSecurityParamsDisplay(timestamp, nonce, signature) {
+            document.getElementById('timestampValue').textContent = timestamp;
+            document.getElementById('nonceValue').textContent = nonce;
+            
+            // 只显示签名的前16位和后8位，中间用...省略
+            if (signature.length > 30) {
+                document.getElementById('signValue').textContent = 
+                    signature.substring(0, 16) + '...' + signature.substring(signature.length - 8);
+            } else {
+                document.getElementById('signValue').textContent = signature;
+            }
+        }
+        
+        // 显示错误通知
+        function showErrorNotification(title, message) {
+            const notification = document.getElementById('errorNotification');
+            document.getElementById('errorTitle').textContent = title;
+            document.getElementById('errorMessage').textContent = message;
+            
+            notification.classList.add('show');
+            
+            // 5秒后自动隐藏
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 5000);
+        }
+        
+        // 登录功能
+        async function handleLogin(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const loginBtn = document.getElementById('loginBtn');
+            
+            // 验证输入
+            if (!username || !password) {
+                showErrorNotification('输入不完整', '请输入账号和密码');
+                return;
+            }
+            
+            // 生成安全参数
+            const timestamp = getTimestamp();
+            const nonce = generateNonce();
+            
+            // 构建请求参数对象
+            const requestParams = {
+                username: username,
+                password: password,
+                timestamp: timestamp,
+                nonce: nonce,
+                app_id: SECURITY_CONFIG.appId
+            };
+            
+            // 生成签名
+            const signature = generateSignature(requestParams);
+            
+            // 添加签名到参数中
+            requestParams.sign = signature;
+            
+            // 更新安全参数显示
+            updateSecurityParamsDisplay(timestamp, nonce, signature);
+            
+            // 显示加载状态
+            loginBtn.classList.add('loading');
+            loginBtn.innerHTML = '<i class="fas fa-spinner"></i> 登录中...';
+            
+            try {
+                // 发送POST请求到后端登录接口
+                const response = await fetch('http://192.168.29.128:9009/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        // 可以添加自定义请求头
+                        'X-Client-Type': 'web',
+                        'X-Request-ID': nonce
+                    },
+                    body: JSON.stringify(requestParams)
+                });
+                
+                // 解析响应数据
+                const data = await response.json();
+                
+                // 恢复按钮状态
+                loginBtn.classList.remove('loading');
+                loginBtn.innerHTML = '<i class="fas fa-sign-in-alt"></i> 登录系统';
+                
+                // 检查登录是否成功
+                if (data.status_code === 200) {
+                    // 保存token和用户信息到localStorage
+                    localStorage.setItem('hls_toolbox_token', data.token);
+                    localStorage.setItem('hls_toolbox_user_data', JSON.stringify(data.userinfo));
+                    localStorage.setItem('hls_toolbox_logged_in', 'true');
+                    
+                    // 登录成功，跳转到index.html并传递用户信息
+                    window.location.href = 'index.html';
+                } else {
+                    // 登录失败
+                    showErrorNotification('登录失败', data.message || '账号或密码错误，请重试');
+                }
+            } catch (error) {
+                console.error('登录请求失败:', error);
+                
+                // 恢复按钮状态
+                loginBtn.classList.remove('loading');
+                loginBtn.innerHTML = '<i class="fas fa-sign-in-alt"></i> 登录系统';
+                
+                // 网络错误或后端不可用
+                showErrorNotification('连接失败', '无法连接到服务器，请检查网络或稍后重试');
+                
+                // 模拟成功登录（用于演示，实际开发中应删除）
+                // 模拟成功响应
+                // const mockData = {
+                //     status_code: 200,
+                //     token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6IkFkbWluaXN0cmF0b3IiLCJsZXZlbCI6IlZJUCBtZW1iZXIiLCJsYXN0TG9naW4iOiJqdXN0IG5vdyIsImVuY3J5cHRBY2Nlc3MiOnRydWUsImFwcF9pZCI6Imhsc190b29sYm94X3dlYiIsImV4cCI6MTY4MDk0NzIwMH0.mocktoken12345",
+                //     userinfo: {
+                //         username: "admin",
+                //         role: "管理员",
+                //         level: "VIP会员",
+                //         lastLogin: "刚刚",
+                //         encryptAccess: true
+                //     }
+                // };
+                
+                // // 保存模拟数据到localStorage
+                // localStorage.setItem('hls_toolbox_token', mockData.token);
+                // localStorage.setItem('hls_toolbox_user_data', JSON.stringify(mockData.userinfo));
+                // localStorage.setItem('hls_toolbox_logged_in', 'true');
+                
+                // 跳转到index.html (实际使用时取消注释)
+                // setTimeout(() => {
+                //     window.location.href = 'index.html';
+                // }, 1000);
+            }
+        }
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 创建科幻背景
+            createSciFiBackground();
+            
+            // 检查是否已登录
+            const isLoggedIn = localStorage.getItem('hls_toolbox_logged_in') === 'true';
+            if (isLoggedIn) {
+                // 如果已登录，直接跳转到index.html
+                window.location.href = 'index.html';
+            }
+            
+            // 绑定表单提交事件
+            const loginForm = document.getElementById('loginForm');
+            loginForm.addEventListener('submit', handleLogin);
+            
+            // 绑定安全参数显示/隐藏切换
+            const toggleSecurityBtn = document.getElementById('toggleSecurity');
+            const securityParams = document.getElementById('securityParams');
+            
+            toggleSecurityBtn.addEventListener('click', function() {
+                const isShowing = securityParams.classList.contains('show');
+                
+                if (isShowing) {
+                    // 当前是显示状态，切换到隐藏
+                    securityParams.classList.remove('show');
+                    toggleSecurityBtn.innerHTML = '<i class="fas fa-eye"></i> 显示安全参数';
+                    toggleSecurityBtn.style.marginBottom = '15px';
+                } else {
+                    // 当前是隐藏状态，切换到显示
+                    securityParams.classList.add('show');
+                    toggleSecurityBtn.innerHTML = '<i class="fas fa-eye-slash"></i> 隐藏安全参数';
+                    toggleSecurityBtn.style.marginBottom = '10px';
+                    
+                    // 滚动到安全参数区域底部，确保按钮可见
+                    setTimeout(() => {
+                        securityParams.scrollTop = securityParams.scrollHeight;
+                    }, 300);
+                }
+            });
+            
+            // 为输入框添加焦点效果
+            const inputs = document.querySelectorAll('.form-input');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.querySelector('.input-icon').style.color = 'var(--primary-color)';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.querySelector('.input-icon').style.color = 'rgba(58, 134, 255, 0.7)';
+                });
+                
+                // 输入时预生成安全参数
+                input.addEventListener('input', function() {
+                    const username = document.getElementById('username').value.trim();
+                    const password = document.getElementById('password').value.trim();
+                    
+                    if (username && password) {
+                        const timestamp = getTimestamp();
+                        const nonce = generateNonce();
+                        const params = {
+                            username: username,
+                            password: password,
+                            timestamp: timestamp,
+                            nonce: nonce,
+                            app_id: SECURITY_CONFIG.appId
+                        };
+                        const signature = generateSignature(params);
+                        updateSecurityParamsDisplay(timestamp, nonce, signature);
+                    }
+                });
+            });
+            
+            // 初始生成安全参数
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            if (username && password) {
+                const timestamp = getTimestamp();
+                const nonce = generateNonce();
+                const params = {
+                    username: username,
+                    password: password,
+                    timestamp: timestamp,
+                    nonce: nonce,
+                    app_id: SECURITY_CONFIG.appId
+                };
+                const signature = generateSignature(params);
+                updateSecurityParamsDisplay(timestamp, nonce, signature);
+            }
+            
+            // 添加回车键提交支持
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !document.getElementById('loginBtn').classList.contains('loading')) {
+                    handleLogin(e);
+                }
+            });
+            
+            // 确保页面加载后滚动到顶部
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html>

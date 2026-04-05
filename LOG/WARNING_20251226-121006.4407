@@ -1,0 +1,236 @@
+Log file created at: 2025/12/26 12:10:06
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:06
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251226 12:10:06.716279  4418 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:10:06.717819  4418 ConnectionHandler.hpp:166] 28301
+W20251226 12:10:07.645473  4420 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251226 12:10:07.647845  4420 ConnectionHandler.hpp:166] 67821
+W20251226 12:10:08.822366  4422 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:10:08.822906  4422 ConnectionHandler.hpp:166] 28301
+W20251226 12:10:10.103377  4424 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251226 12:10:10.104611  4424 ConnectionHandler.hpp:166] 67821
+W20251226 12:10:12.806346  4419 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:10:12.806852  4419 ConnectionHandler.hpp:166] 28301
+W20251226 12:10:14.657228  4420 ConnectionHandler.hpp:134] URL: /encrypt.html
+W20251226 12:10:14.658808  4420 ConnectionHandler.hpp:166] 48830
+W20251226 12:10:52.587356  4422 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:10:52.587828  4422 ConnectionHandler.hpp:166] 28301
+W20251226 12:10:53.751706  4424 ConnectionHandler.hpp:134] URL: /tsparse.html
+W20251226 12:10:53.753386  4424 ConnectionHandler.hpp:166] 43162
+W20251226 12:20:20.033658  4420 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:20:20.034461  4420 ConnectionHandler.hpp:166] 28301
+W20251226 12:20:20.939352  4422 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251226 12:20:20.941136  4422 ConnectionHandler.hpp:166] 67821
+W20251226 12:20:22.042865  4424 ConnectionHandler.hpp:134] URL: /video
+W20251226 12:20:22.046553  4424 ConnectionHandler.hpp:166] 2521
+W20251226 12:20:23.711114  4419 ConnectionHandler.hpp:134] URL: /video/enc/test/output.m3u8
+W20251226 12:20:23.711835  4419 ConnectionHandler.hpp:166] 2660
+W20251226 12:20:23.728101  4420 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:23.728212  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output000.ts
+W20251226 12:20:23.728878  4420 ConnectionHandler.hpp:166] 457
+W20251226 12:20:23.778443  4421 ConnectionHandler.hpp:166] 2328646
+W20251226 12:20:23.955809  4424 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:23.955822  4425 ConnectionHandler.hpp:134] URL: /video/enc/test/output001.ts
+W20251226 12:20:23.956451  4424 ConnectionHandler.hpp:166] 457
+W20251226 12:20:23.971103  4425 ConnectionHandler.hpp:166] 937253
+W20251226 12:20:24.061084  4423 ConnectionHandler.hpp:134] URL: /video/enc/test/output002.ts
+W20251226 12:20:24.061996  4421 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:24.062182  4421 ConnectionHandler.hpp:166] 457
+W20251226 12:20:24.076762  4423 ConnectionHandler.hpp:166] 962069
+W20251226 12:20:27.732331  4418 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:27.732353  4425 ConnectionHandler.hpp:134] URL: /video/enc/test/output003.ts
+W20251226 12:20:27.732686  4418 ConnectionHandler.hpp:166] 457
+W20251226 12:20:27.744074  4425 ConnectionHandler.hpp:166] 814869
+W20251226 12:20:29.833631  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output004.ts
+W20251226 12:20:29.833699  4424 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:29.834453  4424 ConnectionHandler.hpp:166] 457
+W20251226 12:20:29.872494  4421 ConnectionHandler.hpp:166] 2129542
+W20251226 12:20:37.153899  4420 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:37.153928  4425 ConnectionHandler.hpp:134] URL: /video/enc/test/output005.ts
+W20251226 12:20:37.154896  4420 ConnectionHandler.hpp:166] 457
+W20251226 12:20:37.174444  4425 ConnectionHandler.hpp:166] 1226214
+W20251226 12:20:41.324121  4419 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:41.324225  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output006.ts
+W20251226 12:20:41.325009  4419 ConnectionHandler.hpp:166] 457
+W20251226 12:20:41.341569  4421 ConnectionHandler.hpp:166] 1038582
+W20251226 12:20:45.494108  4422 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:45.494242  4425 ConnectionHandler.hpp:134] URL: /video/enc/test/output007.ts
+W20251226 12:20:45.494412  4422 ConnectionHandler.hpp:166] 457
+W20251226 12:20:45.520615  4425 ConnectionHandler.hpp:166] 1719142
+W20251226 12:20:51.763912  4419 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:51.763921  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output008.ts
+W20251226 12:20:51.764302  4419 ConnectionHandler.hpp:166] 457
+W20251226 12:20:51.781680  4421 ConnectionHandler.hpp:166] 1147622
+W20251226 12:20:56.444542  4424 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:20:56.444610  4425 ConnectionHandler.hpp:134] URL: /video/enc/test/output009.ts
+W20251226 12:20:56.444892  4424 ConnectionHandler.hpp:166] 457
+W20251226 12:20:56.463182  4425 ConnectionHandler.hpp:166] 1057942
+W20251226 12:21:05.204138  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output010.ts
+W20251226 12:21:05.204172  4420 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:21:05.204604  4420 ConnectionHandler.hpp:166] 457
+W20251226 12:21:05.229723  4421 ConnectionHandler.hpp:166] 1731558
+W20251226 12:21:19.095068  4418 ConnectionHandler.hpp:134] URL: /video/enc/test/output011.ts
+W20251226 12:21:19.095105  4425 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:21:19.095507  4425 ConnectionHandler.hpp:166] 457
+W20251226 12:21:19.122874  4418 ConnectionHandler.hpp:166] 1565542
+W20251226 12:22:28.921576  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output011.ts
+W20251226 12:22:28.946648  4421 ConnectionHandler.hpp:166] 1565542
+W20251226 12:22:35.197413  4423 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:22:35.198091  4423 ConnectionHandler.hpp:166] 28301
+W20251226 12:22:36.465154  4419 ConnectionHandler.hpp:134] URL: /tsparse.html
+W20251226 12:22:36.465875  4419 ConnectionHandler.hpp:166] 43162
+W20251226 12:23:30.335467  4420 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:23:30.336110  4420 ConnectionHandler.hpp:166] 28301
+W20251226 12:23:33.333910  4421 ConnectionHandler.hpp:134] URL: /encrypt.html
+W20251226 12:23:33.335055  4421 ConnectionHandler.hpp:166] 48830
+W20251226 12:23:36.234501  4423 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:23:36.235411  4423 ConnectionHandler.hpp:166] 28301
+W20251226 12:23:37.888665  4419 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251226 12:23:37.889663  4419 ConnectionHandler.hpp:166] 67821
+W20251226 12:23:38.979857  4420 ConnectionHandler.hpp:134] URL: /video
+W20251226 12:23:38.980883  4420 ConnectionHandler.hpp:166] 2521
+W20251226 12:23:42.532212  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output.m3u8
+W20251226 12:23:42.532811  4421 ConnectionHandler.hpp:166] 2660
+W20251226 12:23:42.543758  4423 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:23:42.543781  4425 ConnectionHandler.hpp:134] URL: /video/enc/test/output000.ts
+W20251226 12:23:42.544165  4423 ConnectionHandler.hpp:166] 457
+W20251226 12:23:42.584403  4425 ConnectionHandler.hpp:166] 2328646
+W20251226 12:23:42.768399  4420 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:23:42.768450  4422 ConnectionHandler.hpp:134] URL: /video/enc/test/output001.ts
+W20251226 12:23:42.768633  4420 ConnectionHandler.hpp:166] 457
+W20251226 12:23:42.782173  4422 ConnectionHandler.hpp:166] 937253
+W20251226 12:23:42.876828  4423 ConnectionHandler.hpp:134] URL: /video/enc/test/output002.ts
+W20251226 12:23:42.876870  4419 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:23:42.877295  4419 ConnectionHandler.hpp:166] 457
+W20251226 12:23:42.899454  4423 ConnectionHandler.hpp:166] 962069
+W20251226 12:23:58.889609  4420 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:23:58.889634  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output003.ts
+W20251226 12:23:58.890098  4420 ConnectionHandler.hpp:166] 457
+W20251226 12:23:58.909691  4421 ConnectionHandler.hpp:166] 814869
+W20251226 12:24:01.020084  4419 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:24:01.020118  4425 ConnectionHandler.hpp:134] URL: /video/enc/test/output004.ts
+W20251226 12:24:01.020344  4419 ConnectionHandler.hpp:166] 457
+W20251226 12:24:01.047508  4425 ConnectionHandler.hpp:166] 2129542
+W20251226 12:24:08.309875  4422 ConnectionHandler.hpp:134] URL: /video/enc/test/output005.ts
+W20251226 12:24:08.309914  4421 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:24:08.310372  4421 ConnectionHandler.hpp:166] 457
+W20251226 12:24:08.327584  4422 ConnectionHandler.hpp:166] 1226214
+W20251226 12:24:12.480311  4425 ConnectionHandler.hpp:134] URL: /video/enc/test/output006.ts
+W20251226 12:24:12.480334  4423 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:24:12.480684  4423 ConnectionHandler.hpp:166] 457
+W20251226 12:24:12.494716  4425 ConnectionHandler.hpp:166] 1038582
+W20251226 12:24:16.640694  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output007.ts
+W20251226 12:24:16.640709  4424 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:24:16.641119  4424 ConnectionHandler.hpp:166] 457
+W20251226 12:24:16.663827  4421 ConnectionHandler.hpp:166] 1719142
+W20251226 12:27:11.056162  4418 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:27:11.056777  4418 ConnectionHandler.hpp:166] 28301
+W20251226 12:27:13.663849  4420 ConnectionHandler.hpp:134] URL: /m3u8parse.html
+W20251226 12:27:13.667019  4420 ConnectionHandler.hpp:166] 50201
+W20251226 12:28:21.046070  4422 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:28:21.046628  4422 ConnectionHandler.hpp:166] 28301
+W20251226 12:28:22.068645  4419 ConnectionHandler.hpp:134] URL: /tsparse.html
+W20251226 12:28:22.069612  4419 ConnectionHandler.hpp:166] 43162
+W20251226 12:28:36.270080  4418 ConnectionHandler.hpp:134] URL: /tsparse.html
+W20251226 12:28:36.270833  4418 ConnectionHandler.hpp:166] 43162
+W20251226 12:28:36.312901  4420 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251226 12:28:36.314399  4420 ConnectionHandler.hpp:166] 3197
+W20251226 12:36:22.569756  4419 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:36:22.570374  4419 ConnectionHandler.hpp:166] 28301
+W20251226 12:36:23.439087  4418 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251226 12:36:23.440196  4418 ConnectionHandler.hpp:166] 67821
+W20251226 12:36:28.190102  4420 ConnectionHandler.hpp:134] URL: /video
+W20251226 12:36:28.190941  4420 ConnectionHandler.hpp:166] 2521
+W20251226 12:36:31.086205  4422 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251226 12:36:31.087109  4422 ConnectionHandler.hpp:166] 4058
+W20251226 12:36:31.100299  4419 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+W20251226 12:36:31.109841  4419 ConnectionHandler.hpp:166] 405577
+W20251226 12:36:31.152289  4418 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_001.ts
+W20251226 12:36:31.194671  4418 ConnectionHandler.hpp:166] 1923866
+W20251226 12:36:31.297806  4424 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_002.ts
+W20251226 12:36:31.322338  4424 ConnectionHandler.hpp:166] 937241
+W20251226 12:36:31.370023  4421 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_003.ts
+W20251226 12:36:31.374691  4421 ConnectionHandler.hpp:166] 160613
+W20251226 12:36:31.402618  4423 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_004.ts
+W20251226 12:36:31.420351  4423 ConnectionHandler.hpp:166] 801317
+W20251226 12:36:32.936757  4418 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:36:32.937500  4418 ConnectionHandler.hpp:166] 28301
+W20251226 12:36:35.573873  4424 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251226 12:36:35.575145  4424 ConnectionHandler.hpp:166] 67821
+W20251226 12:36:36.609535  4421 ConnectionHandler.hpp:134] URL: /video
+W20251226 12:36:36.610256  4421 ConnectionHandler.hpp:166] 2521
+W20251226 12:36:38.435171  4423 ConnectionHandler.hpp:134] URL: /video/enc/test/output.m3u8
+W20251226 12:36:38.435523  4423 ConnectionHandler.hpp:166] 2660
+W20251226 12:36:38.445180  4418 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:36:38.445312  4420 ConnectionHandler.hpp:134] URL: /video/enc/test/output000.ts
+W20251226 12:36:38.446432  4418 ConnectionHandler.hpp:166] 457
+W20251226 12:36:38.488232  4420 ConnectionHandler.hpp:166] 2328646
+W20251226 12:36:38.678107  4419 ConnectionHandler.hpp:134] URL: /video/enc/test/output001.ts
+W20251226 12:36:38.678164  4421 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:36:38.678450  4421 ConnectionHandler.hpp:166] 457
+W20251226 12:36:38.691850  4419 ConnectionHandler.hpp:166] 937253
+W20251226 12:36:38.808902  4424 ConnectionHandler.hpp:134] URL: /video/enc/test/output002.ts
+W20251226 12:36:38.808902  4418 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:36:38.809456  4418 ConnectionHandler.hpp:166] 457
+W20251226 12:36:38.823187  4424 ConnectionHandler.hpp:166] 962069
+W20251226 12:36:42.461333  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output003.ts
+W20251226 12:36:42.461406  4423 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:36:42.461758  4423 ConnectionHandler.hpp:166] 457
+W20251226 12:36:42.472783  4421 ConnectionHandler.hpp:166] 814869
+W20251226 12:36:44.561762  4420 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:36:44.561781  4418 ConnectionHandler.hpp:134] URL: /video/enc/test/output004.ts
+W20251226 12:36:44.562248  4420 ConnectionHandler.hpp:166] 457
+W20251226 12:36:44.591354  4418 ConnectionHandler.hpp:166] 2129542
+W20251226 12:36:48.430490  4423 ConnectionHandler.hpp:134] URL: /index.html
+W20251226 12:36:48.431418  4423 ConnectionHandler.hpp:166] 28301
+W20251226 12:41:43.669482  4421 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251226 12:41:43.670684  4421 ConnectionHandler.hpp:166] 67821
+W20251226 12:41:44.991503  4420 ConnectionHandler.hpp:134] URL: /video
+W20251226 12:41:44.992091  4420 ConnectionHandler.hpp:166] 2521
+W20251226 12:41:47.024544  4422 ConnectionHandler.hpp:134] URL: /video/enc/test/output.m3u8
+W20251226 12:41:47.024881  4422 ConnectionHandler.hpp:166] 2660
+W20251226 12:41:47.039728  4419 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:41:47.041265  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output000.ts
+W20251226 12:41:47.041494  4419 ConnectionHandler.hpp:166] 457
+W20251226 12:41:47.079144  4421 ConnectionHandler.hpp:166] 2328646
+W20251226 12:41:47.272346  4424 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:41:47.272358  4418 ConnectionHandler.hpp:134] URL: /video/enc/test/output001.ts
+W20251226 12:41:47.272758  4424 ConnectionHandler.hpp:166] 457
+W20251226 12:41:47.286929  4418 ConnectionHandler.hpp:166] 937253
+W20251226 12:41:47.382689  4425 ConnectionHandler.hpp:134] URL: /video/enc/test/output002.ts
+W20251226 12:41:47.382730  4419 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:41:47.383260  4419 ConnectionHandler.hpp:166] 457
+W20251226 12:41:47.401120  4425 ConnectionHandler.hpp:166] 962069
+W20251226 12:41:51.029464  4424 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:41:51.029541  4422 ConnectionHandler.hpp:134] URL: /video/enc/test/output003.ts
+W20251226 12:41:51.029728  4424 ConnectionHandler.hpp:166] 457
+W20251226 12:41:51.039645  4422 ConnectionHandler.hpp:166] 814869
+W20251226 12:41:53.128602  4421 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:41:53.128763  4421 ConnectionHandler.hpp:166] 457
+W20251226 12:41:53.128820  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output004.ts
+W20251226 12:41:53.156347  4421 ConnectionHandler.hpp:166] 2129542
+W20251226 12:42:00.419682  4422 ConnectionHandler.hpp:134] URL: /video/enc/test/output005.ts
+W20251226 12:42:00.419703  4418 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:42:00.420171  4418 ConnectionHandler.hpp:166] 457
+W20251226 12:42:00.437975  4422 ConnectionHandler.hpp:166] 1226214
+W20251226 12:42:04.588881  4419 ConnectionHandler.hpp:134] URL: /video/enc/test/output006.ts
+W20251226 12:42:04.588901  4421 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:42:04.589213  4421 ConnectionHandler.hpp:166] 457
+W20251226 12:42:04.603018  4419 ConnectionHandler.hpp:166] 1038582
+W20251226 12:42:08.249094  4418 ConnectionHandler.hpp:134] URL: /video/enc/test/output007.ts
+W20251226 12:42:08.249145  4423 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:42:08.249435  4423 ConnectionHandler.hpp:166] 457
+W20251226 12:42:08.273248  4418 ConnectionHandler.hpp:166] 1719142
+W20251226 12:42:14.489749  4420 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:42:14.489944  4420 ConnectionHandler.hpp:166] 457
+W20251226 12:42:14.489780  4421 ConnectionHandler.hpp:134] URL: /video/enc/test/output008.ts
+W20251226 12:42:14.504555  4421 ConnectionHandler.hpp:166] 1147622
+W20251226 12:42:19.680696  4423 ConnectionHandler.hpp:134] URL: /video/enc/test/output009.ts
+W20251226 12:42:19.681478  4422 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251226 12:42:19.682209  4422 ConnectionHandler.hpp:166] 457
+W20251226 12:42:19.696594  4423 ConnectionHandler.hpp:166] 1057942
+W20251226 12:49:51.702965  4407 main.cpp:69] Shutting down server...
+W20251226 12:49:51.789486  4407 main.cpp:71] main is closed
+W20251226 12:49:52.045079  4407 main.cpp:79] Server stopped
+W20251226 12:49:52.045423  4407 main.cpp:80] main end()

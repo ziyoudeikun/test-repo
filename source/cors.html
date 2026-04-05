@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS问题检测工具</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 2.2rem;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 15px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+        
+        .card-title {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .card-title i {
+            font-size: 1.2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, select:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+        
+        .url-input-group {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .url-input-group select {
+            width: 120px;
+            flex-shrink: 0;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .checkbox-item input {
+            width: auto;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .primary-btn {
+            background-color: #3498db;
+            color: white;
+            flex: 1;
+        }
+        
+        .primary-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .secondary-btn {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+        }
+        
+        .secondary-btn:hover {
+            background-color: #d5dbdb;
+        }
+        
+        .danger-btn {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        .danger-btn:hover {
+            background-color: #c0392b;
+        }
+        
+        .result-section {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .result-section.active {
+            display: block;
+        }
+        
+        .status-indicator {
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .status-success {
+            background-color: #d5f4e6;
+            color: #27ae60;
+            border-left: 4px solid #27ae60;
+        }
+        
+        .status-error {
+            background-color: #fadbd8;
+            color: #e74c3c;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .status-warning {
+            background-color: #fef9e7;
+            color: #f39c12;
+            border-left: 4px solid #f39c12;
+        }
+        
+        .response-details {
+            margin-top: 20px;
+        }
+        
+        .detail-section {
+            margin-bottom: 25px;
+        }
+        
+        .detail-title {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .headers-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+        
+        .headers-table th, .headers-table td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .headers-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #2c3e50;
+            width: 40%;
+        }
+        
+        .cors-important {
+            background-color: #e8f4fc;
+        }
+        
+        .cors-important th {
+            background-color: #d6eaf8;
+        }
+        
+        .response-body {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+            font-size: 0.9rem;
+            border: 1px solid #eaeaea;
+        }
+        
+        .analysis-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .analysis-title {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .solution-list {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .solution-list li {
+            margin-bottom: 8px;
+        }
+        
+        .examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .example-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .example-card:hover {
+            border-color: #3498db;
+            transform: translateY(-3px);
+        }
+        
+        .example-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .example-desc {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        
+        .loader {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .loader.active {
+            display: block;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                gap: 15px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .url-input-group {
+                flex-direction: column;
+            }
+            
+            .url-input-group select {
+                width: 100%;
+            }
+            
+            .buttons {
+                flex-direction: column;
+            }
+            
+            .examples {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-universal-access"></i> CORS问题检测工具</h1>
+            <p class="subtitle">测试和分析跨源资源共享(CORS)配置问题，识别缺失的响应头并提供解决方案</p>
+        </header>
+        
+        <main class="card">
+            <h2 class="card-title"><i class="fas fa-cogs"></i> 请求配置</h2>
+            
+            <div class="form-group">
+                <label for="url">请求URL</label>
+                <div class="url-input-group">
+                    <select id="method">
+                        <option value="GET">GET</option>
+                        <option value="POST">POST</option>
+                        <option value="PUT">PUT</option>
+                        <option value="DELETE">DELETE</option>
+                        <option value="OPTIONS">OPTIONS</option>
+                    </select>
+                    <input type="url" id="url" placeholder="https://api.example.com/data" value="https://jsonplaceholder.typicode.com/posts/1">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>请求选项</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="credentials" checked>
+                        <label for="credentials">发送凭据 (credentials: include)</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="customHeaders">
+                        <label for="customHeaders">添加自定义请求头</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="corsMode">
+                        <label for="corsMode">使用CORS模式 (mode: cors)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group" id="customHeadersSection" style="display: none;">
+                <label for="headers">自定义请求头 (JSON格式)</label>
+                <textarea id="headers" rows="3" placeholder='{"X-Custom-Header": "value", "Content-Type": "application/json"}'></textarea>
+            </div>
+            
+            <div class="buttons">
+                <button id="testBtn" class="primary-btn">
+                    <i class="fas fa-play"></i> 测试CORS请求
+                </button>
+                <button id="clearBtn" class="secondary-btn">
+                    <i class="fas fa-broom"></i> 清除结果
+                </button>
+                <button id="testErrorBtn" class="danger-btn">
+                    <i class="fas fa-exclamation-triangle"></i> 测试CORS错误
+                </button>
+            </div>
+            
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+                <p>正在发送请求并分析CORS配置...</p>
+            </div>
+            
+            <div class="result-section" id="resultSection">
+                <div id="statusIndicator" class="status-indicator"></div>
+                
+                <div class="response-details">
+                    <div class="detail-section">
+                        <h3 class="detail-title">响应头信息</h3>
+                        <table class="headers-table" id="headersTable">
+                            <thead>
+                                <tr>
+                                    <th>响应头</th>
+                                    <th>值</th>
+                                </tr>
+                            </thead>
+                            <tbody id="headersBody">
+                                <!-- 动态填充 -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3 class="detail-title">响应内容</h3>
+                        <div class="response-body" id="responseBody">
+                            <!-- 动态填充 -->
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3 class="detail-title">CORS问题分析与解决方案</h3>
+                        <div class="analysis-section" id="analysisSection">
+                            <!-- 动态填充 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-lightbulb"></i> CORS示例请求</h2>
+            <p>点击下面的示例快速测试常见的CORS场景：</p>
+            
+            <div class="examples">
+                <div class="example-card" data-url="https://jsonplaceholder.typicode.com/posts/1" data-method="GET">
+                    <div class="example-title">正确CORS配置 (GET)</div>
+                    <div class="example-desc">测试允许跨域请求的API (jsonplaceholder.typicode.com)</div>
+                </div>
+                
+                <div class="example-card" data-url="https://httpbin.org/headers" data-method="GET">
+                    <div class="example-title">CORS支持API (GET)</div>
+                    <div class="example-desc">测试httpbin.org的CORS配置，返回请求头信息</div>
+                </div>
+                
+                <div class="example-card" data-url="https://api.github.com/users/octocat" data-method="GET">
+                    <div class="example-title">GitHub API (GET)</div>
+                    <div class="example-desc">测试GitHub API的CORS配置 (通常有适当的CORS头)</div>
+                </div>
+                
+                <div class="example-card" data-url="https://example.com" data-method="GET">
+                    <div class="example-title">无CORS头 (GET)</div>
+                    <div class="example-desc">测试没有CORS头的网站 (可能触发CORS错误)</div>
+                </div>
+                
+                <div class="example-card" data-url="https://httpbin.org/post" data-method="POST">
+                    <div class="example-title">POST请求测试</div>
+                    <div class="example-desc">测试POST请求的CORS处理 (可能触发预检请求)</div>
+                </div>
+                
+                <div class="example-card" data-url="https://httpbin.org/status/403" data-method="GET">
+                    <div class="example-title">返回403状态码</div>
+                    <div class="example-desc">测试服务器返回403时CORS头是否仍然存在</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-info-circle"></i> 关于CORS</h2>
+            <p><strong>CORS (跨源资源共享)</strong> 是一种安全机制，允许Web应用从不同源（域、协议或端口）请求资源。</p>
+            
+            <div style="margin-top: 15px;">
+                <h3 style="color: #2c3e50; margin-bottom: 10px;">关键CORS响应头：</h3>
+                <ul style="padding-left: 20px;">
+                    <li><strong>Access-Control-Allow-Origin</strong>: 指定允许访问资源的源</li>
+                    <li><strong>Access-Control-Allow-Methods</strong>: 指定允许的HTTP方法</li>
+                    <li><strong>Access-Control-Allow-Headers</strong>: 指定允许的请求头</li>
+                    <li><strong>Access-Control-Allow-Credentials</strong>: 指定是否允许发送凭据（cookies等）</li>
+                    <li><strong>Access-Control-Expose-Headers</strong>: 指定哪些响应头可以暴露给客户端</li>
+                </ul>
+            </div>
+            
+            <div style="margin-top: 20px; background-color: #f8f9fa; padding: 15px; border-radius: 6px;">
+                <h4 style="color: #2c3e50; margin-bottom: 8px;">常见CORS问题：</h4>
+                <ol style="padding-left: 20px;">
+                    <li>缺少<code>Access-Control-Allow-Origin</code>响应头</li>
+                    <li>服务器返回的通配符(*)不允许携带凭据</li>
+                    <li>预检请求(OPTIONS)未正确处理</li>
+                    <li>请求头不在<code>Access-Control-Allow-Headers</code>中</li>
+                    <li>HTTP方法不在<code>Access-Control-Allow-Methods</code>中</li>
+                </ol>
+            </div>
+        </div>
+        
+        <footer>
+            <p>CORS问题检测工具 &copy; 2023 | 使用现代JavaScript Fetch API进行测试</p>
+            <p style="margin-top: 5px; font-size: 0.85rem;">注意：由于浏览器安全限制，某些请求可能会被阻止。结果仅供参考。</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取DOM元素
+            const testBtn = document.getElementById('testBtn');
+            const clearBtn = document.getElementById('clearBtn');
+            const testErrorBtn = document.getElementById('testErrorBtn');
+            const urlInput = document.getElementById('url');
+            const methodSelect = document.getElementById('method');
+            const credentialsCheckbox = document.getElementById('credentials');
+            const customHeadersCheckbox = document.getElementById('customHeaders');
+            const corsModeCheckbox = document.getElementById('corsMode');
+            const customHeadersSection = document.getElementById('customHeadersSection');
+            const headersTextarea = document.getElementById('headers');
+            const loader = document.getElementById('loader');
+            const resultSection = document.getElementById('resultSection');
+            const statusIndicator = document.getElementById('statusIndicator');
+            const headersBody = document.getElementById('headersBody');
+            const responseBody = document.getElementById('responseBody');
+            const analysisSection = document.getElementById('analysisSection');
+            const exampleCards = document.querySelectorAll('.example-card');
+            
+            // 切换自定义请求头输入框显示
+            customHeadersCheckbox.addEventListener('change', function() {
+                customHeadersSection.style.display = this.checked ? 'block' : 'none';
+            });
+            
+            // 示例卡片点击事件
+            exampleCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const url = this.getAttribute('data-url');
+                    const method = this.getAttribute('data-method');
+                    
+                    urlInput.value = url;
+                    methodSelect.value = method;
+                    
+                    // 滚动到顶部
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                });
+            });
+            
+            // 清除结果
+            clearBtn.addEventListener('click', function() {
+                resultSection.classList.remove('active');
+                statusIndicator.innerHTML = '';
+                headersBody.innerHTML = '';
+                responseBody.textContent = '';
+                analysisSection.innerHTML = '';
+            });
+            
+            // 测试CORS错误
+            testErrorBtn.addEventListener('click', function() {
+                // 使用一个已知没有CORS头的URL来触发错误
+                urlInput.value = 'https://example.com';
+                methodSelect.value = 'GET';
+                testCORSRequest();
+            });
+            
+            // 测试CORS请求
+            testBtn.addEventListener('click', testCORSRequest);
+            
+            // 主测试函数
+            async function testCORSRequest() {
+                // 显示加载器
+                loader.classList.add('active');
+                resultSection.classList.remove('active');
+                
+                // 获取输入值
+                const url = urlInput.value.trim();
+                const method = methodSelect.value;
+                const includeCredentials = credentialsCheckbox.checked;
+                const useCorsMode = corsModeCheckbox.checked;
+                
+                // 验证URL
+                if (!url) {
+                    alert('请输入URL');
+                    loader.classList.remove('active');
+                    return;
+                }
+                
+                // 准备请求选项
+                const options = {
+                    method: method,
+                    mode: useCorsMode ? 'cors' : 'no-cors',
+                    cache: 'no-cache',
+                    credentials: includeCredentials ? 'include' : 'same-origin',
+                    headers: {}
+                };
+                
+                // 添加自定义请求头
+                if (customHeadersCheckbox.checked && headersTextarea.value.trim()) {
+                    try {
+                        const customHeaders = JSON.parse(headersTextarea.value);
+                        for (const [key, value] of Object.entries(customHeaders)) {
+                            options.headers[key] = value;
+                        }
+                    } catch (error) {
+                        alert('自定义请求头格式错误，请使用有效的JSON格式');
+                        loader.classList.remove('active');
+                        return;
+                    }
+                }
+                
+                // 对于非简单请求，如果包含自定义头，需要添加Content-Type
+                if (method !== 'GET' && method !== 'HEAD' && method !== 'POST') {
+                    if (!options.headers['Content-Type']) {
+                        options.headers['Content-Type'] = 'text/plain';
+                    }
+                }
+                
+                // 发送请求
+                try {
+                    const startTime = Date.now();
+                    const response = await fetch(url, options);
+                    const endTime = Date.now();
+                    
+                    // 解析响应
+                    const responseTime = endTime - startTime;
+                    const status = response.status;
+                    const statusText = response.statusText;
+                    const headers = response.headers;
+                    
+                    // 尝试获取响应体
+                    let responseText = '';
+                    try {
+                        responseText = await response.text();
+                        // 尝试格式化为JSON（如果可能）
+                        if (responseText.trim().startsWith('{') || responseText.trim().startsWith('[')) {
+                            try {
+                                const jsonResponse = JSON.parse(responseText);
+                                responseText = JSON.stringify(jsonResponse, null, 2);
+                            } catch (e) {
+                                // 保持原样
+                            }
+                        }
+                    } catch (e) {
+                        responseText = '无法读取响应内容: ' + e.message;
+                    }
+                    
+                    // 处理响应头
+                    const headersArray = [];
+                    headers.forEach((value, key) => {
+                        headersArray.push({ key, value });
+                    });
+                    
+                    // 分析CORS配置
+                    const corsAnalysis = analyzeCORS(headersArray, url, includeCredentials, method);
+                    
+                    // 显示结果
+                    displayResults({
+                        success: true,
+                        status,
+                        statusText,
+                        headers: headersArray,
+                        body: responseText,
+                        responseTime,
+                        analysis: corsAnalysis
+                    });
+                    
+                } catch (error) {
+                    // 请求失败（可能是CORS错误）
+                    const corsAnalysis = analyzeCORS([], url, includeCredentials, method, error);
+                    
+                    displayResults({
+                        success: false,
+                        error: error.message,
+                        analysis: corsAnalysis
+                    });
+                } finally {
+                    // 隐藏加载器
+                    loader.classList.remove('active');
+                    resultSection.classList.add('active');
+                    
+                    // 滚动到结果部分
+                    setTimeout(() => {
+                        resultSection.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            }
+            
+            // 分析CORS配置
+            function analyzeCORS(headers, url, includeCredentials, method, error = null) {
+                const analysis = {
+                    hasCorsHeaders: false,
+                    allowOrigin: null,
+                    allowCredentials: null,
+                    allowMethods: null,
+                    allowHeaders: null,
+                    exposeHeaders: null,
+                    maxAge: null,
+                    issues: [],
+                    recommendations: []
+                };
+                
+                // 提取CORS相关头
+                headers.forEach(header => {
+                    const key = header.key.toLowerCase();
+                    const value = header.value;
+                    
+                    switch (key) {
+                        case 'access-control-allow-origin':
+                            analysis.hasCorsHeaders = true;
+                            analysis.allowOrigin = value;
+                            break;
+                        case 'access-control-allow-credentials':
+                            analysis.allowCredentials = value;
+                            break;
+                        case 'access-control-allow-methods':
+                            analysis.allowMethods = value;
+                            break;
+                        case 'access-control-allow-headers':
+                            analysis.allowHeaders = value;
+                            break;
+                        case 'access-control-expose-headers':
+                            analysis.exposeHeaders = value;
+                            break;
+                        case 'access-control-max-age':
+                            analysis.maxAge = value;
+                            break;
+                    }
+                });
+                
+                // 当前源
+                const currentOrigin = window.location.origin;
+                const requestOrigin = new URL(url).origin;
+                
+                // 检查问题
+                if (!analysis.hasCorsHeaders) {
+                    analysis.issues.push('响应中没有CORS相关头。这意味着浏览器会阻止跨域请求。');
+                    analysis.recommendations.push('在服务器响应中添加适当的CORS头，例如Access-Control-Allow-Origin。');
+                }
+                
+                if (analysis.allowOrigin === '*') {
+                    if (includeCredentials) {
+                        analysis.issues.push('当使用凭据(credentials)时，Access-Control-Allow-Origin不能为"*"。');
+                        analysis.recommendations.push('将Access-Control-Allow-Origin设置为具体的源，而不是"*"。');
+                    } else {
+                        analysis.recommendations.push('Access-Control-Allow-Origin设置为"*"，允许所有域访问。');
+                    }
+                } else if (analysis.allowOrigin && analysis.allowOrigin !== '*' && analysis.allowOrigin !== currentOrigin) {
+                    analysis.issues.push(`Access-Control-Allow-Origin (${analysis.allowOrigin}) 与当前源 (${currentOrigin}) 不匹配。`);
+                    analysis.recommendations.push(`确保Access-Control-Allow-Origin包含当前源: ${currentOrigin}`);
+                }
+                
+                if (includeCredentials && analysis.allowCredentials !== 'true') {
+                    analysis.issues.push('请求包含凭据，但Access-Control-Allow-Credentials未设置为"true"。');
+                    analysis.recommendations.push('如果需要发送凭据，请将Access-Control-Allow-Credentials设置为"true"。');
+                }
+                
+                if (error) {
+                    analysis.issues.push(`请求失败: ${error}`);
+                    
+                    if (error.includes('CORS') || error.includes('cross-origin')) {
+                        analysis.recommendations.push('这是一个典型的CORS错误。请检查服务器是否正确配置了CORS头。');
+                    }
+                    
+                    if (error.includes('NetworkError')) {
+                        analysis.recommendations.push('可能是网络错误或服务器未响应。请检查URL和服务器状态。');
+                    }
+                }
+                
+                // 如果没有问题，添加成功提示
+                if (analysis.issues.length === 0 && analysis.hasCorsHeaders) {
+                    analysis.recommendations.push('CORS配置正确！跨域请求应该可以正常工作。');
+                }
+                
+                return analysis;
+            }
+            
+            // 显示结果
+            function displayResults(data) {
+                // 清除之前的内容
+                statusIndicator.innerHTML = '';
+                headersBody.innerHTML = '';
+                responseBody.textContent = '';
+                analysisSection.innerHTML = '';
+                
+                // 设置状态指示器
+                if (data.success) {
+                    statusIndicator.className = 'status-indicator status-success';
+                    statusIndicator.innerHTML = `
+                        <i class="fas fa-check-circle"></i>
+                        <span>请求成功! 状态: ${data.status} ${data.statusText || ''} | 响应时间: ${data.responseTime}ms</span>
+                    `;
+                } else {
+                    statusIndicator.className = 'status-indicator status-error';
+                    statusIndicator.innerHTML = `
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>请求失败: ${data.error || '未知错误'}</span>
+                    `;
+                }
+                
+                // 显示响应头
+                if (data.headers && data.headers.length > 0) {
+                    data.headers.forEach(header => {
+                        const isCorsHeader = header.key.toLowerCase().includes('access-control');
+                        const row = document.createElement('tr');
+                        if (isCorsHeader) {
+                            row.className = 'cors-important';
+                        }
+                        
+                        row.innerHTML = `
+                            <td>${header.key}</td>
+                            <td>${header.value}</td>
+                        `;
+                        
+                        headersBody.appendChild(row);
+                    });
+                } else {
+                    headersBody.innerHTML = `
+                        <tr>
+                            <td colspan="2" style="text-align: center; padding: 20px; color: #7f8c8d;">
+                                <i class="fas fa-info-circle"></i> 未收到响应头或无法读取
+                            </td>
+                        </tr>
+                    `;
+                }
+                
+                // 显示响应体
+                if (data.body) {
+                    responseBody.textContent = data.body;
+                } else {
+                    responseBody.textContent = '无响应内容';
+                }
+                
+                // 显示分析结果
+                const analysis = data.analysis;
+                let analysisHTML = `
+                    <h3 class="analysis-title"><i class="fas fa-search"></i> CORS分析结果</h3>
+                    <p>检测到以下CORS配置：</p>
+                    <ul style="margin-top: 10px; margin-bottom: 15px;">
+                `;
+                
+                if (analysis.allowOrigin) {
+                    analysisHTML += `<li><strong>Access-Control-Allow-Origin:</strong> ${analysis.allowOrigin}</li>`;
+                }
+                
+                if (analysis.allowCredentials) {
+                    analysisHTML += `<li><strong>Access-Control-Allow-Credentials:</strong> ${analysis.allowCredentials}</li>`;
+                }
+                
+                if (analysis.allowMethods) {
+                    analysisHTML += `<li><strong>Access-Control-Allow-Methods:</strong> ${analysis.allowMethods}</li>`;
+                }
+                
+                if (analysis.allowHeaders) {
+                    analysisHTML += `<li><strong>Access-Control-Allow-Headers:</strong> ${analysis.allowHeaders}</li>`;
+                }
+                
+                if (!analysis.allowOrigin && !analysis.allowCredentials && !analysis.allowMethods && !analysis.allowHeaders) {
+                    analysisHTML += `<li>未检测到CORS响应头</li>`;
+                }
+                
+                analysisHTML += `</ul>`;
+                
+                // 显示问题
+                if (analysis.issues && analysis.issues.length > 0) {
+                    analysisHTML += `
+                        <div style="background-color: #fadbd8; padding: 12px; border-radius: 6px; margin-top: 15px;">
+                            <h4 style="color: #e74c3c; margin-bottom: 8px;"><i class="fas fa-exclamation-triangle"></i> 发现的问题</h4>
+                            <ul style="padding-left: 20px;">
+                                ${analysis.issues.map(issue => `<li>${issue}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                }
+                
+                // 显示建议
+                if (analysis.recommendations && analysis.recommendations.length > 0) {
+                    analysisHTML += `
+                        <div style="background-color: #d5f4e6; padding: 12px; border-radius: 6px; margin-top: 15px;">
+                            <h4 style="color: #27ae60; margin-bottom: 8px;"><i class="fas fa-lightbulb"></i> 解决方案与建议</h4>
+                            <ul style="padding-left: 20px;">
+                                ${analysis.recommendations.map(rec => `<li>${rec}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                }
+                
+                // 添加服务器配置示例
+                analysisHTML += `
+                    <div style="margin-top: 20px;">
+                        <h4 style="color: #2c3e50; margin-bottom: 10px;"><i class="fas fa-code"></i> 服务器CORS配置示例</h4>
+                        <div style="background-color: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.9rem; overflow-x: auto;">
+                            <pre>
+// Node.js/Express示例
+app.use((req, res, next) => {
+    // 允许特定源访问
+    res.header('Access-Control-Allow-Origin', '${window.location.origin}');
+    
+    // 允许携带凭据
+    res.header('Access-Control-Allow-Credentials', 'true');
+    
+    // 允许的HTTP方法
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    
+    // 允许的请求头
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+    
+    // 预检请求处理
+    if (req.method === 'OPTIONS') {
+        return res.sendStatus(200);
+    }
+    
+    next();
+});</pre>
+                        </div>
+                    </div>
+                `;
+                
+                analysisSection.innerHTML = analysisHTML;
+            }
+            
+            // 初始加载时显示一些信息
+            displayInitialInfo();
+            
+            function displayInitialInfo() {
+                resultSection.classList.add('active');
+                statusIndicator.className = 'status-indicator status-warning';
+                statusIndicator.innerHTML = `
+                    <i class="fas fa-info-circle"></i>
+                    <span>准备测试CORS请求。输入URL并点击"测试CORS请求"按钮开始。</span>
+                `;
+                
+                headersBody.innerHTML = `
+                    <tr>
+                        <td colspan="2" style="text-align: center; padding: 20px; color: #7f8c8d;">
+                            <i class="fas fa-arrow-up"></i> 测试后将显示响应头信息
+                        </td>
+                    </tr>
+                `;
+                
+                responseBody.textContent = '测试后将显示响应内容';
+                
+                analysisSection.innerHTML = `
+                    <h3 class="analysis-title"><i class="fas fa-info-circle"></i> 使用说明</h3>
+                    <p>1. 输入要测试的URL地址</p>
+                    <p>2. 选择HTTP请求方法</p>
+                    <p>3. 配置请求选项（是否发送凭据、自定义请求头等）</p>
+                    <p>4. 点击"测试CORS请求"按钮</p>
+                    <p>5. 查看CORS分析结果和解决方案</p>
+                    <p style="margin-top: 15px; font-weight: 600;">提示：您也可以点击下面的示例快速测试常见的CORS场景。</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

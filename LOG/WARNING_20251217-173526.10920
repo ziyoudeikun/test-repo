@@ -1,0 +1,18 @@
+Log file created at: 2025/12/17 17:35:26
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:09
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251217 17:35:26.596735 10921 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:26.599109 10922 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:26.600113 10923 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:26.601006 10925 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:26.602083 10924 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:26.603725 10926 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:26.605268 10927 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:26.606499 10928 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:26.607791 10921 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:26.609115 10922 ConnectionHandler.hpp:134] URL: /
+W20251217 17:35:48.987888 10920 main.cpp:62] Shutting down server...
+W20251217 17:35:49.012163 10920 main.cpp:64] main is closed
+W20251217 17:35:49.409212 10920 main.cpp:72] Server stopped
+W20251217 17:35:49.409245 10920 main.cpp:73] main end()

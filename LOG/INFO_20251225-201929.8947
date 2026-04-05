@@ -1,0 +1,98 @@
+Log file created at: 2025/12/25 20:19:29
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251225 20:19:29.452661  8947 main.cpp:44] main begin
+I20251225 20:19:29.453699  8947 main.cpp:55] Server started on port 8080
+I20251225 20:19:29.454005  8947 main.cpp:62] begin
+I20251225 20:19:34.645768  8961 MainReactor.hpp:116] new connection
+I20251225 20:19:34.645989  8961 SubReactor.hpp:55] new fd:20
+I20251225 20:19:34.646039  8961 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251225 20:19:34.646047  8961 MainReactor.hpp:177] Accepted connection from 192.168.29.1:59422
+W20251225 20:19:34.710459  8949 ConnectionHandler.hpp:134] URL: /index.html
+I20251225 20:19:34.711452  8949 ConnectionHandler.hpp:156] GET
+I20251225 20:19:34.711490  8949 ConnectionHandler.hpp:157] /index.html
+I20251225 20:19:34.711938  8949 Router.hpp:112] Read 27866 bytes from ../source/index.html
+I20251225 20:19:34.712062  8949 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 27866
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 20:19:34.711498  8949 ConnectionHandler.hpp:164] 1
+W20251225 20:19:34.712533  8949 ConnectionHandler.hpp:166] 28301
+I20251225 20:19:34.712610  8949 SubReactor.hpp:60] old fd:20
+I20251225 20:19:34.712792  8950 ConnectionHandler.hpp:185] handle_write called, buffer size: 28301
+I20251225 20:19:34.713032  8950 ConnectionHandler.hpp:198] Attempted to send 28301 bytes, actually sent: 28301
+I20251225 20:19:34.713070  8950 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 20:19:34.713078  8950 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 20:19:34.713091  8950 SubReactor.hpp:60] old fd:20
+I20251225 20:19:34.720137  8961 MainReactor.hpp:116] new connection
+I20251225 20:19:34.720304  8961 SubReactor.hpp:55] new fd:22
+I20251225 20:19:34.720332  8961 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251225 20:19:34.720345  8961 MainReactor.hpp:177] Accepted connection from 192.168.29.1:55121
+W20251225 20:19:35.478626  8951 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251225 20:19:35.478721  8951 ConnectionHandler.hpp:156] GET
+I20251225 20:19:35.478740  8951 ConnectionHandler.hpp:157] /hlsparse.html
+I20251225 20:19:35.479274  8951 Router.hpp:112] Read 67386 bytes from ../source//hlsparse.html
+I20251225 20:19:35.479373  8951 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 67386
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 20:19:35.478760  8951 ConnectionHandler.hpp:164] 1
+W20251225 20:19:35.480312  8951 ConnectionHandler.hpp:166] 67821
+I20251225 20:19:35.480392  8951 SubReactor.hpp:60] old fd:20
+I20251225 20:19:35.480554  8952 ConnectionHandler.hpp:185] handle_write called, buffer size: 67821
+I20251225 20:19:35.480824  8952 ConnectionHandler.hpp:198] Attempted to send 67821 bytes, actually sent: 67821
+I20251225 20:19:35.480865  8952 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 20:19:35.480873  8952 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 20:19:35.480885  8952 SubReactor.hpp:60] old fd:20
+W20251225 20:19:38.644629  8953 ConnectionHandler.hpp:134] URL: /video
+I20251225 20:19:38.644722  8953 ConnectionHandler.hpp:156] GET
+I20251225 20:19:38.644742  8953 ConnectionHandler.hpp:157] /video
+I20251225 20:19:38.646983  8953 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: application/json
+Content-Length: 2079
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 20:19:38.647122  8953 Router.hpp:435] 
+I20251225 20:19:38.644753  8953 ConnectionHandler.hpp:164] 1
+W20251225 20:19:38.647141  8953 ConnectionHandler.hpp:166] 2520
+I20251225 20:19:38.647179  8953 SubReactor.hpp:60] old fd:20
+I20251225 20:19:38.647377  8954 ConnectionHandler.hpp:185] handle_write called, buffer size: 2520
+I20251225 20:19:38.647609  8954 ConnectionHandler.hpp:198] Attempted to send 2520 bytes, actually sent: 2520
+I20251225 20:19:38.647647  8954 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 20:19:38.647655  8954 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 20:19:38.647663  8954 SubReactor.hpp:60] old fd:20
+W20251225 20:20:49.486385  8947 main.cpp:69] Shutting down server...
+I20251225 20:20:49.486585  8947 MainReactor.hpp:142] now at stop in main
+W20251225 20:20:49.581341  8947 main.cpp:71] main is closed
+I20251225 20:20:49.639920  8947 MainReactor.hpp:28] at ~MainReactor()
+I20251225 20:20:49.640021  8947 MainReactor.hpp:142] now at stop in main
+W20251225 20:20:49.651965  8947 main.cpp:79] Server stopped
+W20251225 20:20:49.652093  8947 main.cpp:80] main end()
+I20251225 20:20:49.652361  8947 GlobalMoudle.cpp:8] just only one class is ~()

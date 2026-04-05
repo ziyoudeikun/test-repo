@@ -1,0 +1,57 @@
+Log file created at: 2025/12/16 10:10:30
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251216 10:10:30.765800  5662 main.cpp:37] main begin
+I20251216 10:10:30.766065  5662 main.cpp:48] Server started on port 8080
+I20251216 10:10:30.766403  5662 main.cpp:55] begin
+I20251216 10:10:34.812412  5675 MainReactor.hpp:116] new connection
+I20251216 10:10:34.812628  5675 SubReactor.hpp:55] new fd:10
+I20251216 10:10:34.812669  5675 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251216 10:10:34.812682  5675 MainReactor.hpp:177] Accepted connection from 192.168.29.1:58087
+W20251216 10:10:34.817602  5663 ConnectionHandler.hpp:53] URL: /
+I20251216 10:10:34.818266  5663 Router.hpp:43] Read 8505 bytes from ../source/index.html
+I20251216 10:10:34.817833  5663 ConnectionHandler.hpp:75] 1
+I20251216 10:10:34.818596  5663 SubReactor.hpp:60] old fd:10
+I20251216 10:10:34.819188  5664 SubReactor.hpp:60] old fd:10
+I20251216 10:10:34.827955  5675 MainReactor.hpp:116] new connection
+I20251216 10:10:34.828327  5675 SubReactor.hpp:55] new fd:12
+I20251216 10:10:34.828372  5675 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251216 10:10:34.828441  5675 MainReactor.hpp:177] Accepted connection from 192.168.29.1:52917
+W20251216 10:10:34.853422  5665 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 10:10:34.854606  5665 Router.hpp:43] Read 2763 bytes from ../source/favicon.ico
+I20251216 10:10:34.853735  5665 ConnectionHandler.hpp:75] 1
+I20251216 10:10:34.854954  5665 SubReactor.hpp:60] old fd:10
+I20251216 10:10:34.855170  5666 SubReactor.hpp:60] old fd:10
+W20251216 10:11:22.799266  5667 ConnectionHandler.hpp:53] URL: /
+I20251216 10:11:22.799499  5667 Router.hpp:43] Read 8505 bytes from ../source/index.html
+I20251216 10:11:22.799440  5667 ConnectionHandler.hpp:75] 1
+I20251216 10:11:22.799722  5667 SubReactor.hpp:60] old fd:12
+I20251216 10:11:22.800310  5668 SubReactor.hpp:60] old fd:12
+W20251216 10:11:22.835930  5670 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 10:11:22.836380  5670 Router.hpp:43] Read 2763 bytes from ../source/favicon.ico
+I20251216 10:11:22.836310  5670 ConnectionHandler.hpp:75] 1
+I20251216 10:11:22.837909  5670 SubReactor.hpp:60] old fd:12
+I20251216 10:11:22.838452  5663 SubReactor.hpp:60] old fd:12
+I20251216 10:11:39.608083  5675 MainReactor.hpp:116] new connection
+I20251216 10:11:39.608240  5675 SubReactor.hpp:55] new fd:10
+I20251216 10:11:39.608271  5675 SubReactorManager.hpp:55] this connection is used by sub :2
+I20251216 10:11:39.608281  5675 MainReactor.hpp:177] Accepted connection from 192.168.29.1:64039
+W20251216 10:11:39.608633  5664 ConnectionHandler.hpp:53] URL: /
+I20251216 10:11:39.608734  5664 Router.hpp:43] Read 8505 bytes from ../source/index.html
+I20251216 10:11:39.608698  5664 ConnectionHandler.hpp:75] 1
+I20251216 10:11:39.609167  5664 SubReactor.hpp:60] old fd:10
+I20251216 10:11:39.609588  5665 SubReactor.hpp:60] old fd:10
+W20251216 10:11:39.641713  5667 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 10:11:39.642115  5667 Router.hpp:43] Read 2763 bytes from ../source/favicon.ico
+I20251216 10:11:39.642068  5667 ConnectionHandler.hpp:75] 1
+I20251216 10:11:39.642632  5667 SubReactor.hpp:60] old fd:10
+I20251216 10:11:39.642844  5668 SubReactor.hpp:60] old fd:10
+W20251216 10:13:16.844866  5662 main.cpp:62] Shutting down server...
+I20251216 10:13:16.845037  5662 MainReactor.hpp:142] now at stop in main
+W20251216 10:13:16.912434  5662 main.cpp:64] main is closed
+I20251216 10:13:17.146646  5662 MainReactor.hpp:28] at ~MainReactor()
+I20251216 10:13:17.146756  5662 MainReactor.hpp:142] now at stop in main
+W20251216 10:13:17.146802  5662 main.cpp:72] Server stopped
+W20251216 10:13:17.146823  5662 main.cpp:73] main end()
+I20251216 10:13:17.147177  5662 GlobalMoudle.cpp:8] just only one class is ~()

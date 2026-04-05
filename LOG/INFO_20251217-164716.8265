@@ -1,0 +1,83 @@
+Log file created at: 2025/12/17 16:47:16
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251217 16:47:16.836387  8265 main.cpp:37] main begin
+I20251217 16:47:16.836954  8265 main.cpp:48] Server started on port 8080
+I20251217 16:47:16.837275  8265 main.cpp:55] begin
+I20251217 16:47:21.206079  8278 MainReactor.hpp:116] new connection
+I20251217 16:47:21.206310  8278 SubReactor.hpp:55] new fd:10
+I20251217 16:47:21.206346  8278 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 16:47:21.206357  8278 MainReactor.hpp:177] Accepted connection from 192.168.29.1:64932
+W20251217 16:47:21.269485  8266 ConnectionHandler.hpp:53] URL: /index.html
+I20251217 16:47:21.270097  8266 Router.hpp:109] Read 8505 bytes from ../source/index.html
+I20251217 16:47:21.269908  8266 ConnectionHandler.hpp:75] 1
+W20251217 16:47:21.270275  8266 ConnectionHandler.hpp:77] 8658
+I20251217 16:47:21.270309  8266 SubReactor.hpp:60] old fd:10
+I20251217 16:47:21.271013  8268 SubReactor.hpp:60] old fd:10
+I20251217 16:47:21.276603  8278 MainReactor.hpp:116] new connection
+I20251217 16:47:21.276888  8278 SubReactor.hpp:55] new fd:12
+I20251217 16:47:21.276937  8278 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251217 16:47:21.276952  8278 MainReactor.hpp:177] Accepted connection from 192.168.29.1:49795
+W20251217 16:47:22.848012  8267 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251217 16:47:22.848549  8267 Router.hpp:109] Read 67386 bytes from ../source//hlsparse.html
+I20251217 16:47:22.848110  8267 ConnectionHandler.hpp:75] 1
+W20251217 16:47:22.849725  8267 ConnectionHandler.hpp:77] 67540
+I20251217 16:47:22.849812  8267 SubReactor.hpp:60] old fd:10
+I20251217 16:47:22.857493  8269 SubReactor.hpp:60] old fd:10
+W20251217 16:47:24.061131  8270 ConnectionHandler.hpp:53] URL: /video
+I20251217 16:47:24.062660  8270 Router.hpp:54] {
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}
+I20251217 16:47:24.063160  8270 Router.hpp:54] {
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+I20251217 16:47:24.061249  8270 ConnectionHandler.hpp:75] 1
+W20251217 16:47:24.063266  8270 ConnectionHandler.hpp:77] 1485
+I20251217 16:47:24.063306  8270 SubReactor.hpp:60] old fd:10
+I20251217 16:47:24.063781  8271 SubReactor.hpp:60] old fd:10
+W20251217 16:47:26.696991  8272 ConnectionHandler.hpp:53] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 16:47:26.697783  8272 Router.hpp:109] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 16:47:26.697116  8272 ConnectionHandler.hpp:75] 1
+W20251217 16:47:26.697964  8272 ConnectionHandler.hpp:77] 3765
+I20251217 16:47:26.698017  8272 SubReactor.hpp:60] old fd:10
+I20251217 16:47:26.698810  8273 SubReactor.hpp:60] old fd:10
+W20251217 16:47:26.715040  8266 ConnectionHandler.hpp:53] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 16:47:26.715149  8266 ConnectionHandler.hpp:75] 0
+W20251217 16:47:26.715163  8266 ConnectionHandler.hpp:77] 0
+I20251217 16:47:26.715174  8266 SubReactor.hpp:60] old fd:10
+I20251217 16:47:26.715648  8268 SubReactor.hpp:60] old fd:10
+W20251217 16:47:57.855060  8265 main.cpp:62] Shutting down server...
+I20251217 16:47:57.855176  8265 MainReactor.hpp:142] now at stop in main
+W20251217 16:47:57.950083  8265 main.cpp:64] main is closed
+I20251217 16:47:58.125433  8265 MainReactor.hpp:28] at ~MainReactor()
+I20251217 16:47:58.125578  8265 MainReactor.hpp:142] now at stop in main
+W20251217 16:47:58.125614  8265 main.cpp:72] Server stopped
+W20251217 16:47:58.126040  8265 main.cpp:73] main end()
+I20251217 16:47:58.126555  8265 GlobalMoudle.cpp:8] just only one class is ~()

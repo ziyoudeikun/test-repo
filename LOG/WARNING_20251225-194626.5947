@@ -1,0 +1,284 @@
+Log file created at: 2025/12/25 19:46:26
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:05
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251225 19:46:26.136559  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251225 19:46:26.137485  5949 ConnectionHandler.hpp:166] 4058
+W20251225 19:46:26.888278  5951 ConnectionHandler.hpp:134] URL: /encrypt.html
+W20251225 19:46:26.889204  5951 ConnectionHandler.hpp:166] 48830
+W20251225 19:46:27.856323  5953 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251225 19:46:27.857270  5953 ConnectionHandler.hpp:166] 3197
+W20251225 19:46:32.668956  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251225 19:46:32.669304  5955 ConnectionHandler.hpp:166] 4058
+W20251225 19:46:32.781906  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251225 19:46:32.782354  5949 ConnectionHandler.hpp:166] 4058
+W20251225 19:46:32.803334  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+W20251225 19:46:32.811061  5951 ConnectionHandler.hpp:166] 405577
+W20251225 19:46:32.846608  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_001.ts
+W20251225 19:46:32.880131  5955 ConnectionHandler.hpp:166] 1923866
+W20251225 19:46:32.931452  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_002.ts
+W20251225 19:46:32.955474  5951 ConnectionHandler.hpp:166] 937241
+W20251225 19:46:32.992436  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_003.ts
+W20251225 19:46:32.995577  5953 ConnectionHandler.hpp:166] 160613
+W20251225 19:46:33.007218  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_004.ts
+W20251225 19:46:33.021888  5956 ConnectionHandler.hpp:166] 801317
+W20251225 19:46:36.605144  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_005.ts
+W20251225 19:46:36.618412  5949 ConnectionHandler.hpp:166] 814853
+W20251225 19:46:38.673827  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_006.ts
+W20251225 19:46:38.688308  5951 ConnectionHandler.hpp:166] 930097
+W20251225 19:46:41.764767  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_007.ts
+W20251225 19:46:41.789777  5953 ConnectionHandler.hpp:166] 1200066
+W20251225 19:46:45.905025  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_008.ts
+W20251225 19:46:45.915002  5956 ConnectionHandler.hpp:166] 575529
+W20251225 19:46:47.974086  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_009.ts
+W20251225 19:46:47.984308  5950 ConnectionHandler.hpp:166] 651293
+W20251225 19:46:50.044999  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_010.ts
+W20251225 19:46:50.057725  5952 ConnectionHandler.hpp:166] 775561
+W20251225 19:46:53.133340  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_011.ts
+W20251225 19:46:53.147753  5954 ConnectionHandler.hpp:166] 954349
+W20251225 19:46:56.733538  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_012.ts
+W20251225 19:46:56.740139  5956 ConnectionHandler.hpp:166] 444493
+W20251225 19:46:58.263999  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_013.ts
+W20251225 19:46:58.292279  5950 ConnectionHandler.hpp:166] 1732294
+W20251225 19:47:05.463347  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_014.ts
+W20251225 19:47:05.479067  5953 ConnectionHandler.hpp:166] 1057938
+W20251225 19:47:13.653352  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_015.ts
+W20251225 19:47:13.662676  5955 ConnectionHandler.hpp:166] 511233
+W20251225 19:47:18.781929  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_016.ts
+W20251225 19:47:18.786614  5949 ConnectionHandler.hpp:166] 243333
+W20251225 19:47:19.301919  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_017.ts
+W20251225 19:47:19.317291  5951 ConnectionHandler.hpp:166] 978413
+W20251225 19:47:27.995046  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_018.ts
+W20251225 19:47:28.001781  5954 ConnectionHandler.hpp:166] 324361
+W20251225 19:47:30.557682  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_019.ts
+W20251225 19:47:30.576957  5956 ConnectionHandler.hpp:166] 1241426
+W20251225 19:47:40.792714  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_020.ts
+W20251225 19:47:40.799154  5950 ConnectionHandler.hpp:166] 408961
+W20251225 19:47:43.358040  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_021.ts
+W20251225 19:47:43.376200  5952 ConnectionHandler.hpp:166] 1159834
+W20251225 19:47:50.538328  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_022.ts
+W20251225 19:47:50.559702  5954 ConnectionHandler.hpp:166] 1363062
+W20251225 19:47:57.716511  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_023.ts
+W20251225 19:47:57.723428  5956 ConnectionHandler.hpp:166] 293153
+W20251225 19:47:58.752079  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_024.ts
+W20251225 19:47:58.769169  5950 ConnectionHandler.hpp:166] 1079182
+W20251225 19:48:04.401638  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_025.ts
+W20251225 19:48:04.420519  5952 ConnectionHandler.hpp:166] 1287486
+W20251225 19:48:12.610612  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_026.ts
+W20251225 19:48:12.623786  5954 ConnectionHandler.hpp:166] 814477
+W20251225 19:48:18.251626  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_027.ts
+W20251225 19:48:18.262282  5956 ConnectionHandler.hpp:166] 762401
+W20251225 19:48:24.401711  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_028.ts
+W20251225 19:48:24.431758  5950 ConnectionHandler.hpp:166] 2016362
+W20251225 19:48:32.626477  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_029.ts
+W20251225 19:48:32.654861  5953 ConnectionHandler.hpp:166] 1856374
+W20251225 19:48:40.842835  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_030.ts
+W20251225 19:48:40.852159  5956 ConnectionHandler.hpp:166] 638697
+W20251225 19:48:44.443369  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_031.ts
+W20251225 19:48:44.467722  5950 ConnectionHandler.hpp:166] 1643934
+W20251225 19:48:52.634943  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_032.ts
+W20251225 19:48:52.645804  5953 ConnectionHandler.hpp:166] 691901
+W20251225 19:48:54.705092  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_033.ts
+W20251225 19:48:54.720412  5955 ConnectionHandler.hpp:166] 906221
+W20251225 19:49:00.865461  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_034.ts
+W20251225 19:49:00.886363  5949 ConnectionHandler.hpp:166] 1287486
+W20251225 19:49:10.094187  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_035.ts
+W20251225 19:49:10.107615  5951 ConnectionHandler.hpp:166] 862605
+W20251225 19:49:15.224243  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_036.ts
+W20251225 19:49:15.239094  5953 ConnectionHandler.hpp:166] 938745
+W20251225 19:49:22.900367  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_037.ts
+W20251225 19:49:22.915673  5955 ConnectionHandler.hpp:166] 1013382
+W20251225 19:49:29.066778  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_038.ts
+W20251225 19:49:29.081856  5949 ConnectionHandler.hpp:166] 1001726
+W20251225 19:49:35.739498  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_039.ts
+W20251225 19:49:35.753244  5951 ConnectionHandler.hpp:166] 958673
+W20251225 19:49:43.415897  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_040.ts
+W20251225 19:49:43.430760  5953 ConnectionHandler.hpp:166] 1072038
+W20251225 19:49:51.598489  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_041.ts
+W20251225 19:49:51.607012  5955 ConnectionHandler.hpp:166] 561053
+W20251225 19:49:55.705175  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_042.ts
+W20251225 19:49:55.715994  5949 ConnectionHandler.hpp:166] 727809
+W20251225 19:50:01.344825  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_043.ts
+W20251225 19:50:01.364426  5951 ConnectionHandler.hpp:166] 1256466
+W20251225 19:50:10.060673  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_044.ts
+W20251225 19:50:10.068711  5953 ConnectionHandler.hpp:166] 343161
+W20251225 19:50:12.117759  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_045.ts
+W20251225 19:50:12.152494  5955 ConnectionHandler.hpp:166] 2066934
+W20251225 19:50:20.342051  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_046.ts
+W20251225 19:50:20.367273  5950 ConnectionHandler.hpp:166] 1561778
+W20251225 19:50:27.015640  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_047.ts
+W20251225 19:50:27.040063  5952 ConnectionHandler.hpp:166] 1638294
+W20251225 19:50:35.216339  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_048.ts
+W20251225 19:50:35.238478  5955 ConnectionHandler.hpp:166] 1423598
+W20251225 19:50:43.426471  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_049.ts
+W20251225 19:50:43.445322  5949 ConnectionHandler.hpp:166] 1184650
+W20251225 19:50:49.085003  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_050.ts
+W20251225 19:50:49.116345  5951 ConnectionHandler.hpp:166] 1998690
+W20251225 19:50:55.274493  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_051.ts
+W20251225 19:50:55.285977  5954 ConnectionHandler.hpp:166] 738149
+W20251225 19:50:58.372339  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_052.ts
+W20251225 19:50:58.390110  5956 ConnectionHandler.hpp:166] 1185026
+W20251225 19:51:06.556840  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_053.ts
+W20251225 19:51:06.566301  5950 ConnectionHandler.hpp:166] 630425
+W20251225 19:51:10.656839  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_054.ts
+W20251225 19:51:10.667775  5952 ConnectionHandler.hpp:166] 714461
+W20251225 19:51:16.803613  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_055.ts
+W20251225 19:51:16.810544  5954 ConnectionHandler.hpp:166] 401065
+W20251225 19:51:19.370987  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_056.ts
+W20251225 19:51:19.379855  5956 ConnectionHandler.hpp:166] 531913
+W20251225 19:51:22.460054  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_057.ts
+W20251225 19:51:22.468571  5950 ConnectionHandler.hpp:166] 549961
+W20251225 19:51:26.553504  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_058.ts
+W20251225 19:51:26.561589  5952 ConnectionHandler.hpp:166] 496569
+W20251225 19:51:30.154356  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_059.ts
+W20251225 19:51:30.172865  5954 ConnectionHandler.hpp:166] 1063202
+W20251225 19:51:38.343715  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_060.ts
+W20251225 19:51:38.358035  5956 ConnectionHandler.hpp:166] 851889
+W20251225 19:51:45.004490  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_061.ts
+W20251225 19:51:45.009508  5950 ConnectionHandler.hpp:166] 347485
+W20251225 19:51:47.552771  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_062.ts
+W20251225 19:51:47.576531  5952 ConnectionHandler.hpp:166] 1335426
+W20251225 19:51:58.833050  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_063.ts
+W20251225 19:51:58.844658  5954 ConnectionHandler.hpp:166] 800189
+W20251225 19:52:04.982807  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_064.ts
+W20251225 19:52:04.989975  5956 ConnectionHandler.hpp:166] 375121
+W20251225 19:52:08.042810  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_065.ts
+W20251225 19:52:08.052714  5950 ConnectionHandler.hpp:166] 651857
+W20251225 19:52:13.172706  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_066.ts
+W20251225 19:52:13.177569  5952 ConnectionHandler.hpp:166] 189565
+W20251225 19:52:16.230916  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_067.ts
+W20251225 19:52:16.257351  5954 ConnectionHandler.hpp:166] 1694130
+W20251225 19:52:24.954653  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_068.ts
+W20251225 19:52:24.969480  5956 ConnectionHandler.hpp:166] 981609
+W20251225 19:52:31.105003  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_069.ts
+W20251225 19:52:31.114195  5950 ConnectionHandler.hpp:166] 596773
+W20251225 19:52:34.703894  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_070.ts
+W20251225 19:52:34.719862  5952 ConnectionHandler.hpp:166] 1015826
+W20251225 19:52:41.874401  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_071.ts
+W20251225 19:52:41.893908  5954 ConnectionHandler.hpp:166] 1277146
+W20251225 19:52:49.057427  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_072.ts
+W20251225 19:52:49.066159  5956 ConnectionHandler.hpp:166] 533605
+W20251225 19:52:52.141788  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_073.ts
+W20251225 19:52:52.158470  5950 ConnectionHandler.hpp:166] 1138590
+W20251225 19:53:00.839929  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_074.ts
+W20251225 19:53:00.852705  5952 ConnectionHandler.hpp:166] 768793
+W20251225 19:53:06.480822  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_075.ts
+W20251225 19:53:06.489315  5954 ConnectionHandler.hpp:166] 554849
+W20251225 19:53:10.589187  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_076.ts
+W20251225 19:53:10.604838  5956 ConnectionHandler.hpp:166] 861853
+W20251225 19:53:15.716779  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_077.ts
+W20251225 19:53:15.757494  5950 ConnectionHandler.hpp:166] 2345926
+W20251225 19:53:29.067855  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_078.ts
+W20251225 19:53:29.086794  5953 ConnectionHandler.hpp:166] 1264362
+W20251225 19:53:37.268008  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_079.ts
+W20251225 19:53:37.285989  5955 ConnectionHandler.hpp:166] 1036694
+W20251225 19:53:43.429244  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_080.ts
+W20251225 19:53:43.436257  5949 ConnectionHandler.hpp:166] 310073
+W20251225 19:53:44.483553  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_081.ts
+W20251225 19:53:44.491196  5951 ConnectionHandler.hpp:166] 469873
+W20251225 19:53:47.067513  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_082.ts
+W20251225 19:53:47.080509  5953 ConnectionHandler.hpp:166] 928781
+W20251225 19:53:53.735255  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_083.ts
+W20251225 19:53:53.749763  5955 ConnectionHandler.hpp:166] 1025790
+W20251225 19:54:01.925655  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_084.ts
+W20251225 19:54:01.935011  5949 ConnectionHandler.hpp:166] 612189
+W20251225 19:54:06.035804  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_085.ts
+W20251225 19:54:06.049180  5951 ConnectionHandler.hpp:166] 885729
+W20251225 19:54:12.706581  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_086.ts
+W20251225 19:54:12.713996  5953 ConnectionHandler.hpp:166] 424941
+W20251225 19:54:16.816416  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_087.ts
+W20251225 19:54:16.832978  5955 ConnectionHandler.hpp:166] 1132574
+W20251225 19:54:25.005420  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_088.ts
+W20251225 19:54:25.024008  5949 ConnectionHandler.hpp:166] 1159646
+W20251225 19:54:31.166812  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_089.ts
+W20251225 19:54:31.172124  5951 ConnectionHandler.hpp:166] 147829
+W20251225 19:54:33.732565  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_090.ts
+W20251225 19:54:33.761060  5953 ConnectionHandler.hpp:166] 1913902
+W20251225 19:54:41.955508  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_091.ts
+W20251225 19:54:42.005244  5956 ConnectionHandler.hpp:166] 2854090
+W20251225 19:54:52.267725  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_092.ts
+W20251225 19:54:52.283937  5952 ConnectionHandler.hpp:166] 991573
+W20251225 19:54:56.887904  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_093.ts
+W20251225 19:54:56.896940  5954 ConnectionHandler.hpp:166] 511421
+W20251225 19:54:57.920643  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_094.ts
+W20251225 19:54:57.950480  5956 ConnectionHandler.hpp:166] 2008090
+W20251225 19:55:07.167869  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_095.ts
+W20251225 19:55:07.195420  5950 ConnectionHandler.hpp:166] 1637354
+W20251225 19:55:10.288720  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_096.ts
+W20251225 19:55:10.328570  5952 ConnectionHandler.hpp:166] 2642966
+W20251225 19:55:16.498183  5955 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_097.ts
+W20251225 19:55:16.581194  5955 ConnectionHandler.hpp:166] 4393058
+W20251225 19:55:26.348671  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_098.ts
+W20251225 19:55:26.352834  5950 ConnectionHandler.hpp:166] 197649
+W20251225 19:55:30.439109  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_099.ts
+W20251225 19:55:30.444437  5952 ConnectionHandler.hpp:166] 218893
+W20251225 19:55:34.024777  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_100.ts
+W20251225 19:55:34.068288  5954 ConnectionHandler.hpp:166] 2918386
+W20251225 19:55:40.231478  5949 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_101.ts
+W20251225 19:55:40.260329  5949 ConnectionHandler.hpp:166] 2013918
+W20251225 19:55:45.389920  5951 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_102.ts
+W20251225 19:55:45.430583  5951 ConnectionHandler.hpp:166] 2648982
+W20251225 19:55:53.641934  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_103.ts
+W20251225 19:55:53.654553  5954 ConnectionHandler.hpp:166] 877269
+W20251225 19:55:57.753527  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_104.ts
+W20251225 19:55:57.781570  5956 ConnectionHandler.hpp:166] 1735302
+W20251225 20:07:29.755254  5951 ConnectionHandler.hpp:134] URL: /index.html
+W20251225 20:07:29.779177  5951 ConnectionHandler.hpp:166] 28301
+W20251225 20:09:24.944995  5953 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251225 20:09:24.945640  5953 ConnectionHandler.hpp:166] 0
+W20251225 20:10:11.173348  5949 ConnectionHandler.hpp:134] URL: /encrypt.html
+W20251225 20:10:11.181192  5949 ConnectionHandler.hpp:166] 48830
+W20251225 20:10:21.347211  5951 ConnectionHandler.hpp:134] URL: /index.html
+W20251225 20:10:21.348114  5951 ConnectionHandler.hpp:166] 28301
+W20251225 20:10:22.163554  5953 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251225 20:10:22.168052  5953 ConnectionHandler.hpp:166] 67821
+W20251225 20:10:24.106747  5955 ConnectionHandler.hpp:134] URL: /video
+W20251225 20:10:24.113314  5955 ConnectionHandler.hpp:166] 1766
+W20251225 20:12:12.048627  5950 ConnectionHandler.hpp:134] URL: /index.html
+W20251225 20:12:12.050585  5950 ConnectionHandler.hpp:166] 28301
+W20251225 20:12:12.874570  5952 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251225 20:12:12.877759  5952 ConnectionHandler.hpp:166] 67821
+W20251225 20:12:14.159732  5954 ConnectionHandler.hpp:134] URL: /video
+W20251225 20:12:14.161362  5954 ConnectionHandler.hpp:166] 2520
+W20251225 20:12:19.748669  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251225 20:12:19.749647  5956 ConnectionHandler.hpp:166] 4058
+W20251225 20:12:19.765822  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+W20251225 20:12:19.786150  5950 ConnectionHandler.hpp:166] 405577
+W20251225 20:12:19.821076  5953 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_001.ts
+W20251225 20:12:19.875286  5953 ConnectionHandler.hpp:166] 1923866
+W20251225 20:12:19.922746  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_002.ts
+W20251225 20:12:19.959159  5956 ConnectionHandler.hpp:166] 937241
+W20251225 20:12:19.989820  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_003.ts
+W20251225 20:12:19.992987  5950 ConnectionHandler.hpp:166] 160613
+W20251225 20:12:20.005825  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_004.ts
+W20251225 20:12:20.042498  5952 ConnectionHandler.hpp:166] 801317
+W20251225 20:12:23.135174  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_005.ts
+W20251225 20:12:23.156840  5954 ConnectionHandler.hpp:166] 814853
+W20251225 20:12:25.716329  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_006.ts
+W20251225 20:12:25.728612  5956 ConnectionHandler.hpp:166] 930097
+W20251225 20:12:28.809880  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_007.ts
+W20251225 20:12:28.838941  5950 ConnectionHandler.hpp:166] 1200066
+W20251225 20:12:32.973970  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_008.ts
+W20251225 20:12:32.981664  5952 ConnectionHandler.hpp:166] 575529
+W20251225 20:12:35.040117  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_009.ts
+W20251225 20:12:35.048911  5954 ConnectionHandler.hpp:166] 651293
+W20251225 20:12:37.095634  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_010.ts
+W20251225 20:12:37.105670  5956 ConnectionHandler.hpp:166] 775561
+W20251225 20:12:40.172204  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_011.ts
+W20251225 20:12:40.184784  5950 ConnectionHandler.hpp:166] 954349
+W20251225 20:12:43.767998  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_012.ts
+W20251225 20:12:43.774622  5952 ConnectionHandler.hpp:166] 444493
+W20251225 20:12:45.333149  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_013.ts
+W20251225 20:12:45.369251  5954 ConnectionHandler.hpp:166] 1732294
+W20251225 20:12:52.529385  5956 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_014.ts
+W20251225 20:12:52.550825  5956 ConnectionHandler.hpp:166] 1057938
+W20251225 20:13:00.743100  5950 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_015.ts
+W20251225 20:13:00.750375  5950 ConnectionHandler.hpp:166] 511233
+W20251225 20:13:05.356647  5952 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_016.ts
+W20251225 20:13:05.361003  5952 ConnectionHandler.hpp:166] 243333
+W20251225 20:13:06.391021  5954 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_017.ts
+W20251225 20:13:06.404731  5954 ConnectionHandler.hpp:166] 978413
+W20251225 20:13:07.126341  5947 main.cpp:69] Shutting down server...
+W20251225 20:13:07.132208  5947 main.cpp:71] main is closed
+W20251225 20:13:07.579381  5947 main.cpp:79] Server stopped
+W20251225 20:13:07.579644  5947 main.cpp:80] main end()

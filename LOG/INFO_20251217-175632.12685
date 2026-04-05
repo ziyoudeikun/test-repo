@@ -1,0 +1,721 @@
+Log file created at: 2025/12/17 17:56:32
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251217 17:56:32.079617 12685 main.cpp:37] main begin
+I20251217 17:56:32.080139 12685 main.cpp:48] Server started on port 8080
+I20251217 17:56:32.080406 12685 main.cpp:55] begin
+I20251217 17:56:36.858901 12698 MainReactor.hpp:116] new connection
+I20251217 17:56:36.859164 12698 SubReactor.hpp:55] new fd:10
+I20251217 17:56:36.859182 12698 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 17:56:36.859187 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.1:60962
+W20251217 17:56:36.932113 12686 ConnectionHandler.hpp:134] URL: /index.html
+I20251217 17:56:36.932369 12686 ConnectionHandler.hpp:156] GET
+I20251217 17:56:36.932399 12686 ConnectionHandler.hpp:157] /index.html
+I20251217 17:56:36.932974 12686 Router.hpp:110] Read 8505 bytes from ../source/index.html
+I20251217 17:56:36.933189 12686 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 8505
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:56:36.932412 12686 ConnectionHandler.hpp:164] 1
+W20251217 17:56:36.933527 12686 ConnectionHandler.hpp:166] 8924
+I20251217 17:56:36.933584 12686 SubReactor.hpp:60] old fd:10
+I20251217 17:56:36.933954 12687 SubReactor.hpp:60] old fd:10
+I20251217 17:56:36.945617 12698 MainReactor.hpp:116] new connection
+I20251217 17:56:36.946045 12698 SubReactor.hpp:55] new fd:12
+I20251217 17:56:36.946089 12698 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251217 17:56:36.946098 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.1:60172
+W20251217 17:56:38.168954 12688 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251217 17:56:38.169235 12688 ConnectionHandler.hpp:156] GET
+I20251217 17:56:38.169258 12688 ConnectionHandler.hpp:157] /hlsparse.html
+I20251217 17:56:38.170365 12688 Router.hpp:110] Read 67386 bytes from ../source//hlsparse.html
+I20251217 17:56:38.170542 12688 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 67386
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:56:38.169270 12688 ConnectionHandler.hpp:164] 1
+W20251217 17:56:38.171593 12688 ConnectionHandler.hpp:166] 67806
+I20251217 17:56:38.171643 12688 SubReactor.hpp:60] old fd:10
+I20251217 17:56:38.172263 12689 SubReactor.hpp:60] old fd:10
+W20251217 17:56:53.582777 12690 ConnectionHandler.hpp:134] URL: /video
+I20251217 17:56:53.583531 12690 ConnectionHandler.hpp:156] GET
+I20251217 17:56:53.583595 12690 ConnectionHandler.hpp:157] /video
+I20251217 17:56:53.584333 12690 Router.hpp:55] {
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}
+I20251217 17:56:53.584725 12690 Router.hpp:55] {
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+I20251217 17:56:53.584825 12690 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: application/json
+Content-Length: 1325
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:56:53.583608 12690 ConnectionHandler.hpp:164] 1
+W20251217 17:56:53.584903 12690 ConnectionHandler.hpp:166] 1751
+I20251217 17:56:53.584950 12690 SubReactor.hpp:60] old fd:10
+I20251217 17:56:53.585208 12691 SubReactor.hpp:60] old fd:10
+W20251217 17:56:55.141088 12692 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:56:55.141301 12692 ConnectionHandler.hpp:156] GET
+I20251217 17:56:55.141338 12692 ConnectionHandler.hpp:157] /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:56:55.141870 12692 Router.hpp:110] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:56:55.142030 12692 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 3612
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:56:55.141366 12692 ConnectionHandler.hpp:164] 1
+W20251217 17:56:55.142184 12692 ConnectionHandler.hpp:166] 4031
+I20251217 17:56:55.142237 12692 SubReactor.hpp:60] old fd:10
+I20251217 17:56:55.142585 12693 SubReactor.hpp:60] old fd:10
+W20251217 17:56:55.156270 12686 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 17:56:55.156564 12686 ConnectionHandler.hpp:156] GET
+I20251217 17:56:55.156638 12686 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 17:56:55.156661 12686 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:56:55.156687 12686 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 17:56:55.156710 12686 Router.hpp:423] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:56:55.159148 12686 Router.hpp:110] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:56:55.159694 12686 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 405140
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:56:55.156699 12686 ConnectionHandler.hpp:164] 1
+W20251217 17:56:55.168216 12686 ConnectionHandler.hpp:166] 405562
+I20251217 17:56:55.168311 12686 SubReactor.hpp:60] old fd:10
+I20251217 17:56:55.168762 12687 SubReactor.hpp:60] old fd:10
+I20251217 17:58:24.312558 12698 MainReactor.hpp:116] new connection
+I20251217 17:58:24.312925 12698 SubReactor.hpp:55] new fd:12
+I20251217 17:58:24.313009 12698 SubReactorManager.hpp:55] this connection is used by sub :2
+I20251217 17:58:24.313033 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.1:64342
+W20251217 17:58:24.313277 12689 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251217 17:58:24.313349 12689 ConnectionHandler.hpp:156] GET
+I20251217 17:58:24.313365 12689 ConnectionHandler.hpp:157] /hlsparse.html
+I20251217 17:58:24.313472 12689 Router.hpp:110] Read 67386 bytes from ../source//hlsparse.html
+I20251217 17:58:24.313536 12689 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 67386
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:58:24.313376 12689 ConnectionHandler.hpp:164] 1
+W20251217 17:58:24.314697 12689 ConnectionHandler.hpp:166] 67806
+I20251217 17:58:24.314759 12689 SubReactor.hpp:60] old fd:12
+I20251217 17:58:24.315804 12690 SubReactor.hpp:60] old fd:12
+W20251217 17:58:24.467386 12692 ConnectionHandler.hpp:134] URL: /favicon.ico
+I20251217 17:58:24.467542 12692 ConnectionHandler.hpp:156] GET
+I20251217 17:58:24.467574 12692 ConnectionHandler.hpp:157] /favicon.ico
+I20251217 17:58:24.468039 12692 Router.hpp:110] Read 2763 bytes from ../source/favicon.ico
+I20251217 17:58:24.468150 12692 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 2763
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:58:24.467586 12692 ConnectionHandler.hpp:164] 1
+W20251217 17:58:24.468251 12692 ConnectionHandler.hpp:166] 3182
+I20251217 17:58:24.468309 12692 SubReactor.hpp:60] old fd:12
+I20251217 17:58:24.468573 12693 SubReactor.hpp:60] old fd:12
+I20251217 17:59:36.409497 12698 MainReactor.hpp:116] new connection
+I20251217 17:59:36.409698 12698 SubReactor.hpp:55] new fd:10
+I20251217 17:59:36.409760 12698 SubReactorManager.hpp:55] this connection is used by sub :3
+I20251217 17:59:36.409973 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.128:49230
+W20251217 17:59:36.410061 12686 ConnectionHandler.hpp:134] URL: /
+I20251217 17:59:36.410172 12686 ConnectionHandler.hpp:156] GET
+I20251217 17:59:36.410192 12686 ConnectionHandler.hpp:157] /
+I20251217 17:59:36.410238 12686 Router.hpp:110] Read 8505 bytes from ../source/index.html
+I20251217 17:59:36.410259 12686 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 8505
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:36.410200 12686 ConnectionHandler.hpp:164] 1
+W20251217 17:59:36.410523 12686 ConnectionHandler.hpp:166] 8924
+I20251217 17:59:36.410609 12686 SubReactor.hpp:60] old fd:10
+I20251217 17:59:36.410912 12687 SubReactor.hpp:60] old fd:10
+W20251217 17:59:38.570717 12688 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251217 17:59:38.570870 12688 ConnectionHandler.hpp:156] GET
+I20251217 17:59:38.570889 12688 ConnectionHandler.hpp:157] /hlsparse.html
+I20251217 17:59:38.570966 12688 Router.hpp:110] Read 67386 bytes from ../source//hlsparse.html
+I20251217 17:59:38.570999 12688 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 67386
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:38.570910 12688 ConnectionHandler.hpp:164] 1
+W20251217 17:59:38.571893 12688 ConnectionHandler.hpp:166] 67806
+I20251217 17:59:38.571921 12688 SubReactor.hpp:60] old fd:10
+I20251217 17:59:38.572257 12689 SubReactor.hpp:60] old fd:10
+W20251217 17:59:39.834540 12690 ConnectionHandler.hpp:134] URL: /video
+I20251217 17:59:39.834756 12690 ConnectionHandler.hpp:156] GET
+I20251217 17:59:39.835063 12690 ConnectionHandler.hpp:157] /video
+I20251217 17:59:39.835503 12690 Router.hpp:55] {
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}
+I20251217 17:59:39.835616 12690 Router.hpp:55] {
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+I20251217 17:59:39.835776 12690 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: application/json
+Content-Length: 1325
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:39.835150 12690 ConnectionHandler.hpp:164] 1
+W20251217 17:59:39.835938 12690 ConnectionHandler.hpp:166] 1751
+I20251217 17:59:39.836005 12690 SubReactor.hpp:60] old fd:10
+I20251217 17:59:39.836541 12691 SubReactor.hpp:60] old fd:10
+W20251217 17:59:41.306162 12692 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:59:41.306406 12692 ConnectionHandler.hpp:156] GET
+I20251217 17:59:41.306416 12692 ConnectionHandler.hpp:157] /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:59:41.306672 12692 Router.hpp:110] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:59:41.306756 12692 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 3612
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:41.306420 12692 ConnectionHandler.hpp:164] 1
+W20251217 17:59:41.306908 12692 ConnectionHandler.hpp:166] 4031
+I20251217 17:59:41.306967 12692 SubReactor.hpp:60] old fd:10
+I20251217 17:59:41.307438 12693 SubReactor.hpp:60] old fd:10
+W20251217 17:59:41.348835 12686 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 17:59:41.349049 12686 ConnectionHandler.hpp:156] GET
+I20251217 17:59:41.349064 12686 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 17:59:41.349088 12686 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:59:41.349098 12686 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 17:59:41.349116 12686 Router.hpp:423] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:59:41.351150 12686 Router.hpp:110] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:59:41.351505 12686 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 405140
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:41.349108 12686 ConnectionHandler.hpp:164] 1
+W20251217 17:59:41.358848 12686 ConnectionHandler.hpp:166] 405562
+I20251217 17:59:41.358944 12686 SubReactor.hpp:60] old fd:10
+I20251217 17:59:41.359542 12687 SubReactor.hpp:60] old fd:10
+W20251217 17:59:41.458626 12688 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_001.ts
+I20251217 17:59:41.458755 12688 ConnectionHandler.hpp:156] GET
+I20251217 17:59:41.458774 12688 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_001.ts
+I20251217 17:59:41.458793 12688 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:59:41.458807 12688 ConnectionHandler.hpp:162] its seg num is 001
+I20251217 17:59:41.458832 12688 Router.hpp:423] ../source/video/helloworld_sp_01/segment_001.ts
+I20251217 17:59:41.466595 12688 Router.hpp:110] Read 1923428 bytes from ../source/video/helloworld_sp_01/segment_001.ts
+I20251217 17:59:41.467021 12688 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 1923428
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:41.458822 12688 ConnectionHandler.hpp:164] 1
+W20251217 17:59:41.513494 12688 ConnectionHandler.hpp:166] 1923851
+I20251217 17:59:41.513592 12688 SubReactor.hpp:60] old fd:10
+I20251217 17:59:41.516463 12689 SubReactor.hpp:60] old fd:10
+W20251217 17:59:41.637713 12690 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_002.ts
+I20251217 17:59:41.638022 12690 ConnectionHandler.hpp:156] GET
+I20251217 17:59:41.638039 12690 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_002.ts
+I20251217 17:59:41.638056 12690 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:59:41.638067 12690 ConnectionHandler.hpp:162] its seg num is 002
+I20251217 17:59:41.638119 12690 Router.hpp:423] ../source/video/helloworld_sp_01/segment_002.ts
+I20251217 17:59:41.640081 12690 Router.hpp:110] Read 936804 bytes from ../source/video/helloworld_sp_01/segment_002.ts
+I20251217 17:59:41.640328 12690 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 936804
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:41.638077 12690 ConnectionHandler.hpp:164] 1
+W20251217 17:59:41.654665 12690 ConnectionHandler.hpp:166] 937226
+I20251217 17:59:41.654763 12690 SubReactor.hpp:60] old fd:10
+I20251217 17:59:41.655467 12690 SubReactor.hpp:60] old fd:10
+W20251217 17:59:41.725421 12692 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_003.ts
+I20251217 17:59:41.725616 12692 ConnectionHandler.hpp:156] GET
+I20251217 17:59:41.725651 12692 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_003.ts
+I20251217 17:59:41.725667 12692 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:59:41.725687 12692 ConnectionHandler.hpp:162] its seg num is 003
+I20251217 17:59:41.725716 12692 Router.hpp:423] ../source/video/helloworld_sp_01/segment_003.ts
+I20251217 17:59:41.726280 12692 Router.hpp:110] Read 160176 bytes from ../source/video/helloworld_sp_01/segment_003.ts
+I20251217 17:59:41.726461 12692 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 160176
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:41.725704 12692 ConnectionHandler.hpp:164] 1
+W20251217 17:59:41.729456 12692 ConnectionHandler.hpp:166] 160598
+I20251217 17:59:41.729534 12692 SubReactor.hpp:60] old fd:10
+I20251217 17:59:41.729919 12693 SubReactor.hpp:60] old fd:10
+W20251217 17:59:41.762355 12686 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_004.ts
+I20251217 17:59:41.762521 12686 ConnectionHandler.hpp:156] GET
+I20251217 17:59:41.762542 12686 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_004.ts
+I20251217 17:59:41.762554 12686 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:59:41.762564 12686 ConnectionHandler.hpp:162] its seg num is 004
+I20251217 17:59:41.762583 12686 Router.hpp:423] ../source/video/helloworld_sp_01/segment_004.ts
+I20251217 17:59:41.765144 12686 Router.hpp:110] Read 800880 bytes from ../source/video/helloworld_sp_01/segment_004.ts
+I20251217 17:59:41.765606 12686 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 800880
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:41.762573 12686 ConnectionHandler.hpp:164] 1
+W20251217 17:59:41.780416 12686 ConnectionHandler.hpp:166] 801302
+I20251217 17:59:41.780769 12686 SubReactor.hpp:60] old fd:10
+I20251217 17:59:41.782058 12686 SubReactor.hpp:60] old fd:10
+W20251217 17:59:47.500912 12688 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_005.ts
+I20251217 17:59:47.501145 12688 ConnectionHandler.hpp:156] GET
+I20251217 17:59:47.501161 12688 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_005.ts
+I20251217 17:59:47.501176 12688 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:59:47.501187 12688 ConnectionHandler.hpp:162] its seg num is 005
+I20251217 17:59:47.501209 12688 Router.hpp:423] ../source/video/helloworld_sp_01/segment_005.ts
+I20251217 17:59:47.503399 12688 Router.hpp:110] Read 814416 bytes from ../source/video/helloworld_sp_01/segment_005.ts
+I20251217 17:59:47.503894 12688 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 814416
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:47.501199 12688 ConnectionHandler.hpp:164] 1
+W20251217 17:59:47.517920 12688 ConnectionHandler.hpp:166] 814838
+I20251217 17:59:47.518083 12688 SubReactor.hpp:60] old fd:10
+I20251217 17:59:47.519271 12689 SubReactor.hpp:60] old fd:10
+W20251217 17:59:51.586279 12691 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_006.ts
+I20251217 17:59:51.586370 12691 ConnectionHandler.hpp:156] GET
+I20251217 17:59:51.586382 12691 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_006.ts
+I20251217 17:59:51.586392 12691 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:59:51.586400 12691 ConnectionHandler.hpp:162] its seg num is 006
+I20251217 17:59:51.586421 12691 Router.hpp:423] ../source/video/helloworld_sp_01/segment_006.ts
+I20251217 17:59:51.588140 12691 Router.hpp:110] Read 929660 bytes from ../source/video/helloworld_sp_01/segment_006.ts
+I20251217 17:59:51.588244 12691 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 929660
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:51.586407 12691 ConnectionHandler.hpp:164] 1
+W20251217 17:59:51.599895 12691 ConnectionHandler.hpp:166] 930082
+I20251217 17:59:51.599988 12691 SubReactor.hpp:60] old fd:10
+I20251217 17:59:51.601804 12690 SubReactor.hpp:60] old fd:10
+W20251217 17:59:55.654369 12692 ConnectionHandler.hpp:134] URL: /index.html
+I20251217 17:59:55.654577 12692 ConnectionHandler.hpp:156] GET
+I20251217 17:59:55.654631 12692 ConnectionHandler.hpp:157] /index.html
+I20251217 17:59:55.654713 12692 Router.hpp:110] Read 8505 bytes from ../source/index.html
+I20251217 17:59:55.654742 12692 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 8505
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:59:55.654651 12692 ConnectionHandler.hpp:164] 1
+W20251217 17:59:55.654906 12692 ConnectionHandler.hpp:166] 8924
+I20251217 17:59:55.654940 12692 SubReactor.hpp:60] old fd:10
+I20251217 17:59:55.655494 12693 SubReactor.hpp:60] old fd:10
+W20251217 18:01:02.942945 12687 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01.m3u8
+I20251217 18:01:02.943419 12687 ConnectionHandler.hpp:156] OPTIONS
+I20251217 18:01:02.943444 12687 ConnectionHandler.hpp:157] /video/helloworld_sp_01.m3u8
+I20251217 18:01:02.943462 12687 ConnectionHandler.hpp:164] 0
+W20251217 18:01:02.943473 12687 ConnectionHandler.hpp:166] 0
+I20251217 18:01:02.943490 12687 SubReactor.hpp:60] old fd:12
+I20251217 18:01:02.943675 12686 SubReactor.hpp:60] old fd:12
+I20251217 18:01:02.944273 12698 MainReactor.hpp:116] new connection
+I20251217 18:01:02.944582 12698 SubReactor.hpp:55] new fd:13
+I20251217 18:01:02.944747 12698 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 18:01:02.944864 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.1:56341
+W20251217 18:01:02.944922 12688 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01.m3u8
+I20251217 18:01:02.944962 12688 ConnectionHandler.hpp:156] GET
+I20251217 18:01:02.944969 12688 ConnectionHandler.hpp:157] /video/helloworld_sp_01.m3u8
+I20251217 18:01:02.944975 12688 ConnectionHandler.hpp:164] 0
+W20251217 18:01:02.944983 12688 ConnectionHandler.hpp:166] 0
+I20251217 18:01:02.944994 12688 SubReactor.hpp:60] old fd:13
+I20251217 18:01:02.945139 12689 SubReactor.hpp:60] old fd:13
+I20251217 18:01:02.944928 12698 SubReactor.hpp:55] new fd:14
+I20251217 18:01:02.945238 12698 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251217 18:01:02.945263 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.1:60536
+W20251217 18:01:02.945513 12691 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 18:01:02.945578 12691 ConnectionHandler.hpp:156] GET
+I20251217 18:01:02.945590 12691 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 18:01:02.945601 12691 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 18:01:02.945609 12691 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 18:01:02.945621 12691 Router.hpp:423] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 18:01:02.946395 12691 Router.hpp:110] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 18:01:02.946530 12691 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 405140
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 18:01:02.945614 12691 ConnectionHandler.hpp:164] 1
+W20251217 18:01:02.951560 12691 ConnectionHandler.hpp:166] 405562
+I20251217 18:01:02.951678 12691 SubReactor.hpp:60] old fd:14
+I20251217 18:01:02.952589 12690 SubReactor.hpp:60] old fd:14
+I20251217 18:01:12.357879 12698 MainReactor.hpp:116] new connection
+I20251217 18:01:12.358126 12698 SubReactor.hpp:55] new fd:15
+I20251217 18:01:12.358207 12698 SubReactorManager.hpp:55] this connection is used by sub :2
+I20251217 18:01:12.358230 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.128:46060
+W20251217 18:01:12.358330 12692 ConnectionHandler.hpp:134] URL: /
+I20251217 18:01:12.358392 12692 ConnectionHandler.hpp:156] GET
+I20251217 18:01:12.358410 12692 ConnectionHandler.hpp:157] /
+I20251217 18:01:12.358470 12692 Router.hpp:110] Read 8505 bytes from ../source/index.html
+I20251217 18:01:12.358498 12692 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 8505
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 18:01:12.358430 12692 ConnectionHandler.hpp:164] 1
+W20251217 18:01:12.358692 12692 ConnectionHandler.hpp:166] 8924
+I20251217 18:01:12.358754 12692 SubReactor.hpp:60] old fd:15
+I20251217 18:01:12.359184 12693 SubReactor.hpp:60] old fd:15
+I20251217 18:02:11.637466 12698 MainReactor.hpp:116] new connection
+I20251217 18:02:11.637686 12698 SubReactor.hpp:55] new fd:10
+I20251217 18:02:11.637748 12698 SubReactorManager.hpp:55] this connection is used by sub :3
+I20251217 18:02:11.637768 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.1:59313
+W20251217 18:02:11.637938 12686 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01.m3u8
+I20251217 18:02:11.637992 12686 ConnectionHandler.hpp:156] GET
+I20251217 18:02:11.638000 12686 ConnectionHandler.hpp:157] /video/helloworld_sp_01.m3u8
+I20251217 18:02:11.638005 12686 ConnectionHandler.hpp:164] 0
+W20251217 18:02:11.638031 12686 ConnectionHandler.hpp:166] 0
+I20251217 18:02:11.638197 12686 SubReactor.hpp:60] old fd:10
+I20251217 18:02:11.638414 12688 SubReactor.hpp:60] old fd:10
+I20251217 18:02:50.511106 12698 MainReactor.hpp:116] new connection
+I20251217 18:02:50.511271 12698 SubReactor.hpp:55] new fd:16
+I20251217 18:02:50.511307 12698 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 18:02:50.511317 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.1:60387
+W20251217 18:02:50.511413 12689 ConnectionHandler.hpp:134] URL: /video
+I20251217 18:02:50.511474 12689 ConnectionHandler.hpp:156] GET
+I20251217 18:02:50.511482 12689 ConnectionHandler.hpp:157] /video
+I20251217 18:02:50.511674 12689 Router.hpp:55] {
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}
+I20251217 18:02:50.511742 12689 Router.hpp:55] {
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+I20251217 18:02:50.511768 12689 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: application/json
+Content-Length: 1325
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 18:02:50.511487 12689 ConnectionHandler.hpp:164] 1
+W20251217 18:02:50.511797 12689 ConnectionHandler.hpp:166] 1751
+I20251217 18:02:50.511809 12689 SubReactor.hpp:60] old fd:16
+I20251217 18:02:50.511936 12689 SubReactor.hpp:60] old fd:16
+W20251217 18:04:28.250906 12692 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 18:04:28.251112 12692 ConnectionHandler.hpp:156] GET
+I20251217 18:04:28.251165 12692 ConnectionHandler.hpp:157] /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 18:04:28.251412 12692 Router.hpp:110] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 18:04:28.251511 12692 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 3612
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 18:04:28.251180 12692 ConnectionHandler.hpp:164] 1
+W20251217 18:04:28.251627 12692 ConnectionHandler.hpp:166] 4031
+I20251217 18:04:28.251652 12692 SubReactor.hpp:60] old fd:16
+I20251217 18:04:28.252170 12693 SubReactor.hpp:60] old fd:16
+W20251217 18:04:28.276469 12687 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 18:04:28.276615 12687 ConnectionHandler.hpp:156] GET
+I20251217 18:04:28.276636 12687 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 18:04:28.276648 12687 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 18:04:28.276656 12687 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 18:04:28.276695 12687 Router.hpp:423] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 18:04:28.277184 12687 Router.hpp:110] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 18:04:28.277297 12687 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 405140
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 18:04:28.276664 12687 ConnectionHandler.hpp:164] 1
+W20251217 18:04:28.285631 12687 ConnectionHandler.hpp:166] 405562
+I20251217 18:04:28.285807 12687 SubReactor.hpp:60] old fd:16
+I20251217 18:04:28.286442 12686 SubReactor.hpp:60] old fd:16
+I20251217 18:05:22.081024 12698 MainReactor.hpp:116] new connection
+I20251217 18:05:22.081228 12698 SubReactor.hpp:55] new fd:15
+I20251217 18:05:22.081256 12698 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251217 18:05:22.081264 12698 MainReactor.hpp:177] Accepted connection from 192.168.29.1:50226
+W20251217 18:05:22.081456 12688 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 18:05:22.081532 12688 ConnectionHandler.hpp:156] GET
+I20251217 18:05:22.081558 12688 ConnectionHandler.hpp:157] /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 18:05:22.081626 12688 Router.hpp:110] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 18:05:22.081662 12688 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 3612
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 18:05:22.081583 12688 ConnectionHandler.hpp:164] 1
+W20251217 18:05:22.081743 12688 ConnectionHandler.hpp:166] 4031
+I20251217 18:05:22.081760 12688 SubReactor.hpp:60] old fd:15
+I20251217 18:05:22.082015 12691 SubReactor.hpp:60] old fd:15
+W20251217 18:05:22.100562 12689 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 18:05:22.100728 12689 ConnectionHandler.hpp:156] GET
+I20251217 18:05:22.100742 12689 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 18:05:22.100754 12689 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 18:05:22.100765 12689 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 18:05:22.100785 12689 Router.hpp:423] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 18:05:22.101214 12689 Router.hpp:110] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 18:05:22.101325 12689 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: video/mp2t
+Content-Length: 405140
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 18:05:22.100776 12689 ConnectionHandler.hpp:164] 1
+W20251217 18:05:22.108839 12689 ConnectionHandler.hpp:166] 405562
+I20251217 18:05:22.108942 12689 SubReactor.hpp:60] old fd:15
+I20251217 18:05:22.109555 12690 SubReactor.hpp:60] old fd:15
+W20251217 18:05:29.342614 12685 main.cpp:62] Shutting down server...
+I20251217 18:05:29.342736 12685 MainReactor.hpp:142] now at stop in main
+W20251217 18:05:29.419085 12685 main.cpp:64] main is closed
+I20251217 18:05:29.677651 12685 MainReactor.hpp:28] at ~MainReactor()
+I20251217 18:05:29.677836 12685 MainReactor.hpp:142] now at stop in main
+W20251217 18:05:29.677896 12685 main.cpp:72] Server stopped
+W20251217 18:05:29.677928 12685 main.cpp:73] main end()
+I20251217 18:05:29.678385 12685 GlobalMoudle.cpp:8] just only one class is ~()

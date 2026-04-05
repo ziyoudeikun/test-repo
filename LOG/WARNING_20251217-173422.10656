@@ -1,0 +1,26 @@
+Log file created at: 2025/12/17 17:34:22
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:07
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251217 17:34:22.888651 10657 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251217 17:34:22.890236 10657 ConnectionHandler.hpp:166] 3765
+W20251217 17:34:22.955441 10659 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+W20251217 17:34:22.962100 10659 ConnectionHandler.hpp:166] 405296
+W20251217 17:34:23.773694 10661 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_001.ts
+W20251217 17:34:24.217438 10661 ConnectionHandler.hpp:166] 1923585
+W20251217 17:34:31.632308 10663 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_002.ts
+W20251217 17:34:31.659354 10663 ConnectionHandler.hpp:166] 936960
+W20251217 17:34:37.379532 10657 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_003.ts
+W20251217 17:34:37.606417 10657 ConnectionHandler.hpp:166] 160332
+W20251217 17:34:40.336845 10659 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_004.ts
+W20251217 17:34:40.351516 10659 ConnectionHandler.hpp:166] 801036
+W20251217 17:34:45.684899 10661 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_005.ts
+W20251217 17:34:45.698307 10661 ConnectionHandler.hpp:166] 814572
+W20251217 17:34:48.328868 10663 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_006.ts
+W20251217 17:34:48.342278 10663 ConnectionHandler.hpp:166] 929816
+W20251217 17:34:53.661583 10657 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_007.ts
+W20251217 17:34:53.998885 10657 ConnectionHandler.hpp:166] 1199785
+W20251217 17:35:04.308333 10656 main.cpp:62] Shutting down server...
+W20251217 17:35:04.383353 10656 main.cpp:64] main is closed
+W20251217 17:35:04.682514 10656 main.cpp:72] Server stopped
+W20251217 17:35:04.682528 10656 main.cpp:73] main end()

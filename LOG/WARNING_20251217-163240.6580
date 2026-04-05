@@ -1,0 +1,10 @@
+Log file created at: 2025/12/17 16:32:40
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:03
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251217 16:32:40.423477  6581 ConnectionHandler.hpp:53] URL: /video
+W20251217 16:32:40.424659  6581 ConnectionHandler.hpp:77] 189
+W20251217 16:34:42.521134  6580 main.cpp:62] Shutting down server...
+W20251217 16:34:42.612871  6580 main.cpp:64] main is closed
+W20251217 16:34:42.767097  6580 main.cpp:72] Server stopped
+W20251217 16:34:42.767117  6580 main.cpp:73] main end()

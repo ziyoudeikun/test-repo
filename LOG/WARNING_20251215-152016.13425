@@ -1,0 +1,14 @@
+Log file created at: 2025/12/15 15:20:16
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:57
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251215 15:20:16.827431 13426 ConnectionHandler.hpp:53] URL: /
+E20251215 15:20:16.828042 13426 Router.hpp:140] Failed to open file: ../source/press.html
+W20251215 15:20:16.871865 13428 ConnectionHandler.hpp:53] URL: /favicon.ico
+W20251215 15:20:36.892050 13432 ConnectionHandler.hpp:53] URL: /
+E20251215 15:20:36.892128 13432 Router.hpp:140] Failed to open file: ../source/press.html
+W20251215 15:20:36.926549 13433 ConnectionHandler.hpp:53] URL: /favicon.ico
+W20251215 15:20:48.083515 13425 main.cpp:62] Shutting down server...
+W20251215 15:20:48.144261 13425 main.cpp:64] main is closed
+W20251215 15:20:48.439833 13425 main.cpp:72] Server stopped
+W20251215 15:20:48.439858 13425 main.cpp:73] main end()

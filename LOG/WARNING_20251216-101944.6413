@@ -1,0 +1,12 @@
+Log file created at: 2025/12/16 10:19:44
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:03
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251216 10:19:44.881887  6414 ConnectionHandler.hpp:53] URL: /tsparse.html
+W20251216 10:19:44.920670  6416 ConnectionHandler.hpp:53] URL: /favicon.ico
+W20251216 10:19:46.328862  6418 ConnectionHandler.hpp:53] URL: /index.html
+W20251216 10:20:03.165246  6420 ConnectionHandler.hpp:53] URL: /m3u8parse.html
+W20251216 10:21:05.281227  6413 main.cpp:62] Shutting down server...
+W20251216 10:21:05.361939  6413 main.cpp:64] main is closed
+W20251216 10:21:05.727451  6413 main.cpp:72] Server stopped
+W20251216 10:21:05.727475  6413 main.cpp:73] main end()

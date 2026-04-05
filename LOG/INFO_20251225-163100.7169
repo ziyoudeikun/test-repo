@@ -1,0 +1,17 @@
+Log file created at: 2025/12/25 16:31:00
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251225 16:31:00.927553  7169 MySqlCppConn.cpp:13] conn is ~()
+E20251225 16:31:00.928224  7169 main.cpp:29] Failed to initialize connection pool
+I20251225 16:31:00.929160  7169 main.cpp:44] main begin
+I20251225 16:31:00.929255  7169 main.cpp:55] Server started on port 8080
+I20251225 16:31:00.929490  7169 main.cpp:62] begin
+W20251225 16:31:06.931519  7169 main.cpp:69] Shutting down server...
+I20251225 16:31:06.931665  7169 MainReactor.hpp:142] now at stop in main
+W20251225 16:31:06.955237  7169 main.cpp:71] main is closed
+I20251225 16:31:07.256057  7169 MainReactor.hpp:28] at ~MainReactor()
+I20251225 16:31:07.256142  7169 MainReactor.hpp:142] now at stop in main
+W20251225 16:31:07.256179  7169 main.cpp:79] Server stopped
+W20251225 16:31:07.256227  7169 main.cpp:80] main end()
+I20251225 16:31:07.256245  7169 GlobalMoudle.cpp:8] just only one class is ~()

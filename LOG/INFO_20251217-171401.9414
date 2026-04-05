@@ -1,0 +1,103 @@
+Log file created at: 2025/12/17 17:14:01
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251217 17:14:01.036705  9414 main.cpp:37] main begin
+I20251217 17:14:01.036969  9414 main.cpp:48] Server started on port 8080
+I20251217 17:14:01.037240  9414 main.cpp:55] begin
+I20251217 17:14:01.274416  9427 MainReactor.hpp:116] new connection
+I20251217 17:14:01.274675  9427 SubReactor.hpp:55] new fd:10
+I20251217 17:14:01.274710  9427 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 17:14:01.274734  9427 MainReactor.hpp:177] Accepted connection from 192.168.29.1:55325
+W20251217 17:14:03.983067  9415 ConnectionHandler.hpp:134] URL: /index.html
+I20251217 17:14:03.983285  9415 ConnectionHandler.hpp:156] GET
+I20251217 17:14:03.983309  9415 ConnectionHandler.hpp:157] /index.html
+I20251217 17:14:03.983389  9427 MainReactor.hpp:116] new connection
+I20251217 17:14:03.983582  9415 Router.hpp:109] Read 8505 bytes from ../source/index.html
+I20251217 17:14:03.983640  9427 SubReactor.hpp:55] new fd:13
+I20251217 17:14:03.983680  9427 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251217 17:14:03.983701  9427 MainReactor.hpp:177] Accepted connection from 192.168.29.1:55505
+I20251217 17:14:03.983317  9415 ConnectionHandler.hpp:164] 1
+W20251217 17:14:03.983903  9415 ConnectionHandler.hpp:166] 8658
+I20251217 17:14:03.983932  9415 SubReactor.hpp:60] old fd:10
+I20251217 17:14:03.984659  9416 SubReactor.hpp:60] old fd:10
+W20251217 17:14:04.074077  9417 ConnectionHandler.hpp:134] URL: /favicon.ico
+I20251217 17:14:04.074198  9417 ConnectionHandler.hpp:156] GET
+I20251217 17:14:04.074210  9417 ConnectionHandler.hpp:157] /favicon.ico
+I20251217 17:14:04.074563  9417 Router.hpp:109] Read 2763 bytes from ../source/favicon.ico
+I20251217 17:14:04.074220  9417 ConnectionHandler.hpp:164] 1
+W20251217 17:14:04.074714  9417 ConnectionHandler.hpp:166] 2916
+I20251217 17:14:04.074735  9417 SubReactor.hpp:60] old fd:10
+I20251217 17:14:04.075228  9418 SubReactor.hpp:60] old fd:10
+W20251217 17:14:05.346237  9419 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251217 17:14:05.346362  9419 ConnectionHandler.hpp:156] GET
+I20251217 17:14:05.346369  9419 ConnectionHandler.hpp:157] /hlsparse.html
+I20251217 17:14:05.346843  9419 Router.hpp:109] Read 67386 bytes from ../source//hlsparse.html
+I20251217 17:14:05.346375  9419 ConnectionHandler.hpp:164] 1
+W20251217 17:14:05.347873  9419 ConnectionHandler.hpp:166] 67540
+I20251217 17:14:05.347919  9419 SubReactor.hpp:60] old fd:10
+I20251217 17:14:05.353410  9420 SubReactor.hpp:60] old fd:10
+W20251217 17:14:06.462595  9421 ConnectionHandler.hpp:134] URL: /video
+I20251217 17:14:06.462692  9421 ConnectionHandler.hpp:156] GET
+I20251217 17:14:06.462699  9421 ConnectionHandler.hpp:157] /video
+I20251217 17:14:06.463377  9421 Router.hpp:54] {
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}
+I20251217 17:14:06.463804  9421 Router.hpp:54] {
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+I20251217 17:14:06.462718  9421 ConnectionHandler.hpp:164] 1
+W20251217 17:14:06.463917  9421 ConnectionHandler.hpp:166] 1485
+I20251217 17:14:06.463943  9421 SubReactor.hpp:60] old fd:10
+I20251217 17:14:06.464419  9422 SubReactor.hpp:60] old fd:10
+W20251217 17:14:08.292817  9415 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:14:08.293018  9415 ConnectionHandler.hpp:156] GET
+I20251217 17:14:08.293028  9415 ConnectionHandler.hpp:157] /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:14:08.293478  9415 Router.hpp:109] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:14:08.293035  9415 ConnectionHandler.hpp:164] 1
+W20251217 17:14:08.293699  9415 ConnectionHandler.hpp:166] 3765
+I20251217 17:14:08.293731  9415 SubReactor.hpp:60] old fd:10
+I20251217 17:14:08.294390  9416 SubReactor.hpp:60] old fd:10
+W20251217 17:14:08.305811  9417 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 17:14:08.306355  9417 ConnectionHandler.hpp:156] GET
+I20251217 17:14:08.306380  9417 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 17:14:08.306392  9417 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:14:08.306401  9417 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 17:14:08.306409  9417 ConnectionHandler.hpp:164] 0
+W20251217 17:14:08.306420  9417 ConnectionHandler.hpp:166] 0
+I20251217 17:14:08.306439  9417 SubReactor.hpp:60] old fd:10
+I20251217 17:14:08.306550  9418 SubReactor.hpp:60] old fd:10
+W20251217 17:14:32.049816  9414 main.cpp:62] Shutting down server...
+I20251217 17:14:32.049963  9414 MainReactor.hpp:142] now at stop in main
+W20251217 17:14:32.115933  9414 main.cpp:64] main is closed
+I20251217 17:14:32.387286  9414 MainReactor.hpp:28] at ~MainReactor()
+I20251217 17:14:32.387396  9414 MainReactor.hpp:142] now at stop in main
+W20251217 17:14:32.387439  9414 main.cpp:72] Server stopped
+W20251217 17:14:32.387470  9414 main.cpp:73] main end()
+I20251217 17:14:32.387916  9414 GlobalMoudle.cpp:8] just only one class is ~()

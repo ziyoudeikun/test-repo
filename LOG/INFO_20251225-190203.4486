@@ -1,0 +1,82 @@
+Log file created at: 2025/12/25 19:02:03
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251225 19:02:03.722993  4486 main.cpp:44] main begin
+I20251225 19:02:03.724954  4486 main.cpp:55] Server started on port 8080
+I20251225 19:02:03.725513  4486 main.cpp:62] begin
+I20251225 19:02:09.708540  4511 MainReactor.hpp:116] new connection
+I20251225 19:02:09.708775  4511 SubReactor.hpp:55] new fd:20
+I20251225 19:02:09.708811  4511 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251225 19:02:09.708834  4511 MainReactor.hpp:177] Accepted connection from 192.168.29.1:52121
+W20251225 19:02:09.715513  4499 ConnectionHandler.hpp:134] URL: /index.html
+I20251225 19:02:09.715845  4499 ConnectionHandler.hpp:156] GET
+I20251225 19:02:09.715888  4499 ConnectionHandler.hpp:157] /index.html
+I20251225 19:02:09.716411  4499 Router.hpp:112] Read 27866 bytes from ../source/index.html
+I20251225 19:02:09.716529  4499 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 27866
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 19:02:09.715905  4499 ConnectionHandler.hpp:164] 1
+W20251225 19:02:09.717126  4499 ConnectionHandler.hpp:166] 28301
+I20251225 19:02:09.717180  4499 SubReactor.hpp:60] old fd:20
+I20251225 19:02:09.717334  4500 ConnectionHandler.hpp:185] handle_write called, buffer size: 28301
+I20251225 19:02:09.717717  4500 ConnectionHandler.hpp:198] Attempted to send 28301 bytes, actually sent: 28301
+I20251225 19:02:09.717811  4500 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 19:02:09.717824  4500 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 19:02:09.717844  4500 SubReactor.hpp:60] old fd:20
+I20251225 19:02:09.727757  4511 MainReactor.hpp:116] new connection
+I20251225 19:02:09.728896  4511 SubReactor.hpp:55] new fd:22
+I20251225 19:02:09.729183  4511 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251225 19:02:09.729300  4511 MainReactor.hpp:177] Accepted connection from 192.168.29.1:53136
+W20251225 19:02:09.758318  4501 ConnectionHandler.hpp:134] URL: /favicon.ico
+I20251225 19:02:09.758433  4501 ConnectionHandler.hpp:156] GET
+I20251225 19:02:09.758455  4501 ConnectionHandler.hpp:157] /favicon.ico
+I20251225 19:02:09.759023  4501 Router.hpp:112] Read 2763 bytes from ../source/favicon.ico
+I20251225 19:02:09.759140  4501 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 2763
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 19:02:09.758474  4501 ConnectionHandler.hpp:164] 1
+W20251225 19:02:09.759258  4501 ConnectionHandler.hpp:166] 3197
+I20251225 19:02:09.759336  4501 SubReactor.hpp:60] old fd:20
+I20251225 19:02:09.759501  4502 ConnectionHandler.hpp:185] handle_write called, buffer size: 3197
+I20251225 19:02:09.759809  4502 ConnectionHandler.hpp:198] Attempted to send 3197 bytes, actually sent: 3197
+I20251225 19:02:09.759883  4502 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 19:02:09.759891  4502 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 19:02:09.759902  4502 SubReactor.hpp:60] old fd:20
+W20251225 19:02:16.348399  4503 ConnectionHandler.hpp:134] URL: /encrypt.html
+I20251225 19:02:16.348573  4503 ConnectionHandler.hpp:156] GET
+I20251225 19:02:16.348600  4503 ConnectionHandler.hpp:157] /encrypt.html
+I20251225 19:02:16.348608  4503 ConnectionHandler.hpp:164] 0
+W20251225 19:02:16.348660  4503 ConnectionHandler.hpp:166] 0
+I20251225 19:02:16.348702  4503 SubReactor.hpp:60] old fd:20
+I20251225 19:02:16.348917  4504 ConnectionHandler.hpp:185] handle_write called, buffer size: 0
+I20251225 19:02:16.349017  4504 ConnectionHandler.hpp:188] Write buffer is empty, disabling write event
+I20251225 19:02:16.349054  4504 SubReactor.hpp:60] old fd:20
+W20251225 19:02:36.743726  4486 main.cpp:69] Shutting down server...
+I20251225 19:02:36.743873  4486 MainReactor.hpp:142] now at stop in main
+W20251225 19:02:36.759582  4486 main.cpp:71] main is closed
+I20251225 19:02:36.984490  4486 MainReactor.hpp:28] at ~MainReactor()
+I20251225 19:02:36.984577  4486 MainReactor.hpp:142] now at stop in main
+W20251225 19:02:36.997773  4486 main.cpp:79] Server stopped
+W20251225 19:02:36.997931  4486 main.cpp:80] main end()
+I20251225 19:02:36.998189  4486 GlobalMoudle.cpp:8] just only one class is ~()

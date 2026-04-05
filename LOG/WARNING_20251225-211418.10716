@@ -1,0 +1,24 @@
+Log file created at: 2025/12/25 21:14:18
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:02
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251225 21:14:18.787846 10718 ConnectionHandler.hpp:134] URL: /video/enc/test/output0.ts
+W20251225 21:14:18.787846 10719 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251225 21:14:18.788774 10718 ConnectionHandler.hpp:166] 0
+W20251225 21:14:18.789011 10719 ConnectionHandler.hpp:166] 457
+W20251225 21:14:20.858983 10722 ConnectionHandler.hpp:134] URL: /index.html
+W20251225 21:14:20.859860 10722 ConnectionHandler.hpp:166] 28301
+W20251225 21:14:21.744921 10724 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251225 21:14:21.746718 10724 ConnectionHandler.hpp:166] 67821
+W20251225 21:14:22.866824 10718 ConnectionHandler.hpp:134] URL: /video
+W20251225 21:14:22.868510 10718 ConnectionHandler.hpp:166] 2521
+W20251225 21:14:24.821839 10721 ConnectionHandler.hpp:134] URL: /video/enc/test/output.m3u8
+W20251225 21:14:24.822108 10721 ConnectionHandler.hpp:166] 2660
+W20251225 21:14:24.837666 10722 ConnectionHandler.hpp:134] URL: /video/enc/test/output000.ts
+W20251225 21:14:24.838935 10723 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251225 21:14:24.839036 10722 ConnectionHandler.hpp:166] 0
+W20251225 21:14:24.840093 10723 ConnectionHandler.hpp:166] 457
+W20251225 21:15:14.429286 10716 main.cpp:69] Shutting down server...
+W20251225 21:15:14.469667 10716 main.cpp:71] main is closed
+W20251225 21:15:14.597569 10716 main.cpp:79] Server stopped
+W20251225 21:15:14.597684 10716 main.cpp:80] main end()

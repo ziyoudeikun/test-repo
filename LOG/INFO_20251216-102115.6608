@@ -1,0 +1,57 @@
+Log file created at: 2025/12/16 10:21:15
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251216 10:21:15.823817  6608 main.cpp:37] main begin
+I20251216 10:21:15.824052  6608 main.cpp:48] Server started on port 8080
+I20251216 10:21:15.824330  6608 main.cpp:55] begin
+I20251216 10:21:18.346194  6621 MainReactor.hpp:116] new connection
+I20251216 10:21:18.346390  6621 SubReactor.hpp:55] new fd:10
+I20251216 10:21:18.346405  6621 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251216 10:21:18.346411  6621 MainReactor.hpp:177] Accepted connection from 192.168.29.1:61869
+W20251216 10:21:18.355640  6609 ConnectionHandler.hpp:53] URL: /m3u8parse.html
+I20251216 10:21:18.356696  6609 Router.hpp:43] Read 49766 bytes from ../source//m3u8parse.html
+I20251216 10:21:18.355919  6609 ConnectionHandler.hpp:75] 1
+I20251216 10:21:18.357481  6609 SubReactor.hpp:60] old fd:10
+I20251216 10:21:18.357936  6611 SubReactor.hpp:60] old fd:10
+W20251216 10:21:40.177806  6610 ConnectionHandler.hpp:53] URL: /index.html
+I20251216 10:21:40.177853  6621 MainReactor.hpp:116] new connection
+I20251216 10:21:40.177946  6610 Router.hpp:43] Read 8505 bytes from ../source/index.html
+I20251216 10:21:40.178004  6621 SubReactor.hpp:55] new fd:13
+I20251216 10:21:40.178059  6621 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251216 10:21:40.178067  6621 MainReactor.hpp:177] Accepted connection from 192.168.29.1:50316
+I20251216 10:21:40.177911  6610 ConnectionHandler.hpp:75] 1
+I20251216 10:21:40.178210  6610 SubReactor.hpp:60] old fd:10
+I20251216 10:21:40.178498  6612 SubReactor.hpp:60] old fd:10
+W20251216 10:21:43.984129  6613 ConnectionHandler.hpp:53] URL: /tsparse.html
+I20251216 10:21:43.984299  6613 Router.hpp:43] Read 42727 bytes from ../source/tsparse.html
+I20251216 10:21:43.984242  6613 ConnectionHandler.hpp:75] 1
+I20251216 10:21:43.984834  6613 SubReactor.hpp:60] old fd:10
+I20251216 10:21:43.985610  6614 SubReactor.hpp:60] old fd:10
+W20251216 10:21:45.217155  6615 ConnectionHandler.hpp:53] URL: /index.html
+I20251216 10:21:45.217293  6615 Router.hpp:43] Read 8505 bytes from ../source/index.html
+I20251216 10:21:45.217255  6615 ConnectionHandler.hpp:75] 1
+I20251216 10:21:45.217484  6615 SubReactor.hpp:60] old fd:10
+I20251216 10:21:45.217903  6616 SubReactor.hpp:60] old fd:10
+W20251216 10:22:03.457964  6609 ConnectionHandler.hpp:53] URL: /m3u8parse.html
+I20251216 10:22:03.458190  6609 Router.hpp:43] Read 49766 bytes from ../source//m3u8parse.html
+I20251216 10:22:03.458135  6609 ConnectionHandler.hpp:75] 1
+I20251216 10:22:03.458822  6609 SubReactor.hpp:60] old fd:10
+I20251216 10:22:03.459286  6611 SubReactor.hpp:60] old fd:10
+W20251216 10:22:04.815094  6610 ConnectionHandler.hpp:53] URL: /index.html
+I20251216 10:22:04.815222  6610 Router.hpp:43] Read 8505 bytes from ../source/index.html
+I20251216 10:22:04.815188  6610 ConnectionHandler.hpp:75] 1
+I20251216 10:22:04.815366  6610 SubReactor.hpp:60] old fd:10
+I20251216 10:22:04.815677  6612 SubReactor.hpp:60] old fd:10
+W20251216 10:22:31.574436  6613 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251216 10:22:31.574566  6613 ConnectionHandler.hpp:75] 0
+I20251216 10:22:31.574604  6613 SubReactor.hpp:60] old fd:10
+I20251216 10:22:31.574745  6614 SubReactor.hpp:60] old fd:10
+W20251216 10:22:44.866185  6608 main.cpp:62] Shutting down server...
+I20251216 10:22:44.866315  6608 MainReactor.hpp:142] now at stop in main
+W20251216 10:22:44.875176  6608 main.cpp:64] main is closed
+I20251216 10:22:45.046943  6608 MainReactor.hpp:28] at ~MainReactor()
+I20251216 10:22:45.047101  6608 MainReactor.hpp:142] now at stop in main
+W20251216 10:22:45.047139  6608 main.cpp:72] Server stopped
+W20251216 10:22:45.047158  6608 main.cpp:73] main end()
+I20251216 10:22:45.047544  6608 GlobalMoudle.cpp:8] just only one class is ~()

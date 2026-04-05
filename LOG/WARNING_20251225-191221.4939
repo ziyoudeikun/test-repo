@@ -1,0 +1,42 @@
+Log file created at: 2025/12/25 19:12:21
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251225 19:12:21.965703  4941 ConnectionHandler.hpp:134] URL: /encrypt.html
+W20251225 19:12:21.966950  4941 ConnectionHandler.hpp:166] 36832
+W20251225 19:15:52.014633  4945 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251225 19:15:52.017989  4945 ConnectionHandler.hpp:166] 67821
+W20251225 19:16:00.480624  4947 ConnectionHandler.hpp:134] URL: /video
+W20251225 19:16:00.483973  4947 ConnectionHandler.hpp:166] 1766
+W20251225 19:16:01.661384  4941 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251225 19:16:01.662159  4941 ConnectionHandler.hpp:166] 4058
+W20251225 19:16:01.682005  4944 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+W20251225 19:16:01.694904  4944 ConnectionHandler.hpp:166] 405577
+W20251225 19:16:01.733966  4947 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_001.ts
+W20251225 19:16:01.770190  4947 ConnectionHandler.hpp:166] 1923866
+W20251225 19:16:01.819365  4941 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_002.ts
+W20251225 19:16:01.834410  4941 ConnectionHandler.hpp:166] 937241
+W20251225 19:16:01.870894  4944 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_003.ts
+W20251225 19:16:01.880776  4944 ConnectionHandler.hpp:166] 160613
+W20251225 19:16:01.903620  4945 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_004.ts
+W20251225 19:16:01.926301  4945 ConnectionHandler.hpp:166] 801317
+W20251225 19:16:47.409720  4947 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251225 19:16:47.410727  4947 ConnectionHandler.hpp:166] 67821
+W20251225 19:17:19.975224  4942 ConnectionHandler.hpp:134] URL: /index.html
+W20251225 19:17:19.976078  4942 ConnectionHandler.hpp:166] 28301
+W20251225 19:17:21.683924  4943 ConnectionHandler.hpp:134] URL: /encrypt.html
+W20251225 19:17:21.684803  4943 ConnectionHandler.hpp:166] 36826
+W20251225 19:17:22.817560  4946 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251225 19:17:22.817845  4946 ConnectionHandler.hpp:166] 4058
+W20251225 19:17:33.695225  4948 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251225 19:17:33.695544  4948 ConnectionHandler.hpp:166] 4058
+W20251225 19:18:00.984560  4942 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251225 19:18:00.984987  4942 ConnectionHandler.hpp:166] 4058
+W20251225 19:18:40.741462  4945 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251225 19:18:40.741698  4945 ConnectionHandler.hpp:166] 4058
+W20251225 19:18:54.874316  4947 ConnectionHandler.hpp:134] URL: /index.html
+W20251225 19:18:54.874886  4947 ConnectionHandler.hpp:166] 28301
+W20251225 19:28:27.208098  4939 main.cpp:69] Shutting down server...
+W20251225 19:28:27.219722  4939 main.cpp:71] main is closed
+W20251225 19:28:27.395017  4939 main.cpp:79] Server stopped
+W20251225 19:28:27.395184  4939 main.cpp:80] main end()

@@ -1,0 +1,488 @@
+Log file created at: 2025/12/17 20:06:34
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251217 20:06:34.597849 10313 main.cpp:37] main begin
+I20251217 20:06:34.598096 10313 main.cpp:48] Server started on port 8080
+I20251217 20:06:34.598395 10313 main.cpp:55] begin
+I20251217 20:06:34.848376 10326 MainReactor.hpp:116] new connection
+I20251217 20:06:34.848672 10326 SubReactor.hpp:55] new fd:10
+I20251217 20:06:34.848711 10326 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 20:06:34.848719 10326 MainReactor.hpp:177] Accepted connection from 192.168.29.1:62566
+W20251217 20:06:34.848932 10314 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 20:06:34.849131 10314 ConnectionHandler.hpp:156] GET
+I20251217 20:06:34.849143 10314 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 20:06:34.849154 10314 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:34.849162 10314 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 20:06:34.849190 10314 Router.hpp:436] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 20:06:34.849520 10314 Router.hpp:111] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 20:06:34.849644 10314 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 405140
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:34.849170 10314 ConnectionHandler.hpp:164] 1
+W20251217 20:06:34.855899 10314 ConnectionHandler.hpp:166] 405577
+I20251217 20:06:34.855991 10314 SubReactor.hpp:60] old fd:10
+I20251217 20:06:34.856139 10315 ConnectionHandler.hpp:185] handle_write called, buffer size: 405577
+I20251217 20:06:34.856508 10315 ConnectionHandler.hpp:198] Attempted to send 405577 bytes, actually sent: 110960
+I20251217 20:06:34.856647 10315 ConnectionHandler.hpp:206] Remaining buffer size: 294617
+I20251217 20:06:34.856707 10315 ConnectionHandler.hpp:198] Attempted to send 294617 bytes, actually sent: -1
+I20251217 20:06:34.856767 10315 ConnectionHandler.hpp:222] Send buffer full (EAGAIN/EWOULDBLOCK), waiting for next write event
+I20251217 20:06:34.856822 10315 SubReactor.hpp:60] old fd:10
+I20251217 20:06:34.857252 10316 ConnectionHandler.hpp:185] handle_write called, buffer size: 294617
+I20251217 20:06:34.857451 10316 ConnectionHandler.hpp:198] Attempted to send 294617 bytes, actually sent: 96360
+I20251217 20:06:34.857528 10316 ConnectionHandler.hpp:206] Remaining buffer size: 198257
+I20251217 20:06:34.857553 10316 ConnectionHandler.hpp:198] Attempted to send 198257 bytes, actually sent: -1
+I20251217 20:06:34.857570 10316 ConnectionHandler.hpp:222] Send buffer full (EAGAIN/EWOULDBLOCK), waiting for next write event
+I20251217 20:06:34.857604 10316 SubReactor.hpp:60] old fd:10
+I20251217 20:06:34.858624 10317 ConnectionHandler.hpp:185] handle_write called, buffer size: 198257
+I20251217 20:06:34.859217 10317 ConnectionHandler.hpp:198] Attempted to send 198257 bytes, actually sent: 198257
+I20251217 20:06:34.859519 10317 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:34.859589 10317 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:34.859627 10317 SubReactor.hpp:60] old fd:10
+W20251217 20:06:35.091374 10319 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_001.ts
+I20251217 20:06:35.091711 10319 ConnectionHandler.hpp:156] GET
+I20251217 20:06:35.091768 10319 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_001.ts
+I20251217 20:06:35.091811 10319 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:35.091845 10319 ConnectionHandler.hpp:162] its seg num is 001
+I20251217 20:06:35.091914 10319 Router.hpp:436] ../source/video/helloworld_sp_01/segment_001.ts
+I20251217 20:06:35.097965 10319 Router.hpp:111] Read 1923428 bytes from ../source/video/helloworld_sp_01/segment_001.ts
+I20251217 20:06:35.098251 10319 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 1923428
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:35.099560 10326 MainReactor.hpp:116] new connection
+I20251217 20:06:35.099910 10326 SubReactor.hpp:55] new fd:12
+I20251217 20:06:35.099947 10326 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251217 20:06:35.100014 10326 MainReactor.hpp:177] Accepted connection from 192.168.29.1:59683
+I20251217 20:06:35.091897 10319 ConnectionHandler.hpp:164] 1
+W20251217 20:06:35.134223 10319 ConnectionHandler.hpp:166] 1923866
+I20251217 20:06:35.134308 10319 SubReactor.hpp:60] old fd:10
+I20251217 20:06:35.134496 10318 ConnectionHandler.hpp:185] handle_write called, buffer size: 1923866
+I20251217 20:06:35.135667 10318 ConnectionHandler.hpp:198] Attempted to send 1923866 bytes, actually sent: 775260
+I20251217 20:06:35.136160 10318 ConnectionHandler.hpp:206] Remaining buffer size: 1148606
+I20251217 20:06:35.136555 10318 ConnectionHandler.hpp:198] Attempted to send 1148606 bytes, actually sent: 128480
+I20251217 20:06:35.136876 10318 ConnectionHandler.hpp:206] Remaining buffer size: 1020126
+I20251217 20:06:35.136950 10318 ConnectionHandler.hpp:198] Attempted to send 1020126 bytes, actually sent: -1
+I20251217 20:06:35.136965 10318 ConnectionHandler.hpp:222] Send buffer full (EAGAIN/EWOULDBLOCK), waiting for next write event
+I20251217 20:06:35.136993 10318 SubReactor.hpp:60] old fd:10
+I20251217 20:06:35.138420 10320 ConnectionHandler.hpp:185] handle_write called, buffer size: 1020126
+I20251217 20:06:35.138880 10320 ConnectionHandler.hpp:198] Attempted to send 1020126 bytes, actually sent: 385440
+I20251217 20:06:35.139079 10320 ConnectionHandler.hpp:206] Remaining buffer size: 634686
+I20251217 20:06:35.139197 10320 ConnectionHandler.hpp:198] Attempted to send 634686 bytes, actually sent: -1
+I20251217 20:06:35.139221 10320 ConnectionHandler.hpp:222] Send buffer full (EAGAIN/EWOULDBLOCK), waiting for next write event
+I20251217 20:06:35.139266 10320 SubReactor.hpp:60] old fd:10
+I20251217 20:06:35.140774 10321 ConnectionHandler.hpp:185] handle_write called, buffer size: 634686
+I20251217 20:06:35.141155 10321 ConnectionHandler.hpp:198] Attempted to send 634686 bytes, actually sent: 385440
+I20251217 20:06:35.141214 10321 ConnectionHandler.hpp:206] Remaining buffer size: 249246
+I20251217 20:06:35.141224 10321 ConnectionHandler.hpp:198] Attempted to send 249246 bytes, actually sent: -1
+I20251217 20:06:35.141232 10321 ConnectionHandler.hpp:222] Send buffer full (EAGAIN/EWOULDBLOCK), waiting for next write event
+I20251217 20:06:35.141249 10321 SubReactor.hpp:60] old fd:10
+I20251217 20:06:35.143610 10314 ConnectionHandler.hpp:185] handle_write called, buffer size: 249246
+I20251217 20:06:35.144286 10314 ConnectionHandler.hpp:198] Attempted to send 249246 bytes, actually sent: 249246
+I20251217 20:06:35.144397 10314 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:35.144408 10314 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:35.144460 10314 SubReactor.hpp:60] old fd:10
+W20251217 20:06:36.091629 10315 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_002.ts
+I20251217 20:06:36.091733 10315 ConnectionHandler.hpp:156] GET
+I20251217 20:06:36.091742 10315 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_002.ts
+I20251217 20:06:36.091749 10315 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:36.091763 10315 ConnectionHandler.hpp:162] its seg num is 002
+I20251217 20:06:36.091776 10315 Router.hpp:436] ../source/video/helloworld_sp_01/segment_002.ts
+I20251217 20:06:36.093827 10315 Router.hpp:111] Read 936804 bytes from ../source/video/helloworld_sp_01/segment_002.ts
+I20251217 20:06:36.093983 10315 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 936804
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:36.091768 10315 ConnectionHandler.hpp:164] 1
+W20251217 20:06:36.105332 10315 ConnectionHandler.hpp:166] 937241
+I20251217 20:06:36.105444 10315 SubReactor.hpp:60] old fd:10
+I20251217 20:06:36.105609 10316 ConnectionHandler.hpp:185] handle_write called, buffer size: 937241
+I20251217 20:06:36.106244 10316 ConnectionHandler.hpp:198] Attempted to send 937241 bytes, actually sent: 937241
+I20251217 20:06:36.106366 10316 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:36.106374 10316 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:36.106390 10316 SubReactor.hpp:60] old fd:10
+W20251217 20:06:37.090794 10317 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_003.ts
+I20251217 20:06:37.090934 10317 ConnectionHandler.hpp:156] GET
+I20251217 20:06:37.090955 10317 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_003.ts
+I20251217 20:06:37.090966 10317 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:37.090974 10317 ConnectionHandler.hpp:162] its seg num is 003
+I20251217 20:06:37.090989 10317 Router.hpp:436] ../source/video/helloworld_sp_01/segment_003.ts
+I20251217 20:06:37.091570 10317 Router.hpp:111] Read 160176 bytes from ../source/video/helloworld_sp_01/segment_003.ts
+I20251217 20:06:37.091657 10317 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 160176
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:37.090979 10317 ConnectionHandler.hpp:164] 1
+W20251217 20:06:37.094977 10317 ConnectionHandler.hpp:166] 160613
+I20251217 20:06:37.095032 10317 SubReactor.hpp:60] old fd:10
+I20251217 20:06:37.095182 10319 ConnectionHandler.hpp:185] handle_write called, buffer size: 160613
+I20251217 20:06:37.095383 10319 ConnectionHandler.hpp:198] Attempted to send 160613 bytes, actually sent: 160613
+I20251217 20:06:37.095438 10319 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:37.095445 10319 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:37.095454 10319 SubReactor.hpp:60] old fd:10
+W20251217 20:06:38.090814 10318 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_004.ts
+I20251217 20:06:38.090921 10318 ConnectionHandler.hpp:156] GET
+I20251217 20:06:38.090931 10318 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_004.ts
+I20251217 20:06:38.090951 10318 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:38.090960 10318 ConnectionHandler.hpp:162] its seg num is 004
+I20251217 20:06:38.090976 10318 Router.hpp:436] ../source/video/helloworld_sp_01/segment_004.ts
+I20251217 20:06:38.092387 10318 Router.hpp:111] Read 800880 bytes from ../source/video/helloworld_sp_01/segment_004.ts
+I20251217 20:06:38.092537 10318 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 800880
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:38.090966 10318 ConnectionHandler.hpp:164] 1
+W20251217 20:06:38.102886 10318 ConnectionHandler.hpp:166] 801317
+I20251217 20:06:38.102954 10318 SubReactor.hpp:60] old fd:10
+I20251217 20:06:38.103092 10320 ConnectionHandler.hpp:185] handle_write called, buffer size: 801317
+I20251217 20:06:38.103852 10320 ConnectionHandler.hpp:198] Attempted to send 801317 bytes, actually sent: 801317
+I20251217 20:06:38.104154 10320 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:38.104338 10320 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:38.104878 10320 SubReactor.hpp:60] old fd:10
+W20251217 20:06:39.090668 10321 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_005.ts
+I20251217 20:06:39.090772 10321 ConnectionHandler.hpp:156] GET
+I20251217 20:06:39.090780 10321 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_005.ts
+I20251217 20:06:39.090790 10321 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:39.090796 10321 ConnectionHandler.hpp:162] its seg num is 005
+I20251217 20:06:39.090811 10321 Router.hpp:436] ../source/video/helloworld_sp_01/segment_005.ts
+I20251217 20:06:39.093192 10321 Router.hpp:111] Read 814416 bytes from ../source/video/helloworld_sp_01/segment_005.ts
+I20251217 20:06:39.093324 10321 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 814416
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:39.090801 10321 ConnectionHandler.hpp:164] 1
+W20251217 20:06:39.103058 10321 ConnectionHandler.hpp:166] 814853
+I20251217 20:06:39.103163 10321 SubReactor.hpp:60] old fd:10
+I20251217 20:06:39.103475 10314 ConnectionHandler.hpp:185] handle_write called, buffer size: 814853
+I20251217 20:06:39.104341 10314 ConnectionHandler.hpp:198] Attempted to send 814853 bytes, actually sent: 814853
+I20251217 20:06:39.104887 10314 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:39.104983 10314 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:39.105098 10314 SubReactor.hpp:60] old fd:10
+W20251217 20:06:40.677595 10315 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_006.ts
+I20251217 20:06:40.677750 10315 ConnectionHandler.hpp:156] GET
+I20251217 20:06:40.677778 10315 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_006.ts
+I20251217 20:06:40.677826 10315 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:40.677855 10315 ConnectionHandler.hpp:162] its seg num is 006
+I20251217 20:06:40.677896 10315 Router.hpp:436] ../source/video/helloworld_sp_01/segment_006.ts
+I20251217 20:06:40.681128 10315 Router.hpp:111] Read 929660 bytes from ../source/video/helloworld_sp_01/segment_006.ts
+I20251217 20:06:40.681263 10315 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 929660
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:40.677881 10315 ConnectionHandler.hpp:164] 1
+W20251217 20:06:40.693876 10315 ConnectionHandler.hpp:166] 930097
+I20251217 20:06:40.693969 10315 SubReactor.hpp:60] old fd:10
+I20251217 20:06:40.694118 10316 ConnectionHandler.hpp:185] handle_write called, buffer size: 930097
+I20251217 20:06:40.694514 10316 ConnectionHandler.hpp:198] Attempted to send 930097 bytes, actually sent: 930097
+I20251217 20:06:40.694669 10316 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:40.694684 10316 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:40.694701 10316 SubReactor.hpp:60] old fd:10
+W20251217 20:06:43.766028 10317 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_007.ts
+I20251217 20:06:43.766247 10317 ConnectionHandler.hpp:156] GET
+I20251217 20:06:43.766253 10317 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_007.ts
+I20251217 20:06:43.766261 10317 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:43.766266 10317 ConnectionHandler.hpp:162] its seg num is 007
+I20251217 20:06:43.766279 10317 Router.hpp:436] ../source/video/helloworld_sp_01/segment_007.ts
+I20251217 20:06:43.770272 10317 Router.hpp:111] Read 1199628 bytes from ../source/video/helloworld_sp_01/segment_007.ts
+I20251217 20:06:43.770493 10317 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 1199628
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:43.766271 10317 ConnectionHandler.hpp:164] 1
+W20251217 20:06:43.786693 10317 ConnectionHandler.hpp:166] 1200066
+I20251217 20:06:43.786773 10317 SubReactor.hpp:60] old fd:10
+I20251217 20:06:43.786926 10319 ConnectionHandler.hpp:185] handle_write called, buffer size: 1200066
+I20251217 20:06:43.787595 10319 ConnectionHandler.hpp:198] Attempted to send 1200066 bytes, actually sent: 1042440
+I20251217 20:06:43.787734 10319 ConnectionHandler.hpp:206] Remaining buffer size: 157626
+I20251217 20:06:43.787781 10319 ConnectionHandler.hpp:198] Attempted to send 157626 bytes, actually sent: 64240
+I20251217 20:06:43.787809 10319 ConnectionHandler.hpp:206] Remaining buffer size: 93386
+I20251217 20:06:43.787827 10319 ConnectionHandler.hpp:198] Attempted to send 93386 bytes, actually sent: -1
+I20251217 20:06:43.787835 10319 ConnectionHandler.hpp:222] Send buffer full (EAGAIN/EWOULDBLOCK), waiting for next write event
+I20251217 20:06:43.787858 10319 SubReactor.hpp:60] old fd:10
+I20251217 20:06:43.790550 10318 ConnectionHandler.hpp:185] handle_write called, buffer size: 93386
+I20251217 20:06:43.790791 10318 ConnectionHandler.hpp:198] Attempted to send 93386 bytes, actually sent: 93386
+I20251217 20:06:43.790805 10318 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:43.790812 10318 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:43.790825 10318 SubReactor.hpp:60] old fd:10
+W20251217 20:06:47.906860 10320 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_008.ts
+I20251217 20:06:47.906975 10320 ConnectionHandler.hpp:156] GET
+I20251217 20:06:47.907008 10320 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_008.ts
+I20251217 20:06:47.907024 10320 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:47.907032 10320 ConnectionHandler.hpp:162] its seg num is 008
+I20251217 20:06:47.907053 10320 Router.hpp:436] ../source/video/helloworld_sp_01/segment_008.ts
+I20251217 20:06:47.908396 10320 Router.hpp:111] Read 575092 bytes from ../source/video/helloworld_sp_01/segment_008.ts
+I20251217 20:06:47.908586 10320 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 575092
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:47.907039 10320 ConnectionHandler.hpp:164] 1
+W20251217 20:06:47.917284 10320 ConnectionHandler.hpp:166] 575529
+I20251217 20:06:47.917387 10320 SubReactor.hpp:60] old fd:10
+I20251217 20:06:47.917721 10321 ConnectionHandler.hpp:185] handle_write called, buffer size: 575529
+I20251217 20:06:47.919430 10321 ConnectionHandler.hpp:198] Attempted to send 575529 bytes, actually sent: 575529
+I20251217 20:06:47.920531 10321 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:47.921789 10321 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:47.922281 10321 SubReactor.hpp:60] old fd:10
+W20251217 20:06:49.467238 10314 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_009.ts
+I20251217 20:06:49.467402 10314 ConnectionHandler.hpp:156] GET
+I20251217 20:06:49.467417 10314 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_009.ts
+I20251217 20:06:49.467427 10314 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:49.467433 10314 ConnectionHandler.hpp:162] its seg num is 009
+I20251217 20:06:49.467451 10314 Router.hpp:436] ../source/video/helloworld_sp_01/segment_009.ts
+I20251217 20:06:49.469537 10314 Router.hpp:111] Read 650856 bytes from ../source/video/helloworld_sp_01/segment_009.ts
+I20251217 20:06:49.469686 10314 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 650856
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:49.467440 10314 ConnectionHandler.hpp:164] 1
+W20251217 20:06:49.482628 10314 ConnectionHandler.hpp:166] 651293
+I20251217 20:06:49.482813 10314 SubReactor.hpp:60] old fd:10
+I20251217 20:06:49.483253 10315 ConnectionHandler.hpp:185] handle_write called, buffer size: 651293
+I20251217 20:06:49.483788 10315 ConnectionHandler.hpp:198] Attempted to send 651293 bytes, actually sent: 651293
+I20251217 20:06:49.483906 10315 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:49.483925 10315 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:49.483951 10315 SubReactor.hpp:60] old fd:10
+W20251217 20:06:52.046988 10316 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_010.ts
+I20251217 20:06:52.047144 10316 ConnectionHandler.hpp:156] GET
+I20251217 20:06:52.047156 10316 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_010.ts
+I20251217 20:06:52.047168 10316 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:52.047176 10316 ConnectionHandler.hpp:162] its seg num is 010
+I20251217 20:06:52.047195 10316 Router.hpp:436] ../source/video/helloworld_sp_01/segment_010.ts
+I20251217 20:06:52.048969 10316 Router.hpp:111] Read 775124 bytes from ../source/video/helloworld_sp_01/segment_010.ts
+I20251217 20:06:52.049130 10316 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 775124
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:52.047183 10316 ConnectionHandler.hpp:164] 1
+W20251217 20:06:52.058869 10316 ConnectionHandler.hpp:166] 775561
+I20251217 20:06:52.058920 10316 SubReactor.hpp:60] old fd:10
+I20251217 20:06:52.058992 10317 ConnectionHandler.hpp:185] handle_write called, buffer size: 775561
+I20251217 20:06:52.059808 10317 ConnectionHandler.hpp:198] Attempted to send 775561 bytes, actually sent: 775561
+I20251217 20:06:52.060875 10317 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:52.061187 10317 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:52.061559 10317 SubReactor.hpp:60] old fd:10
+W20251217 20:06:54.656800 10319 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_011.ts
+I20251217 20:06:54.656916 10319 ConnectionHandler.hpp:156] GET
+I20251217 20:06:54.656925 10319 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_011.ts
+I20251217 20:06:54.656934 10319 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:54.656939 10319 ConnectionHandler.hpp:162] its seg num is 011
+I20251217 20:06:54.656951 10319 Router.hpp:436] ../source/video/helloworld_sp_01/segment_011.ts
+I20251217 20:06:54.658967 10319 Router.hpp:111] Read 953912 bytes from ../source/video/helloworld_sp_01/segment_011.ts
+I20251217 20:06:54.659107 10319 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 953912
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:54.656944 10319 ConnectionHandler.hpp:164] 1
+W20251217 20:06:54.673519 10319 ConnectionHandler.hpp:166] 954349
+I20251217 20:06:54.673653 10319 SubReactor.hpp:60] old fd:10
+I20251217 20:06:54.674283 10318 ConnectionHandler.hpp:185] handle_write called, buffer size: 954349
+I20251217 20:06:54.676244 10318 ConnectionHandler.hpp:198] Attempted to send 954349 bytes, actually sent: 954349
+I20251217 20:06:54.676379 10318 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:54.676398 10318 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:54.676479 10318 SubReactor.hpp:60] old fd:10
+W20251217 20:06:58.256283 10320 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_012.ts
+I20251217 20:06:58.256389 10320 ConnectionHandler.hpp:156] GET
+I20251217 20:06:58.256397 10320 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_012.ts
+I20251217 20:06:58.256404 10320 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:06:58.256409 10320 ConnectionHandler.hpp:162] its seg num is 012
+I20251217 20:06:58.256423 10320 Router.hpp:436] ../source/video/helloworld_sp_01/segment_012.ts
+I20251217 20:06:58.258165 10320 Router.hpp:111] Read 444056 bytes from ../source/video/helloworld_sp_01/segment_012.ts
+I20251217 20:06:58.258280 10320 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 444056
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:06:58.256415 10320 ConnectionHandler.hpp:164] 1
+W20251217 20:06:58.264230 10320 ConnectionHandler.hpp:166] 444493
+I20251217 20:06:58.264320 10320 SubReactor.hpp:60] old fd:10
+I20251217 20:06:58.264460 10321 ConnectionHandler.hpp:185] handle_write called, buffer size: 444493
+I20251217 20:06:58.264798 10321 ConnectionHandler.hpp:198] Attempted to send 444493 bytes, actually sent: 444493
+I20251217 20:06:58.264873 10321 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:06:58.264883 10321 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:06:58.264896 10321 SubReactor.hpp:60] old fd:10
+W20251217 20:07:00.325675 10314 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_013.ts
+I20251217 20:07:00.325789 10314 ConnectionHandler.hpp:156] GET
+I20251217 20:07:00.325814 10314 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_013.ts
+I20251217 20:07:00.325826 10314 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 20:07:00.325847 10314 ConnectionHandler.hpp:162] its seg num is 013
+I20251217 20:07:00.325863 10314 Router.hpp:436] ../source/video/helloworld_sp_01/segment_013.ts
+I20251217 20:07:00.330389 10314 Router.hpp:111] Read 1731856 bytes from ../source/video/helloworld_sp_01/segment_013.ts
+I20251217 20:07:00.330646 10314 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: video/mp2t
+Content-Length: 1731856
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:07:00.325855 10314 ConnectionHandler.hpp:164] 1
+W20251217 20:07:00.357345 10314 ConnectionHandler.hpp:166] 1732294
+I20251217 20:07:00.357458 10314 SubReactor.hpp:60] old fd:10
+I20251217 20:07:00.357729 10315 ConnectionHandler.hpp:185] handle_write called, buffer size: 1732294
+I20251217 20:07:00.358654 10315 ConnectionHandler.hpp:198] Attempted to send 1732294 bytes, actually sent: 1106680
+I20251217 20:07:00.359354 10315 ConnectionHandler.hpp:206] Remaining buffer size: 625614
+I20251217 20:07:00.359690 10315 ConnectionHandler.hpp:198] Attempted to send 625614 bytes, actually sent: -1
+I20251217 20:07:00.359762 10315 ConnectionHandler.hpp:222] Send buffer full (EAGAIN/EWOULDBLOCK), waiting for next write event
+I20251217 20:07:00.359805 10315 SubReactor.hpp:60] old fd:10
+I20251217 20:07:00.364955 10316 ConnectionHandler.hpp:185] handle_write called, buffer size: 625614
+I20251217 20:07:00.367985 10316 ConnectionHandler.hpp:198] Attempted to send 625614 bytes, actually sent: 513920
+I20251217 20:07:00.368340 10316 ConnectionHandler.hpp:206] Remaining buffer size: 111694
+I20251217 20:07:00.368988 10316 ConnectionHandler.hpp:198] Attempted to send 111694 bytes, actually sent: 111694
+I20251217 20:07:00.369215 10316 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:07:00.369347 10316 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:07:00.369419 10316 SubReactor.hpp:60] old fd:10
+W20251217 20:07:01.159222 10317 ConnectionHandler.hpp:134] URL: /index.html
+I20251217 20:07:01.159325 10317 ConnectionHandler.hpp:156] GET
+I20251217 20:07:01.159333 10317 ConnectionHandler.hpp:157] /index.html
+I20251217 20:07:01.159407 10317 Router.hpp:111] Read 8505 bytes from ../source/index.html
+I20251217 20:07:01.159497 10317 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 8505
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 20:07:01.159338 10317 ConnectionHandler.hpp:164] 1
+W20251217 20:07:01.159636 10317 ConnectionHandler.hpp:166] 8939
+I20251217 20:07:01.159652 10317 SubReactor.hpp:60] old fd:10
+I20251217 20:07:01.159755 10319 ConnectionHandler.hpp:185] handle_write called, buffer size: 8939
+I20251217 20:07:01.159922 10319 ConnectionHandler.hpp:198] Attempted to send 8939 bytes, actually sent: 8939
+I20251217 20:07:01.159977 10319 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251217 20:07:01.159996 10319 ConnectionHandler.hpp:239] All data sent successfully
+I20251217 20:07:01.160013 10319 SubReactor.hpp:60] old fd:10
+W20251217 20:07:08.613709 10313 main.cpp:62] Shutting down server...
+I20251217 20:07:08.613879 10313 MainReactor.hpp:142] now at stop in main
+W20251217 20:07:08.676169 10313 main.cpp:64] main is closed
+I20251217 20:07:08.863868 10313 MainReactor.hpp:28] at ~MainReactor()
+I20251217 20:07:08.863979 10313 MainReactor.hpp:142] now at stop in main
+W20251217 20:07:08.864023 10313 main.cpp:72] Server stopped
+W20251217 20:07:08.864039 10313 main.cpp:73] main end()
+I20251217 20:07:08.864517 10313 GlobalMoudle.cpp:8] just only one class is ~()

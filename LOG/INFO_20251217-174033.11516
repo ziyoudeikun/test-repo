@@ -1,0 +1,257 @@
+Log file created at: 2025/12/17 17:40:33
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251217 17:40:33.110459 11516 main.cpp:37] main begin
+I20251217 17:40:33.110934 11516 main.cpp:48] Server started on port 8080
+I20251217 17:40:33.111200 11516 main.cpp:55] begin
+I20251217 17:40:43.474375 11529 MainReactor.hpp:116] new connection
+I20251217 17:40:43.474584 11529 SubReactor.hpp:55] new fd:10
+I20251217 17:40:43.474601 11529 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 17:40:43.474607 11529 MainReactor.hpp:177] Accepted connection from 192.168.29.1:60551
+W20251217 17:40:43.488570 11517 ConnectionHandler.hpp:134] URL: /
+I20251217 17:40:43.488842 11517 ConnectionHandler.hpp:156] GET
+I20251217 17:40:43.488858 11517 ConnectionHandler.hpp:157] /
+I20251217 17:40:43.489892 11517 Router.hpp:110] Read 8505 bytes from ../source/index.html
+I20251217 17:40:43.488868 11517 ConnectionHandler.hpp:164] 1
+W20251217 17:40:43.490319 11517 ConnectionHandler.hpp:166] 8658
+I20251217 17:40:43.490569 11517 SubReactor.hpp:60] old fd:10
+I20251217 17:40:43.491160 11518 SubReactor.hpp:60] old fd:10
+I20251217 17:40:43.492177 11529 MainReactor.hpp:116] new connection
+I20251217 17:40:43.492321 11529 SubReactor.hpp:55] new fd:12
+I20251217 17:40:43.492363 11529 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251217 17:40:43.492405 11529 MainReactor.hpp:177] Accepted connection from 192.168.29.1:51433
+I20251217 17:40:46.310971 11529 MainReactor.hpp:116] new connection
+I20251217 17:40:46.311110 11529 SubReactor.hpp:55] new fd:10
+I20251217 17:40:46.311124 11529 SubReactorManager.hpp:55] this connection is used by sub :2
+I20251217 17:40:46.311131 11529 MainReactor.hpp:177] Accepted connection from 192.168.29.1:63816
+W20251217 17:40:46.398068 11521 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251217 17:40:46.398171 11521 ConnectionHandler.hpp:156] GET
+I20251217 17:40:46.398182 11521 ConnectionHandler.hpp:157] /hlsparse.html
+I20251217 17:40:46.398639 11521 Router.hpp:110] Read 67386 bytes from ../source//hlsparse.html
+I20251217 17:40:46.398202 11521 ConnectionHandler.hpp:164] 1
+W20251217 17:40:46.399752 11521 ConnectionHandler.hpp:166] 67540
+I20251217 17:40:46.399802 11521 SubReactor.hpp:60] old fd:10
+I20251217 17:40:46.400367 11522 SubReactor.hpp:60] old fd:10
+I20251217 17:40:46.401829 11529 MainReactor.hpp:116] new connection
+I20251217 17:40:46.402086 11529 SubReactor.hpp:55] new fd:12
+I20251217 17:40:46.402139 11529 SubReactorManager.hpp:55] this connection is used by sub :3
+I20251217 17:40:46.402148 11529 MainReactor.hpp:177] Accepted connection from 192.168.29.1:61891
+W20251217 17:40:47.458702 11523 ConnectionHandler.hpp:134] URL: /video
+I20251217 17:40:47.458844 11523 ConnectionHandler.hpp:156] GET
+I20251217 17:40:47.458854 11523 ConnectionHandler.hpp:157] /video
+I20251217 17:40:47.459908 11523 Router.hpp:55] {
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}
+I20251217 17:40:47.460247 11523 Router.hpp:55] {
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+I20251217 17:40:47.458860 11523 ConnectionHandler.hpp:164] 1
+W20251217 17:40:47.460354 11523 ConnectionHandler.hpp:166] 1485
+I20251217 17:40:47.460376 11523 SubReactor.hpp:60] old fd:10
+I20251217 17:40:47.460644 11524 SubReactor.hpp:60] old fd:10
+W20251217 17:40:49.001506 11517 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:40:49.001669 11517 ConnectionHandler.hpp:156] GET
+I20251217 17:40:49.001710 11517 ConnectionHandler.hpp:157] /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:40:49.002233 11517 Router.hpp:110] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:40:49.001725 11517 ConnectionHandler.hpp:164] 1
+W20251217 17:40:49.002374 11517 ConnectionHandler.hpp:166] 3765
+I20251217 17:40:49.002398 11517 SubReactor.hpp:60] old fd:10
+I20251217 17:40:49.002970 11518 SubReactor.hpp:60] old fd:10
+W20251217 17:40:49.029796 11520 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 17:40:49.029966 11520 ConnectionHandler.hpp:156] GET
+I20251217 17:40:49.029976 11520 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 17:40:49.029984 11520 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:40:49.029989 11520 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 17:40:49.030005 11520 Router.hpp:417] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:40:49.031322 11520 Router.hpp:110] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:40:49.029994 11520 ConnectionHandler.hpp:164] 1
+W20251217 17:40:49.038297 11520 ConnectionHandler.hpp:166] 405296
+I20251217 17:40:49.038457 11520 SubReactor.hpp:60] old fd:10
+I20251217 17:40:49.040863 11519 SubReactor.hpp:60] old fd:10
+W20251217 17:41:34.992950 11521 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251217 17:41:34.993047 11521 ConnectionHandler.hpp:156] GET
+I20251217 17:41:34.993055 11521 ConnectionHandler.hpp:157] /hlsparse.html
+I20251217 17:41:34.993101 11521 Router.hpp:110] Read 67386 bytes from ../source//hlsparse.html
+I20251217 17:41:34.993062 11521 ConnectionHandler.hpp:164] 1
+W20251217 17:41:34.993956 11521 ConnectionHandler.hpp:166] 67540
+I20251217 17:41:34.993994 11521 SubReactor.hpp:60] old fd:12
+I20251217 17:41:34.994477 11522 SubReactor.hpp:60] old fd:12
+W20251217 17:41:35.043768 11524 ConnectionHandler.hpp:134] URL: /favicon.ico
+I20251217 17:41:35.043910 11524 ConnectionHandler.hpp:156] GET
+I20251217 17:41:35.043923 11524 ConnectionHandler.hpp:157] /favicon.ico
+I20251217 17:41:35.044641 11524 Router.hpp:110] Read 2763 bytes from ../source/favicon.ico
+I20251217 17:41:35.043932 11524 ConnectionHandler.hpp:164] 1
+W20251217 17:41:35.044840 11524 ConnectionHandler.hpp:166] 2916
+I20251217 17:41:35.044894 11524 SubReactor.hpp:60] old fd:12
+I20251217 17:41:35.045238 11517 SubReactor.hpp:60] old fd:12
+W20251217 17:41:36.779775 11518 ConnectionHandler.hpp:134] URL: /video
+I20251217 17:41:36.779944 11518 ConnectionHandler.hpp:156] GET
+I20251217 17:41:36.779955 11518 ConnectionHandler.hpp:157] /video
+I20251217 17:41:36.780203 11518 Router.hpp:55] {
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}
+I20251217 17:41:36.780301 11518 Router.hpp:55] {
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+I20251217 17:41:36.779963 11518 ConnectionHandler.hpp:164] 1
+W20251217 17:41:36.780383 11518 ConnectionHandler.hpp:166] 1485
+I20251217 17:41:36.780403 11518 SubReactor.hpp:60] old fd:12
+I20251217 17:41:36.780666 11520 SubReactor.hpp:60] old fd:12
+W20251217 17:41:38.508389 11519 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:41:38.508509 11519 ConnectionHandler.hpp:156] GET
+I20251217 17:41:38.508531 11519 ConnectionHandler.hpp:157] /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:41:38.508584 11519 Router.hpp:110] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:41:38.508539 11519 ConnectionHandler.hpp:164] 1
+W20251217 17:41:38.508678 11519 ConnectionHandler.hpp:166] 3765
+I20251217 17:41:38.508701 11519 SubReactor.hpp:60] old fd:12
+I20251217 17:41:38.509100 11521 SubReactor.hpp:60] old fd:12
+W20251217 17:41:38.518747 11522 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 17:41:38.518846 11522 ConnectionHandler.hpp:156] GET
+I20251217 17:41:38.518855 11522 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 17:41:38.518867 11522 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:41:38.519127 11522 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 17:41:38.519647 11522 Router.hpp:417] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:41:38.520049 11522 Router.hpp:110] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:41:38.519590 11522 ConnectionHandler.hpp:164] 1
+W20251217 17:41:38.526116 11522 ConnectionHandler.hpp:166] 405296
+I20251217 17:41:38.526273 11522 SubReactor.hpp:60] old fd:12
+I20251217 17:41:38.527842 11523 SubReactor.hpp:60] old fd:12
+I20251217 17:42:53.836361 11529 MainReactor.hpp:116] new connection
+I20251217 17:42:53.836635 11529 SubReactor.hpp:55] new fd:10
+I20251217 17:42:53.836684 11529 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 17:42:53.836707 11529 MainReactor.hpp:177] Accepted connection from 192.168.29.1:63754
+W20251217 17:42:53.836863 11524 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251217 17:42:53.836954 11524 ConnectionHandler.hpp:156] GET
+I20251217 17:42:53.836983 11524 ConnectionHandler.hpp:157] /hlsparse.html
+I20251217 17:42:53.837080 11524 Router.hpp:110] Read 67386 bytes from ../source//hlsparse.html
+I20251217 17:42:53.836997 11524 ConnectionHandler.hpp:164] 1
+W20251217 17:42:53.838003 11524 ConnectionHandler.hpp:166] 67540
+I20251217 17:42:53.838060 11524 SubReactor.hpp:60] old fd:10
+I20251217 17:42:53.838454 11517 SubReactor.hpp:60] old fd:10
+W20251217 17:42:53.879642 11520 ConnectionHandler.hpp:134] URL: /favicon.ico
+I20251217 17:42:53.879830 11520 ConnectionHandler.hpp:156] GET
+I20251217 17:42:53.879866 11520 ConnectionHandler.hpp:157] /favicon.ico
+I20251217 17:42:53.879951 11520 Router.hpp:110] Read 2763 bytes from ../source/favicon.ico
+I20251217 17:42:53.879904 11520 ConnectionHandler.hpp:164] 1
+W20251217 17:42:53.880092 11520 ConnectionHandler.hpp:166] 2916
+I20251217 17:42:53.880163 11520 SubReactor.hpp:60] old fd:10
+I20251217 17:42:53.880602 11519 SubReactor.hpp:60] old fd:10
+W20251217 17:42:55.009377 11521 ConnectionHandler.hpp:134] URL: /video
+I20251217 17:42:55.009479 11521 ConnectionHandler.hpp:156] GET
+I20251217 17:42:55.009487 11521 ConnectionHandler.hpp:157] /video
+I20251217 17:42:55.009685 11521 Router.hpp:55] {
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}
+I20251217 17:42:55.009748 11521 Router.hpp:55] {
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+I20251217 17:42:55.009505 11521 ConnectionHandler.hpp:164] 1
+W20251217 17:42:55.009891 11521 ConnectionHandler.hpp:166] 1485
+I20251217 17:42:55.009934 11521 SubReactor.hpp:60] old fd:10
+I20251217 17:42:55.010243 11522 SubReactor.hpp:60] old fd:10
+W20251217 17:42:56.700610 11523 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:42:56.700726 11523 ConnectionHandler.hpp:156] GET
+I20251217 17:42:56.700733 11523 ConnectionHandler.hpp:157] /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:42:56.700790 11523 Router.hpp:110] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:42:56.700739 11523 ConnectionHandler.hpp:164] 1
+W20251217 17:42:56.700847 11523 ConnectionHandler.hpp:166] 3765
+I20251217 17:42:56.700991 11523 SubReactor.hpp:60] old fd:10
+I20251217 17:42:56.701422 11524 SubReactor.hpp:60] old fd:10
+W20251217 17:42:56.709339 11517 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 17:42:56.709452 11517 ConnectionHandler.hpp:156] GET
+I20251217 17:42:56.709460 11517 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 17:42:56.709470 11517 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:42:56.709488 11517 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 17:42:56.709503 11517 Router.hpp:417] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:42:56.709801 11517 Router.hpp:110] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:42:56.709496 11517 ConnectionHandler.hpp:164] 1
+W20251217 17:42:56.717434 11517 ConnectionHandler.hpp:166] 405296
+I20251217 17:42:56.717530 11517 SubReactor.hpp:60] old fd:10
+I20251217 17:42:56.718364 11518 SubReactor.hpp:60] old fd:10
+W20251217 17:43:33.192824 11516 main.cpp:62] Shutting down server...
+I20251217 17:43:33.193038 11516 MainReactor.hpp:142] now at stop in main
+W20251217 17:43:33.222538 11516 main.cpp:64] main is closed
+I20251217 17:43:33.421154 11516 MainReactor.hpp:28] at ~MainReactor()
+I20251217 17:43:33.421257 11516 MainReactor.hpp:142] now at stop in main
+W20251217 17:43:33.421298 11516 main.cpp:72] Server stopped
+W20251217 17:43:33.421310 11516 main.cpp:73] main end()
+I20251217 17:43:33.421332 11516 GlobalMoudle.cpp:8] just only one class is ~()

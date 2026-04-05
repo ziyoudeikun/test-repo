@@ -1,0 +1,20 @@
+Log file created at: 2025/12/17 18:06:39
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:03
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251217 18:06:39.953382 13562 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+W20251217 18:06:39.959838 13562 ConnectionHandler.hpp:166] 405562
+W20251217 18:06:40.206441 13564 ConnectionHandler.hpp:134] URL: /index.html
+W20251217 18:06:40.207980 13564 ConnectionHandler.hpp:166] 8924
+W20251217 18:06:44.123064 13566 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251217 18:06:44.124924 13566 ConnectionHandler.hpp:166] 67806
+W20251217 18:06:57.780048 13568 ConnectionHandler.hpp:134] URL: /video
+W20251217 18:06:57.781301 13568 ConnectionHandler.hpp:166] 1751
+W20251217 18:07:13.605998 13562 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+W20251217 18:07:13.606477 13562 ConnectionHandler.hpp:166] 4031
+W20251217 18:07:13.648917 13564 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+W20251217 18:07:13.658859 13564 ConnectionHandler.hpp:166] 405562
+W20251217 18:09:05.708318 13561 main.cpp:62] Shutting down server...
+W20251217 18:09:05.782410 13561 main.cpp:64] main is closed
+W20251217 18:09:05.910537 13561 main.cpp:72] Server stopped
+W20251217 18:09:05.910566 13561 main.cpp:73] main end()

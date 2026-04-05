@@ -1,0 +1,112 @@
+Log file created at: 2025/12/25 20:27:28
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251225 20:27:28.906183  9389 main.cpp:44] main begin
+I20251225 20:27:28.906416  9389 main.cpp:55] Server started on port 8080
+I20251225 20:27:28.906649  9389 main.cpp:62] begin
+I20251225 20:27:33.395183  9403 MainReactor.hpp:116] new connection
+I20251225 20:27:33.395378  9403 SubReactor.hpp:55] new fd:20
+I20251225 20:27:33.395493  9403 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251225 20:27:33.395541  9403 MainReactor.hpp:177] Accepted connection from 192.168.29.1:63098
+W20251225 20:27:33.395635  9391 ConnectionHandler.hpp:134] URL: /video
+I20251225 20:27:33.396021  9391 ConnectionHandler.hpp:156] GET
+I20251225 20:27:33.396037  9391 ConnectionHandler.hpp:157] /video
+I20251225 20:27:33.396409  9391 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: application/json
+Content-Length: 2080
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 20:27:33.396492  9391 Router.hpp:435] HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: application/json
+Content-Length: 2080
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+[{
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+},{
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+,{
+    "id": 100,
+    "name": "HELLOWORLD世界观：数据之海AES",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/enc/test/output.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}]
+I20251225 20:27:33.396044  9391 ConnectionHandler.hpp:164] 1
+W20251225 20:27:33.396550  9391 ConnectionHandler.hpp:166] 2521
+I20251225 20:27:33.396570  9391 SubReactor.hpp:60] old fd:20
+I20251225 20:27:33.396682  9392 ConnectionHandler.hpp:185] handle_write called, buffer size: 2521
+I20251225 20:27:33.396839  9392 ConnectionHandler.hpp:198] Attempted to send 2521 bytes, actually sent: 2521
+I20251225 20:27:33.396878  9392 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 20:27:33.396888  9392 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 20:27:33.396899  9392 SubReactor.hpp:60] old fd:20
+W20251225 20:27:42.282107  9393 ConnectionHandler.hpp:134] URL: /video/enc/test/output.m3u8
+I20251225 20:27:42.282254  9393 ConnectionHandler.hpp:156] GET
+I20251225 20:27:42.282272  9393 ConnectionHandler.hpp:157] /video/enc/test/output.m3u8
+I20251225 20:27:42.282280  9393 ConnectionHandler.hpp:164] 0
+W20251225 20:27:42.282307  9393 ConnectionHandler.hpp:166] 0
+I20251225 20:27:42.282330  9393 SubReactor.hpp:60] old fd:20
+I20251225 20:27:42.282560  9394 ConnectionHandler.hpp:185] handle_write called, buffer size: 0
+I20251225 20:27:42.282627  9394 ConnectionHandler.hpp:188] Write buffer is empty, disabling write event
+I20251225 20:27:42.282641  9394 SubReactor.hpp:60] old fd:20
+W20251225 20:27:54.916684  9389 main.cpp:69] Shutting down server...
+I20251225 20:27:54.916801  9389 MainReactor.hpp:142] now at stop in main
+W20251225 20:27:55.001394  9389 main.cpp:71] main is closed
+I20251225 20:27:55.233191  9389 MainReactor.hpp:28] at ~MainReactor()
+I20251225 20:27:55.233294  9389 MainReactor.hpp:142] now at stop in main
+W20251225 20:27:55.244379  9389 main.cpp:79] Server stopped
+W20251225 20:27:55.244495  9389 main.cpp:80] main end()
+I20251225 20:27:55.244676  9389 GlobalMoudle.cpp:8] just only one class is ~()

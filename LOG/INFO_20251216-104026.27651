@@ -1,0 +1,131 @@
+Log file created at: 2025/12/16 10:40:26
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251216 10:40:26.658903 27651 main.cpp:37] main begin
+I20251216 10:40:26.660866 27651 main.cpp:48] Server started on port 8080
+I20251216 10:40:26.661226 27651 main.cpp:55] begin
+I20251216 10:40:33.622792 27664 MainReactor.hpp:116] new connection
+I20251216 10:40:33.623046 27664 SubReactor.hpp:55] new fd:10
+I20251216 10:40:33.623090 27664 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251216 10:40:33.623102 27664 MainReactor.hpp:177] Accepted connection from 192.168.29.1:51143
+W20251216 10:40:33.637005 27652 ConnectionHandler.hpp:53] URL: /
+I20251216 10:40:33.639940 27652 Router.hpp:43] Read 8505 bytes from ../source/index.html
+I20251216 10:40:33.639835 27652 ConnectionHandler.hpp:75] 1
+I20251216 10:40:33.640254 27652 SubReactor.hpp:60] old fd:10
+I20251216 10:40:33.641089 27653 SubReactor.hpp:60] old fd:10
+I20251216 10:40:33.667073 27664 MainReactor.hpp:116] new connection
+I20251216 10:40:33.667449 27664 SubReactor.hpp:55] new fd:12
+I20251216 10:40:33.667513 27664 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251216 10:40:33.667533 27664 MainReactor.hpp:177] Accepted connection from 192.168.29.1:49367
+W20251216 10:40:36.122581 27654 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251216 10:40:36.124941 27654 Router.hpp:43] Read 67396 bytes from ../source//hlsparse.html
+I20251216 10:40:36.122812 27654 ConnectionHandler.hpp:75] 1
+I20251216 10:40:36.126708 27654 SubReactor.hpp:60] old fd:10
+I20251216 10:40:36.127152 27655 SubReactor.hpp:60] old fd:10
+W20251216 10:42:23.634230 27657 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251216 10:42:23.635321 27657 Router.hpp:43] Read 67396 bytes from ../source//hlsparse.html
+I20251216 10:42:23.635762 27664 MainReactor.hpp:116] new connection
+I20251216 10:42:23.636013 27664 SubReactor.hpp:55] new fd:12
+I20251216 10:42:23.636103 27664 SubReactorManager.hpp:55] this connection is used by sub :2
+I20251216 10:42:23.636137 27664 MainReactor.hpp:177] Accepted connection from 192.168.29.1:49840
+I20251216 10:42:23.635202 27657 ConnectionHandler.hpp:75] 1
+I20251216 10:42:23.636585 27657 SubReactor.hpp:60] old fd:10
+I20251216 10:42:23.636981 27658 SubReactor.hpp:60] old fd:10
+W20251216 10:42:23.755517 27659 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 10:42:23.756285 27659 Router.hpp:43] Read 2763 bytes from ../source/favicon.ico
+I20251216 10:42:23.755633 27659 ConnectionHandler.hpp:75] 1
+I20251216 10:42:23.756493 27659 SubReactor.hpp:60] old fd:10
+I20251216 10:42:23.756805 27652 SubReactor.hpp:60] old fd:10
+W20251216 10:43:22.143159 27653 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251216 10:43:22.143344 27653 Router.hpp:43] Read 67396 bytes from ../source//hlsparse.html
+I20251216 10:43:22.143281 27653 ConnectionHandler.hpp:75] 1
+I20251216 10:43:22.144457 27653 SubReactor.hpp:60] old fd:10
+I20251216 10:43:22.144928 27654 SubReactor.hpp:60] old fd:10
+W20251216 10:43:22.262697 27655 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 10:43:22.263043 27655 Router.hpp:43] Read 2763 bytes from ../source/favicon.ico
+I20251216 10:43:22.262949 27655 ConnectionHandler.hpp:75] 1
+I20251216 10:43:22.263305 27655 SubReactor.hpp:60] old fd:10
+I20251216 10:43:22.263638 27656 SubReactor.hpp:60] old fd:10
+I20251216 10:43:55.219198 27664 MainReactor.hpp:116] new connection
+I20251216 10:43:55.219390 27664 SubReactor.hpp:55] new fd:13
+I20251216 10:43:55.219411 27664 SubReactorManager.hpp:55] this connection is used by sub :3
+I20251216 10:43:55.219417 27664 MainReactor.hpp:177] Accepted connection from 192.168.29.1:49237
+W20251216 10:43:55.227985 27657 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251216 10:43:55.228272 27657 Router.hpp:43] Read 67396 bytes from ../source//hlsparse.html
+I20251216 10:43:55.228206 27657 ConnectionHandler.hpp:75] 1
+I20251216 10:43:55.229125 27657 SubReactor.hpp:60] old fd:13
+I20251216 10:43:55.229449 27658 SubReactor.hpp:60] old fd:13
+I20251216 10:43:55.230577 27664 MainReactor.hpp:116] new connection
+I20251216 10:43:55.231276 27664 SubReactor.hpp:55] new fd:14
+I20251216 10:43:55.231369 27664 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251216 10:43:55.231393 27664 MainReactor.hpp:177] Accepted connection from 192.168.29.1:58816
+W20251216 10:43:55.308485 27659 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 10:43:55.308687 27659 Router.hpp:43] Read 2763 bytes from ../source/favicon.ico
+I20251216 10:43:55.308610 27659 ConnectionHandler.hpp:75] 1
+I20251216 10:43:55.308790 27659 SubReactor.hpp:60] old fd:13
+I20251216 10:43:55.309284 27652 SubReactor.hpp:60] old fd:13
+W20251216 10:44:35.386956 27654 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251216 10:44:35.387481 27654 Router.hpp:43] Read 67396 bytes from ../source//hlsparse.html
+I20251216 10:44:35.387359 27654 ConnectionHandler.hpp:75] 1
+I20251216 10:44:35.388679 27654 SubReactor.hpp:60] old fd:10
+I20251216 10:44:35.388736 27664 MainReactor.hpp:116] new connection
+I20251216 10:44:35.388888 27664 SubReactor.hpp:55] new fd:12
+I20251216 10:44:35.388933 27664 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251216 10:44:35.388995 27664 MainReactor.hpp:177] Accepted connection from 192.168.29.1:52207
+I20251216 10:44:35.389184 27655 SubReactor.hpp:60] old fd:10
+W20251216 10:44:35.510509 27656 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 10:44:35.510753 27656 Router.hpp:43] Read 2763 bytes from ../source/favicon.ico
+I20251216 10:44:35.510645 27656 ConnectionHandler.hpp:75] 1
+I20251216 10:44:35.510928 27656 SubReactor.hpp:60] old fd:10
+I20251216 10:44:35.511353 27657 SubReactor.hpp:60] old fd:10
+W20251216 10:47:13.556244 27652 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251216 10:47:13.556469 27652 Router.hpp:43] Read 67396 bytes from ../source//hlsparse.html
+I20251216 10:47:13.556396 27652 ConnectionHandler.hpp:75] 1
+I20251216 10:47:13.557478 27652 SubReactor.hpp:60] old fd:10
+I20251216 10:47:13.557778 27653 SubReactor.hpp:60] old fd:10
+I20251216 10:47:13.557766 27664 MainReactor.hpp:116] new connection
+I20251216 10:47:13.557929 27664 SubReactor.hpp:55] new fd:12
+I20251216 10:47:13.557955 27664 SubReactorManager.hpp:55] this connection is used by sub :2
+I20251216 10:47:13.557961 27664 MainReactor.hpp:177] Accepted connection from 192.168.29.1:64381
+W20251216 10:47:13.686821 27654 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 10:47:13.687024 27654 Router.hpp:43] Read 2763 bytes from ../source/favicon.ico
+I20251216 10:47:13.686970 27654 ConnectionHandler.hpp:75] 1
+I20251216 10:47:13.687233 27654 SubReactor.hpp:60] old fd:10
+I20251216 10:47:13.687450 27655 SubReactor.hpp:60] old fd:10
+W20251216 10:48:32.256150 27657 ConnectionHandler.hpp:53] URL: /
+I20251216 10:48:32.256428 27657 Router.hpp:43] Read 8505 bytes from ../source/index.html
+I20251216 10:48:32.256359 27657 ConnectionHandler.hpp:75] 1
+I20251216 10:48:32.257705 27657 SubReactor.hpp:60] old fd:10
+I20251216 10:48:32.258245 27658 SubReactor.hpp:60] old fd:10
+I20251216 10:48:32.280300 27664 MainReactor.hpp:116] new connection
+I20251216 10:48:32.280530 27664 SubReactor.hpp:55] new fd:12
+I20251216 10:48:32.280568 27664 SubReactorManager.hpp:55] this connection is used by sub :3
+I20251216 10:48:32.280584 27664 MainReactor.hpp:177] Accepted connection from 192.168.29.1:50642
+W20251216 10:48:34.122192 27659 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251216 10:48:34.122372 27659 Router.hpp:43] Read 67396 bytes from ../source//hlsparse.html
+I20251216 10:48:34.122313 27659 ConnectionHandler.hpp:75] 1
+I20251216 10:48:34.123275 27659 SubReactor.hpp:60] old fd:10
+I20251216 10:48:34.123735 27652 SubReactor.hpp:60] old fd:10
+W20251216 10:48:50.947372 27653 ConnectionHandler.hpp:53] URL: /hlsparse.html
+I20251216 10:48:50.947513 27653 Router.hpp:43] Read 67396 bytes from ../source//hlsparse.html
+I20251216 10:48:50.947468 27653 ConnectionHandler.hpp:75] 1
+I20251216 10:48:50.948300 27653 SubReactor.hpp:60] old fd:10
+I20251216 10:48:50.948580 27654 SubReactor.hpp:60] old fd:10
+W20251216 10:48:51.056214 27655 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 10:48:51.056497 27655 Router.hpp:43] Read 2763 bytes from ../source/favicon.ico
+I20251216 10:48:51.056406 27655 ConnectionHandler.hpp:75] 1
+I20251216 10:48:51.056607 27655 SubReactor.hpp:60] old fd:10
+I20251216 10:48:51.056955 27656 SubReactor.hpp:60] old fd:10
+W20251216 10:50:56.716738 27659 ConnectionHandler.hpp:53] URL: /video
+I20251216 10:50:56.716864 27659 ConnectionHandler.hpp:75] 0
+I20251216 10:50:56.716904 27659 SubReactor.hpp:60] old fd:10
+I20251216 10:50:56.717034 27652 SubReactor.hpp:60] old fd:10
+W20251216 19:52:56.049135 27651 main.cpp:62] Shutting down server...
+I20251216 19:52:56.053978 27651 MainReactor.hpp:142] now at stop in main
+W20251216 19:52:56.058584 27651 main.cpp:64] main is closed
+I20251216 19:52:56.274511 27651 MainReactor.hpp:28] at ~MainReactor()
+I20251216 19:52:56.274636 27651 MainReactor.hpp:142] now at stop in main
+W20251216 19:52:56.274715 27651 main.cpp:72] Server stopped
+W20251216 19:52:56.275056 27651 main.cpp:73] main end()
+I20251216 19:52:56.277405 27651 GlobalMoudle.cpp:8] just only one class is ~()

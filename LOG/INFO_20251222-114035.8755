@@ -1,0 +1,31 @@
+Log file created at: 2025/12/22 11:40:35
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251222 11:40:35.122845  8755 main.cpp:37] main begin
+I20251222 11:40:35.123324  8755 main.cpp:48] Server started on port 8080
+I20251222 11:40:35.123575  8755 main.cpp:55] begin
+I20251222 11:40:39.190058  8768 MainReactor.hpp:116] new connection
+I20251222 11:40:39.190268  8768 SubReactor.hpp:55] new fd:10
+I20251222 11:40:39.190297  8768 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251222 11:40:39.190305  8768 MainReactor.hpp:177] Accepted connection from 192.168.29.1:56776
+W20251222 11:40:39.190529  8756 ConnectionHandler.hpp:134] URL: /login
+I20251222 11:40:39.191190  8756 ConnectionHandler.hpp:156] POST
+I20251222 11:40:39.191247  8756 ConnectionHandler.hpp:157] /login
+I20251222 11:40:39.191408  8756 Router.hpp:451] now post login
+I20251222 11:40:39.191507  8756 Router.hpp:455] {"username":"admin","password":"pwd","timestamp":1766374838,"nonce":"6b178cdb37dca608","app_id":"hls_toolbox_web","sign":"47d6a3c1d9f50f21ccbc91ae80b5cbb2"}
+I20251222 11:40:39.191617  8756 Router.hpp:456] null
+I20251222 11:40:39.191387  8756 ConnectionHandler.hpp:164] 1
+W20251222 11:40:39.191689  8756 ConnectionHandler.hpp:166] 0
+I20251222 11:40:39.191743  8756 SubReactor.hpp:60] old fd:10
+I20251222 11:40:39.191927  8757 ConnectionHandler.hpp:185] handle_write called, buffer size: 0
+I20251222 11:40:39.192031  8757 ConnectionHandler.hpp:188] Write buffer is empty, disabling write event
+I20251222 11:40:39.192059  8757 SubReactor.hpp:60] old fd:10
+W20251222 11:41:53.176286  8755 main.cpp:62] Shutting down server...
+I20251222 11:41:53.176607  8755 MainReactor.hpp:142] now at stop in main
+W20251222 11:41:53.230281  8755 main.cpp:64] main is closed
+I20251222 11:41:53.391396  8755 MainReactor.hpp:28] at ~MainReactor()
+I20251222 11:41:53.391495  8755 MainReactor.hpp:142] now at stop in main
+W20251222 11:41:53.391541  8755 main.cpp:72] Server stopped
+W20251222 11:41:53.391573  8755 main.cpp:73] main end()
+I20251222 11:41:53.391853  8755 GlobalMoudle.cpp:8] just only one class is ~()

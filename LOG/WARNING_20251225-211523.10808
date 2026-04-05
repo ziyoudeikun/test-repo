@@ -1,0 +1,22 @@
+Log file created at: 2025/12/25 21:15:23
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:01
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251225 21:15:23.624781 10810 ConnectionHandler.hpp:134] URL: /index.html
+W20251225 21:15:23.625921 10810 ConnectionHandler.hpp:166] 28301
+W20251225 21:15:23.727360 10812 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251225 21:15:23.728371 10812 ConnectionHandler.hpp:166] 3197
+W20251225 21:15:36.173246 10814 ConnectionHandler.hpp:134] URL: /hlsparse.html
+W20251225 21:15:36.175318 10814 ConnectionHandler.hpp:166] 67821
+W20251225 21:15:39.516220 10816 ConnectionHandler.hpp:134] URL: /video
+W20251225 21:15:39.516939 10816 ConnectionHandler.hpp:166] 2521
+W20251225 21:15:41.160706 10810 ConnectionHandler.hpp:134] URL: /video/enc/test/output.m3u8
+W20251225 21:15:41.160924 10810 ConnectionHandler.hpp:166] 2660
+W20251225 21:15:41.172945 10812 ConnectionHandler.hpp:134] URL: /video/enc/test/output000.ts
+W20251225 21:15:41.173027 10813 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+W20251225 21:15:41.174540 10812 ConnectionHandler.hpp:166] 0
+W20251225 21:15:41.174990 10813 ConnectionHandler.hpp:166] 457
+W20251225 21:18:59.260996 10808 main.cpp:69] Shutting down server...
+W20251225 21:18:59.297250 10808 main.cpp:71] main is closed
+W20251225 21:18:59.475348 10808 main.cpp:79] Server stopped
+W20251225 21:18:59.475500 10808 main.cpp:80] main end()

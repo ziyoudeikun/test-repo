@@ -1,0 +1,14 @@
+Log file created at: 2025/12/25 19:02:09
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:06
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251225 19:02:09.715513  4499 ConnectionHandler.hpp:134] URL: /index.html
+W20251225 19:02:09.717126  4499 ConnectionHandler.hpp:166] 28301
+W20251225 19:02:09.758318  4501 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251225 19:02:09.759258  4501 ConnectionHandler.hpp:166] 3197
+W20251225 19:02:16.348399  4503 ConnectionHandler.hpp:134] URL: /encrypt.html
+W20251225 19:02:16.348660  4503 ConnectionHandler.hpp:166] 0
+W20251225 19:02:36.743726  4486 main.cpp:69] Shutting down server...
+W20251225 19:02:36.759582  4486 main.cpp:71] main is closed
+W20251225 19:02:36.997773  4486 main.cpp:79] Server stopped
+W20251225 19:02:36.997931  4486 main.cpp:80] main end()

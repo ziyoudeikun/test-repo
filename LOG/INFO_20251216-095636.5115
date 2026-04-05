@@ -1,0 +1,36 @@
+Log file created at: 2025/12/16 09:56:36
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251216 09:56:36.426618  5115 main.cpp:37] main begin
+I20251216 09:56:36.427182  5115 main.cpp:48] Server started on port 8080
+I20251216 09:56:36.427657  5115 main.cpp:55] begin
+I20251216 09:56:42.772927  5128 MainReactor.hpp:116] new connection
+I20251216 09:56:42.773221  5128 SubReactor.hpp:55] new fd:10
+I20251216 09:56:42.773264  5128 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251216 09:56:42.773272  5128 MainReactor.hpp:177] Accepted connection from 192.168.29.1:53724
+W20251216 09:56:42.780594  5116 ConnectionHandler.hpp:53] URL: /
+I20251216 09:56:42.781132  5116 Router.hpp:43] Read 8505 bytes from ../source/index.html
+I20251216 09:56:42.780807  5116 ConnectionHandler.hpp:75] 1
+I20251216 09:56:42.781422  5116 SubReactor.hpp:60] old fd:10
+I20251216 09:56:42.781908  5117 SubReactor.hpp:60] old fd:10
+I20251216 09:56:42.787820  5128 MainReactor.hpp:116] new connection
+I20251216 09:56:42.788290  5128 SubReactor.hpp:55] new fd:12
+I20251216 09:56:42.788439  5128 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251216 09:56:42.788514  5128 MainReactor.hpp:177] Accepted connection from 192.168.29.1:63188
+W20251216 09:56:42.826588  5118 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251216 09:56:42.826754  5118 ConnectionHandler.hpp:75] 0
+I20251216 09:56:42.826813  5118 SubReactor.hpp:60] old fd:10
+I20251216 09:56:42.826954  5119 SubReactor.hpp:60] old fd:10
+W20251216 09:56:46.269829  5120 ConnectionHandler.hpp:53] URL: /tsparse.html
+I20251216 09:56:46.269924  5120 ConnectionHandler.hpp:75] 0
+I20251216 09:56:46.269939  5120 SubReactor.hpp:60] old fd:12
+I20251216 09:56:46.270053  5120 SubReactor.hpp:60] old fd:12
+W20251216 09:57:27.450126  5115 main.cpp:62] Shutting down server...
+I20251216 09:57:27.450274  5115 MainReactor.hpp:142] now at stop in main
+W20251216 09:57:27.483517  5115 main.cpp:64] main is closed
+I20251216 09:57:27.768425  5115 MainReactor.hpp:28] at ~MainReactor()
+I20251216 09:57:27.768534  5115 MainReactor.hpp:142] now at stop in main
+W20251216 09:57:27.768576  5115 main.cpp:72] Server stopped
+W20251216 09:57:27.768596  5115 main.cpp:73] main end()
+I20251216 09:57:27.768617  5115 GlobalMoudle.cpp:8] just only one class is ~()

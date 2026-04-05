@@ -1,0 +1,83 @@
+Log file created at: 2025/12/17 17:55:41
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251217 17:55:41.463825 12485 main.cpp:37] main begin
+I20251217 17:55:41.464133 12485 main.cpp:48] Server started on port 8080
+I20251217 17:55:41.464570 12485 main.cpp:55] begin
+I20251217 17:55:49.457262 12499 MainReactor.hpp:116] new connection
+I20251217 17:55:49.457595 12499 SubReactor.hpp:55] new fd:10
+I20251217 17:55:49.457648 12499 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 17:55:49.457674 12499 MainReactor.hpp:177] Accepted connection from 192.168.29.1:52734
+W20251217 17:55:49.471508 12487 ConnectionHandler.hpp:134] URL: /index.html
+I20251217 17:55:49.472366 12487 ConnectionHandler.hpp:156] GET
+I20251217 17:55:49.472450 12487 ConnectionHandler.hpp:157] /index.html
+I20251217 17:55:49.472985 12487 Router.hpp:110] Read 8505 bytes from ../source/index.html
+I20251217 17:55:49.473196 12487 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 8505
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:55:49.472469 12487 ConnectionHandler.hpp:164] 1
+W20251217 17:55:49.473594 12487 ConnectionHandler.hpp:166] 8924
+I20251217 17:55:49.473675 12487 SubReactor.hpp:60] old fd:10
+I20251217 17:55:49.474715 12488 SubReactor.hpp:60] old fd:10
+I20251217 17:55:49.486977 12499 MainReactor.hpp:116] new connection
+I20251217 17:55:49.487335 12499 SubReactor.hpp:55] new fd:12
+I20251217 17:55:49.487519 12499 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251217 17:55:49.487555 12499 MainReactor.hpp:177] Accepted connection from 192.168.29.1:49246
+W20251217 17:55:49.684998 12489 ConnectionHandler.hpp:134] URL: /favicon.ico
+I20251217 17:55:49.685196 12489 ConnectionHandler.hpp:156] GET
+I20251217 17:55:49.685228 12489 ConnectionHandler.hpp:157] /favicon.ico
+I20251217 17:55:49.685985 12489 Router.hpp:110] Read 2763 bytes from ../source/favicon.ico
+I20251217 17:55:49.686209 12489 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 2763
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:55:49.685245 12489 ConnectionHandler.hpp:164] 1
+W20251217 17:55:49.686396 12489 ConnectionHandler.hpp:166] 3182
+I20251217 17:55:49.686468 12489 SubReactor.hpp:60] old fd:10
+I20251217 17:55:49.687206 12490 SubReactor.hpp:60] old fd:10
+W20251217 17:55:59.278944 12491 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251217 17:55:59.279071 12491 ConnectionHandler.hpp:156] GET
+I20251217 17:55:59.279083 12491 ConnectionHandler.hpp:157] /hlsparse.html
+I20251217 17:55:59.279475 12491 Router.hpp:110] Read 67386 bytes from ../source//hlsparse.html
+I20251217 17:55:59.279560 12491 Router.hpp:166] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Range
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Content-Type: text/html
+Content-Length: 67386
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251217 17:55:59.279088 12491 ConnectionHandler.hpp:164] 1
+W20251217 17:55:59.280485 12491 ConnectionHandler.hpp:166] 67806
+I20251217 17:55:59.280540 12491 SubReactor.hpp:60] old fd:10
+I20251217 17:55:59.296195 12492 SubReactor.hpp:60] old fd:10
+W20251217 17:56:09.477530 12485 main.cpp:62] Shutting down server...
+I20251217 17:56:09.477669 12485 MainReactor.hpp:142] now at stop in main
+W20251217 17:56:09.482892 12485 main.cpp:64] main is closed
+I20251217 17:56:09.709340 12485 MainReactor.hpp:28] at ~MainReactor()
+I20251217 17:56:09.709461 12485 MainReactor.hpp:142] now at stop in main
+W20251217 17:56:09.709504 12485 main.cpp:72] Server stopped
+W20251217 17:56:09.709522 12485 main.cpp:73] main end()
+I20251217 17:56:09.709753 12485 GlobalMoudle.cpp:8] just only one class is ~()

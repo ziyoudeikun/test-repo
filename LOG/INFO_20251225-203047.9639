@@ -1,0 +1,202 @@
+Log file created at: 2025/12/25 20:30:47
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251225 20:30:47.656381  9639 main.cpp:44] main begin
+I20251225 20:30:47.656898  9639 main.cpp:55] Server started on port 8080
+I20251225 20:30:47.657215  9639 main.cpp:62] begin
+I20251225 20:30:54.444864  9653 MainReactor.hpp:116] new connection
+I20251225 20:30:54.445056  9653 SubReactor.hpp:55] new fd:20
+I20251225 20:30:54.445075  9653 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251225 20:30:54.445097  9653 MainReactor.hpp:177] Accepted connection from 192.168.29.1:64553
+W20251225 20:30:54.520807  9641 ConnectionHandler.hpp:134] URL: /index.html
+I20251225 20:30:54.521588  9641 ConnectionHandler.hpp:156] GET
+I20251225 20:30:54.521654  9641 ConnectionHandler.hpp:157] /index.html
+I20251225 20:30:54.522023  9641 Router.hpp:112] Read 27866 bytes from ../source/index.html
+I20251225 20:30:54.522127  9641 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 27866
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 20:30:54.521687  9641 ConnectionHandler.hpp:164] 1
+W20251225 20:30:54.522588  9641 ConnectionHandler.hpp:166] 28301
+I20251225 20:30:54.522656  9641 SubReactor.hpp:60] old fd:20
+I20251225 20:30:54.522840  9642 ConnectionHandler.hpp:185] handle_write called, buffer size: 28301
+I20251225 20:30:54.523314  9642 ConnectionHandler.hpp:198] Attempted to send 28301 bytes, actually sent: 28301
+I20251225 20:30:54.523393  9642 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 20:30:54.523419  9642 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 20:30:54.523435  9642 SubReactor.hpp:60] old fd:20
+I20251225 20:30:54.532522  9653 MainReactor.hpp:116] new connection
+I20251225 20:30:54.532737  9653 SubReactor.hpp:55] new fd:22
+I20251225 20:30:54.532765  9653 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251225 20:30:54.532776  9653 MainReactor.hpp:177] Accepted connection from 192.168.29.1:49964
+W20251225 20:30:55.801759  9643 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251225 20:30:55.801872  9643 ConnectionHandler.hpp:156] GET
+I20251225 20:30:55.801880  9643 ConnectionHandler.hpp:157] /hlsparse.html
+I20251225 20:30:55.802045  9643 Router.hpp:112] Read 67386 bytes from ../source//hlsparse.html
+I20251225 20:30:55.802086  9643 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 67386
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 20:30:55.801888  9643 ConnectionHandler.hpp:164] 1
+W20251225 20:30:55.803023  9643 ConnectionHandler.hpp:166] 67821
+I20251225 20:30:55.803051  9643 SubReactor.hpp:60] old fd:20
+I20251225 20:30:55.803207  9644 ConnectionHandler.hpp:185] handle_write called, buffer size: 67821
+I20251225 20:30:55.803557  9644 ConnectionHandler.hpp:198] Attempted to send 67821 bytes, actually sent: 67821
+I20251225 20:30:55.803612  9644 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 20:30:55.803622  9644 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 20:30:55.803634  9644 SubReactor.hpp:60] old fd:20
+W20251225 20:30:56.811156  9645 ConnectionHandler.hpp:134] URL: /video
+I20251225 20:30:56.811250  9645 ConnectionHandler.hpp:156] GET
+I20251225 20:30:56.811270  9645 ConnectionHandler.hpp:157] /video
+I20251225 20:30:56.811653  9645 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: application/json
+Content-Length: 2080
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 20:30:56.811769  9645 Router.hpp:435] HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: application/json
+Content-Length: 2080
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+[{
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+},{
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+,{
+    "id": 100,
+    "name": "HELLOWORLD世界观：数据之海AES",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/enc/test/output.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}]
+I20251225 20:30:56.811280  9645 ConnectionHandler.hpp:164] 1
+W20251225 20:30:56.811825  9645 ConnectionHandler.hpp:166] 2521
+I20251225 20:30:56.811854  9645 SubReactor.hpp:60] old fd:20
+I20251225 20:30:56.811956  9646 ConnectionHandler.hpp:185] handle_write called, buffer size: 2521
+I20251225 20:30:56.812157  9646 ConnectionHandler.hpp:198] Attempted to send 2521 bytes, actually sent: 2521
+I20251225 20:30:56.812198  9646 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 20:30:56.812207  9646 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 20:30:56.812217  9646 SubReactor.hpp:60] old fd:20
+W20251225 20:30:58.039953  9647 ConnectionHandler.hpp:134] URL: /video/enc/test/output.m3u8
+I20251225 20:30:58.040050  9647 ConnectionHandler.hpp:156] GET
+I20251225 20:30:58.040069  9647 ConnectionHandler.hpp:157] /video/enc/test/output.m3u8
+I20251225 20:30:58.040835  9647 Router.hpp:112] Read 2141 bytes from ../source/video/enc/test/output.m3u8
+I20251225 20:30:58.040916  9647 Router.hpp:172] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: application/x-mpegURL
+Content-Length: 2141
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251225 20:30:58.040078  9647 ConnectionHandler.hpp:164] 1
+W20251225 20:30:58.041007  9647 ConnectionHandler.hpp:166] 2587
+I20251225 20:30:58.041028  9647 SubReactor.hpp:60] old fd:20
+I20251225 20:30:58.041126  9648 ConnectionHandler.hpp:185] handle_write called, buffer size: 2587
+I20251225 20:30:58.041280  9648 ConnectionHandler.hpp:198] Attempted to send 2587 bytes, actually sent: 2587
+I20251225 20:30:58.041301  9648 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251225 20:30:58.041349  9648 ConnectionHandler.hpp:239] All data sent successfully
+I20251225 20:30:58.041388  9648 SubReactor.hpp:60] old fd:20
+W20251225 20:30:58.057337  9641 ConnectionHandler.hpp:134] URL: /source/key/enc.key
+I20251225 20:30:58.057752  9641 ConnectionHandler.hpp:156] GET
+I20251225 20:30:58.057935  9641 ConnectionHandler.hpp:157] /source/key/enc.key
+W20251225 20:30:58.057906  9642 ConnectionHandler.hpp:134] URL: /video/enc/test/output0.ts
+I20251225 20:30:58.058116  9642 ConnectionHandler.hpp:156] GET
+I20251225 20:30:58.058149  9642 ConnectionHandler.hpp:157] /video/enc/test/output0.ts
+I20251225 20:30:58.058176  9642 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/enc/test/outp
+I20251225 20:30:58.058193  9642 ConnectionHandler.hpp:162] its seg num is ut0
+I20251225 20:30:58.058216  9642 ConnectionHandler.hpp:164] 0
+W20251225 20:30:58.058243  9642 ConnectionHandler.hpp:166] 0
+I20251225 20:30:58.058030  9641 ConnectionHandler.hpp:164] 0
+W20251225 20:30:58.058612  9641 ConnectionHandler.hpp:166] 0
+I20251225 20:30:58.058647  9642 SubReactor.hpp:60] old fd:22
+I20251225 20:30:58.058660  9641 SubReactor.hpp:60] old fd:20
+I20251225 20:30:58.058892  9643 ConnectionHandler.hpp:185] handle_write called, buffer size: 0
+I20251225 20:30:58.060217  9643 ConnectionHandler.hpp:188] Write buffer is empty, disabling write event
+I20251225 20:30:58.060286  9643 SubReactor.hpp:60] old fd:22
+I20251225 20:30:58.060343  9643 ConnectionHandler.hpp:185] handle_write called, buffer size: 0
+I20251225 20:30:58.060364  9643 ConnectionHandler.hpp:188] Write buffer is empty, disabling write event
+I20251225 20:30:58.060387  9643 SubReactor.hpp:60] old fd:20
+W20251225 20:31:30.680979  9639 main.cpp:69] Shutting down server...
+I20251225 20:31:30.681128  9639 MainReactor.hpp:142] now at stop in main
+W20251225 20:31:30.709919  9639 main.cpp:71] main is closed
+I20251225 20:31:30.856446  9639 MainReactor.hpp:28] at ~MainReactor()
+I20251225 20:31:30.856580  9639 MainReactor.hpp:142] now at stop in main
+W20251225 20:31:30.869257  9639 main.cpp:79] Server stopped
+W20251225 20:31:30.869369  9639 main.cpp:80] main end()
+I20251225 20:31:30.869578  9639 GlobalMoudle.cpp:8] just only one class is ~()

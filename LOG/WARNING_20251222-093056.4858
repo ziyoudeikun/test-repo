@@ -1,0 +1,28 @@
+Log file created at: 2025/12/22 09:30:56
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:21
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W20251222 09:30:56.503082  4859 ConnectionHandler.hpp:134] URL: /
+W20251222 09:30:56.503875  4859 ConnectionHandler.hpp:166] 10202
+W20251222 09:41:46.464387  4862 ConnectionHandler.hpp:134] URL: /
+W20251222 09:41:46.465238  4862 ConnectionHandler.hpp:166] 28353
+W20251222 09:41:46.503954  4865 ConnectionHandler.hpp:134] URL: /favicon.ico
+W20251222 09:41:46.504386  4865 ConnectionHandler.hpp:166] 3197
+W20251222 09:41:50.691098  4859 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 09:41:50.691407  4859 ConnectionHandler.hpp:166] 0
+W20251222 09:41:56.528888  4863 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 09:41:56.529362  4863 ConnectionHandler.hpp:166] 0
+W20251222 09:42:25.620054  4865 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 09:42:25.620446  4865 ConnectionHandler.hpp:166] 0
+W20251222 09:42:27.753111  4860 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 09:42:27.753247  4860 ConnectionHandler.hpp:166] 0
+W20251222 09:42:28.538547  4862 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 09:42:28.538714  4862 ConnectionHandler.hpp:166] 0
+W20251222 09:42:31.902006  4866 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 09:42:31.902459  4866 ConnectionHandler.hpp:166] 0
+W20251222 09:42:54.664916  4861 ConnectionHandler.hpp:134] URL: /login.html
+W20251222 09:42:54.665062  4861 ConnectionHandler.hpp:166] 0
+W20251222 09:45:05.941226  4858 main.cpp:62] Shutting down server...
+W20251222 09:45:06.031467  4858 main.cpp:64] main is closed
+W20251222 09:45:06.216324  4858 main.cpp:72] Server stopped
+W20251222 09:45:06.216344  4858 main.cpp:73] main end()

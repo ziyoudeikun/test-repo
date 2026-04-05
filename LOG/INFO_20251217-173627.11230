@@ -1,0 +1,167 @@
+Log file created at: 2025/12/17 17:36:27
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251217 17:36:27.095191 11230 main.cpp:37] main begin
+I20251217 17:36:27.095767 11230 main.cpp:48] Server started on port 8080
+I20251217 17:36:27.096109 11230 main.cpp:55] begin
+I20251217 17:36:30.617013 11243 MainReactor.hpp:116] new connection
+I20251217 17:36:30.617174 11243 SubReactor.hpp:55] new fd:10
+I20251217 17:36:30.617193 11243 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251217 17:36:30.617293 11243 MainReactor.hpp:177] Accepted connection from 192.168.29.128:34002
+W20251217 17:36:30.617360 11231 ConnectionHandler.hpp:134] URL: /
+I20251217 17:36:30.617499 11231 ConnectionHandler.hpp:156] GET
+I20251217 17:36:30.617506 11231 ConnectionHandler.hpp:157] /
+I20251217 17:36:30.617672 11231 Router.hpp:110] Read 8505 bytes from ../source/index.html
+I20251217 17:36:30.617511 11231 ConnectionHandler.hpp:164] 1
+W20251217 17:36:30.618007 11231 ConnectionHandler.hpp:166] 8658
+I20251217 17:36:30.618059 11231 SubReactor.hpp:60] old fd:10
+I20251217 17:36:30.618239 11231 SubReactor.hpp:60] old fd:10
+W20251217 17:36:31.489347 11233 ConnectionHandler.hpp:134] URL: /favicon.ico
+I20251217 17:36:31.489619 11233 ConnectionHandler.hpp:156] GET
+I20251217 17:36:31.489665 11233 ConnectionHandler.hpp:157] /favicon.ico
+I20251217 17:36:31.489960 11233 Router.hpp:110] Read 2763 bytes from ../source/favicon.ico
+I20251217 17:36:31.489682 11233 ConnectionHandler.hpp:164] 1
+W20251217 17:36:31.490152 11233 ConnectionHandler.hpp:166] 2916
+I20251217 17:36:31.490195 11233 SubReactor.hpp:60] old fd:10
+I20251217 17:36:31.490350 11234 SubReactor.hpp:60] old fd:10
+W20251217 17:36:33.033903 11235 ConnectionHandler.hpp:134] URL: /hlsparse.html
+I20251217 17:36:33.034027 11235 ConnectionHandler.hpp:156] GET
+I20251217 17:36:33.034052 11235 ConnectionHandler.hpp:157] /hlsparse.html
+I20251217 17:36:33.034422 11235 Router.hpp:110] Read 67386 bytes from ../source//hlsparse.html
+I20251217 17:36:33.034063 11235 ConnectionHandler.hpp:164] 1
+W20251217 17:36:33.035514 11235 ConnectionHandler.hpp:166] 67540
+I20251217 17:36:33.035560 11235 SubReactor.hpp:60] old fd:10
+I20251217 17:36:33.035801 11236 SubReactor.hpp:60] old fd:10
+W20251217 17:36:34.728814 11237 ConnectionHandler.hpp:134] URL: /video
+I20251217 17:36:34.728968 11237 ConnectionHandler.hpp:156] GET
+I20251217 17:36:34.728994 11237 ConnectionHandler.hpp:157] /video
+I20251217 17:36:34.730284 11237 Router.hpp:55] {
+    "id": 10,
+    "name": "HELLOWORLD世界观：数据之海",
+    "description": "《HELLOWORLD》世界观补充动画第一部分。在虚拟与现实交织的世界中，探索数据之海的奥秘，揭示数字生命与人类意识的深层联系。",
+    "cover": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "url": "http://192.168.29.128:9009/video/helloworld_sp_01/newworld_sp_01.m3u8",
+    "size": "356.2 MB",
+    "duration": "22:15",
+    "updated": "2023-11-03 16:45:12",
+    "bitrate": "4.2 Mbps",
+    "resolution": "2560x1440",
+    "framerate": "60 fps",
+    "codec": "H.265/AAC",
+    "category": "世界观补充",
+    "tags": ["HELLOWORLD", "动画电影", "世界观", "科幻"]
+}
+I20251217 17:36:34.730881 11237 Router.hpp:55] {
+    "id": 1,
+    "name": "自然风光纪录片",
+    "description": "高清自然风光纪录片，展示世界各地的壮丽景色。",
+    "cover": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4",
+    "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "size": "245.8 MB",
+    "duration": "15:30",
+    "updated": "2023-11-05 14:30:22",
+    "bitrate": "3.5 Mbps",
+    "resolution": "1920x1080",
+    "framerate": "30 fps",
+    "codec": "H.264/AAC",
+    "category": "纪录片",
+    "tags": ["自然", "风光", "高清"]
+  }
+I20251217 17:36:34.729005 11237 ConnectionHandler.hpp:164] 1
+W20251217 17:36:34.730978 11237 ConnectionHandler.hpp:166] 1485
+I20251217 17:36:34.731015 11237 SubReactor.hpp:60] old fd:10
+I20251217 17:36:34.731281 11238 SubReactor.hpp:60] old fd:10
+W20251217 17:36:36.598416 11232 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:36:36.599355 11232 ConnectionHandler.hpp:156] GET
+I20251217 17:36:36.599467 11232 ConnectionHandler.hpp:157] /video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:36:36.599752 11232 Router.hpp:110] Read 3612 bytes from ../source/video/helloworld_sp_01/newworld_sp_01.m3u8
+I20251217 17:36:36.599526 11232 ConnectionHandler.hpp:164] 1
+W20251217 17:36:36.600015 11232 ConnectionHandler.hpp:166] 3765
+I20251217 17:36:36.600135 11232 SubReactor.hpp:60] old fd:10
+I20251217 17:36:36.600371 11231 SubReactor.hpp:60] old fd:10
+W20251217 17:36:36.656877 11233 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_000.ts
+I20251217 17:36:36.657042 11233 ConnectionHandler.hpp:156] GET
+I20251217 17:36:36.657090 11233 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_000.ts
+I20251217 17:36:36.657143 11233 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:36:36.657171 11233 ConnectionHandler.hpp:162] its seg num is 000
+I20251217 17:36:36.657227 11233 Router.hpp:417] ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:36:36.658515 11233 Router.hpp:110] Read 405140 bytes from ../source/video/helloworld_sp_01/segment_000.ts
+I20251217 17:36:36.657203 11233 ConnectionHandler.hpp:164] 1
+W20251217 17:36:36.665753 11233 ConnectionHandler.hpp:166] 405296
+I20251217 17:36:36.665899 11233 SubReactor.hpp:60] old fd:10
+I20251217 17:36:36.666313 11234 SubReactor.hpp:60] old fd:10
+W20251217 17:36:36.881935 11235 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_001.ts
+I20251217 17:36:36.882063 11235 ConnectionHandler.hpp:156] GET
+I20251217 17:36:36.882076 11235 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_001.ts
+I20251217 17:36:36.882090 11235 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:36:36.882100 11235 ConnectionHandler.hpp:162] its seg num is 001
+I20251217 17:36:36.882118 11235 Router.hpp:417] ../source/video/helloworld_sp_01/segment_001.ts
+I20251217 17:36:36.885286 11235 Router.hpp:110] Read 1923428 bytes from ../source/video/helloworld_sp_01/segment_001.ts
+I20251217 17:36:36.882110 11235 ConnectionHandler.hpp:164] 1
+W20251217 17:36:36.912375 11235 ConnectionHandler.hpp:166] 1923585
+I20251217 17:36:36.912477 11235 SubReactor.hpp:60] old fd:10
+I20251217 17:36:36.913400 11236 SubReactor.hpp:60] old fd:10
+W20251217 17:36:37.115669 11237 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_002.ts
+I20251217 17:36:37.115803 11237 ConnectionHandler.hpp:156] GET
+I20251217 17:36:37.115825 11237 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_002.ts
+I20251217 17:36:37.115844 11237 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:36:37.115859 11237 ConnectionHandler.hpp:162] its seg num is 002
+I20251217 17:36:37.116142 11237 Router.hpp:417] ../source/video/helloworld_sp_01/segment_002.ts
+I20251217 17:36:37.118115 11237 Router.hpp:110] Read 936804 bytes from ../source/video/helloworld_sp_01/segment_002.ts
+I20251217 17:36:37.115872 11237 ConnectionHandler.hpp:164] 1
+W20251217 17:36:37.134099 11237 ConnectionHandler.hpp:166] 936960
+I20251217 17:36:37.134341 11237 SubReactor.hpp:60] old fd:10
+I20251217 17:36:37.135076 11238 SubReactor.hpp:60] old fd:10
+W20251217 17:36:37.202163 11232 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_003.ts
+I20251217 17:36:37.202339 11232 ConnectionHandler.hpp:156] GET
+I20251217 17:36:37.202364 11232 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_003.ts
+I20251217 17:36:37.202409 11232 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:36:37.202440 11232 ConnectionHandler.hpp:162] its seg num is 003
+I20251217 17:36:37.202491 11232 Router.hpp:417] ../source/video/helloworld_sp_01/segment_003.ts
+I20251217 17:36:37.203222 11232 Router.hpp:110] Read 160176 bytes from ../source/video/helloworld_sp_01/segment_003.ts
+I20251217 17:36:37.202468 11232 ConnectionHandler.hpp:164] 1
+W20251217 17:36:37.206532 11232 ConnectionHandler.hpp:166] 160332
+I20251217 17:36:37.206725 11232 SubReactor.hpp:60] old fd:10
+I20251217 17:36:37.207053 11231 SubReactor.hpp:60] old fd:10
+W20251217 17:36:37.231334 11233 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_004.ts
+I20251217 17:36:37.231487 11233 ConnectionHandler.hpp:156] GET
+I20251217 17:36:37.231506 11233 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_004.ts
+I20251217 17:36:37.231526 11233 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:36:37.231542 11233 ConnectionHandler.hpp:162] its seg num is 004
+I20251217 17:36:37.231571 11233 Router.hpp:417] ../source/video/helloworld_sp_01/segment_004.ts
+I20251217 17:36:37.233017 11233 Router.hpp:110] Read 800880 bytes from ../source/video/helloworld_sp_01/segment_004.ts
+I20251217 17:36:37.231559 11233 ConnectionHandler.hpp:164] 1
+W20251217 17:36:37.246276 11233 ConnectionHandler.hpp:166] 801036
+I20251217 17:36:37.246388 11233 SubReactor.hpp:60] old fd:10
+I20251217 17:36:37.247092 11234 SubReactor.hpp:60] old fd:10
+W20251217 17:36:47.103237 11235 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_005.ts
+I20251217 17:36:47.103343 11235 ConnectionHandler.hpp:156] GET
+I20251217 17:36:47.103354 11235 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_005.ts
+I20251217 17:36:47.103367 11235 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:36:47.103376 11235 ConnectionHandler.hpp:162] its seg num is 005
+I20251217 17:36:47.103421 11235 Router.hpp:417] ../source/video/helloworld_sp_01/segment_005.ts
+I20251217 17:36:47.104815 11235 Router.hpp:110] Read 814416 bytes from ../source/video/helloworld_sp_01/segment_005.ts
+I20251217 17:36:47.103411 11235 ConnectionHandler.hpp:164] 1
+W20251217 17:36:47.114792 11235 ConnectionHandler.hpp:166] 814572
+I20251217 17:36:47.114871 11235 SubReactor.hpp:60] old fd:10
+I20251217 17:36:47.115435 11236 SubReactor.hpp:60] old fd:10
+W20251217 17:36:53.449704 11237 ConnectionHandler.hpp:134] URL: /video/helloworld_sp_01/segment_006.ts
+I20251217 17:36:53.449820 11237 ConnectionHandler.hpp:156] GET
+I20251217 17:36:53.449826 11237 ConnectionHandler.hpp:157] /video/helloworld_sp_01/segment_006.ts
+I20251217 17:36:53.449836 11237 ConnectionHandler.hpp:161] it is a ts file,and the path is /video/helloworld_sp_01/segment_
+I20251217 17:36:53.449841 11237 ConnectionHandler.hpp:162] its seg num is 006
+I20251217 17:36:53.449856 11237 Router.hpp:417] ../source/video/helloworld_sp_01/segment_006.ts
+I20251217 17:36:53.459316 11237 Router.hpp:110] Read 929660 bytes from ../source/video/helloworld_sp_01/segment_006.ts
+I20251217 17:36:53.449844 11237 ConnectionHandler.hpp:164] 1
+W20251217 17:36:53.497960 11237 ConnectionHandler.hpp:166] 929816
+I20251217 17:36:53.498116 11237 SubReactor.hpp:60] old fd:10
+I20251217 17:36:53.501354 11238 SubReactor.hpp:60] old fd:10
+W20251217 17:36:58.432829 11230 main.cpp:62] Shutting down server...
+I20251217 17:36:58.432988 11230 MainReactor.hpp:142] now at stop in main
+W20251217 17:36:58.469336 11230 main.cpp:64] main is closed
+I20251217 17:36:58.903582 11230 MainReactor.hpp:28] at ~MainReactor()
+I20251217 17:36:58.903725 11230 MainReactor.hpp:142] now at stop in main
+W20251217 17:36:58.903785 11230 main.cpp:72] Server stopped
+W20251217 17:36:58.903818 11230 main.cpp:73] main end()
+I20251217 17:36:58.904398 11230 GlobalMoudle.cpp:8] just only one class is ~()

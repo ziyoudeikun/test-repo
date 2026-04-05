@@ -1,0 +1,41 @@
+Log file created at: 2025/12/15 15:19:19
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251215 15:19:19.044221 13425 main.cpp:37] main begin
+I20251215 15:19:19.045367 13425 main.cpp:48] Server started on port 8080
+I20251215 15:19:19.045795 13425 main.cpp:55] begin
+I20251215 15:20:16.823750 13438 MainReactor.hpp:116] new connection
+I20251215 15:20:16.824080 13438 SubReactor.hpp:55] new fd:10
+I20251215 15:20:16.824112 13438 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251215 15:20:16.824119 13438 MainReactor.hpp:177] Accepted connection from 127.0.0.1:46296
+W20251215 15:20:16.827431 13426 ConnectionHandler.hpp:53] URL: /
+E20251215 15:20:16.828042 13426 Router.hpp:140] Failed to open file: ../source/press.html
+I20251215 15:20:16.827915 13426 ConnectionHandler.hpp:75] 1
+I20251215 15:20:16.828581 13426 SubReactor.hpp:60] old fd:10
+I20251215 15:20:16.828794 13427 SubReactor.hpp:60] old fd:10
+W20251215 15:20:16.871865 13428 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251215 15:20:16.872273 13428 ConnectionHandler.hpp:75] 0
+I20251215 15:20:16.872305 13428 SubReactor.hpp:60] old fd:10
+I20251215 15:20:16.872475 13429 SubReactor.hpp:60] old fd:10
+I20251215 15:20:36.891635 13438 MainReactor.hpp:116] new connection
+I20251215 15:20:36.891778 13438 SubReactor.hpp:55] new fd:10
+I20251215 15:20:36.891804 13438 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251215 15:20:36.891829 13438 MainReactor.hpp:177] Accepted connection from 127.0.0.1:32980
+W20251215 15:20:36.892050 13432 ConnectionHandler.hpp:53] URL: /
+E20251215 15:20:36.892128 13432 Router.hpp:140] Failed to open file: ../source/press.html
+I20251215 15:20:36.892107 13432 ConnectionHandler.hpp:75] 1
+I20251215 15:20:36.892192 13432 SubReactor.hpp:60] old fd:10
+I20251215 15:20:36.892474 13431 SubReactor.hpp:60] old fd:10
+W20251215 15:20:36.926549 13433 ConnectionHandler.hpp:53] URL: /favicon.ico
+I20251215 15:20:36.926901 13433 ConnectionHandler.hpp:75] 0
+I20251215 15:20:36.927316 13433 SubReactor.hpp:60] old fd:10
+I20251215 15:20:36.927582 13426 SubReactor.hpp:60] old fd:10
+W20251215 15:20:48.083515 13425 main.cpp:62] Shutting down server...
+I20251215 15:20:48.083648 13425 MainReactor.hpp:142] now at stop in main
+W20251215 15:20:48.144261 13425 main.cpp:64] main is closed
+I20251215 15:20:48.439697 13425 MainReactor.hpp:28] at ~MainReactor()
+I20251215 15:20:48.439795 13425 MainReactor.hpp:142] now at stop in main
+W20251215 15:20:48.439833 13425 main.cpp:72] Server stopped
+W20251215 15:20:48.439858 13425 main.cpp:73] main end()
+I20251215 15:20:48.439877 13425 GlobalMoudle.cpp:8] just only one class is ~()

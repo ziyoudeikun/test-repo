@@ -1,0 +1,32 @@
+Log file created at: 2025/12/25 19:11:24
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251225 19:11:24.185177  4741 main.cpp:44] main begin
+I20251225 19:11:24.185707  4741 main.cpp:55] Server started on port 8080
+I20251225 19:11:24.186261  4741 main.cpp:62] begin
+I20251225 19:11:28.814229  4755 MainReactor.hpp:116] new connection
+I20251225 19:11:28.814743  4755 SubReactor.hpp:55] new fd:20
+I20251225 19:11:28.814802  4755 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251225 19:11:28.814812  4755 MainReactor.hpp:177] Accepted connection from 192.168.29.1:64339
+W20251225 19:11:30.036260  4743 ConnectionHandler.hpp:134] URL: /encrypt.html
+I20251225 19:11:30.037140  4743 ConnectionHandler.hpp:156] GET
+I20251225 19:11:30.037170  4743 ConnectionHandler.hpp:157] /encrypt.html
+I20251225 19:11:30.037175  4743 ConnectionHandler.hpp:164] 0
+W20251225 19:11:30.037187  4743 ConnectionHandler.hpp:166] 0
+I20251225 19:11:30.037204  4743 SubReactor.hpp:60] old fd:20
+I20251225 19:11:30.037289  4744 ConnectionHandler.hpp:185] handle_write called, buffer size: 0
+I20251225 19:11:30.037370  4744 ConnectionHandler.hpp:188] Write buffer is empty, disabling write event
+I20251225 19:11:30.037384  4744 SubReactor.hpp:60] old fd:20
+I20251225 19:11:30.042361  4755 MainReactor.hpp:116] new connection
+I20251225 19:11:30.042570  4755 SubReactor.hpp:55] new fd:22
+I20251225 19:11:30.042596  4755 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251225 19:11:30.042605  4755 MainReactor.hpp:177] Accepted connection from 192.168.29.1:65217
+W20251225 19:12:10.209535  4741 main.cpp:69] Shutting down server...
+I20251225 19:12:10.209679  4741 MainReactor.hpp:142] now at stop in main
+W20251225 19:12:10.244263  4741 main.cpp:71] main is closed
+I20251225 19:12:10.498868  4741 MainReactor.hpp:28] at ~MainReactor()
+I20251225 19:12:10.498972  4741 MainReactor.hpp:142] now at stop in main
+W20251225 19:12:10.510795  4741 main.cpp:79] Server stopped
+W20251225 19:12:10.510891  4741 main.cpp:80] main end()
+I20251225 19:12:10.511113  4741 GlobalMoudle.cpp:8] just only one class is ~()

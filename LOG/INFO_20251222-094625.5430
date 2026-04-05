@@ -1,0 +1,73 @@
+Log file created at: 2025/12/22 09:46:25
+Running on machine: chenguo-VMware-Virtual-Platform
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20251222 09:46:25.491883  5430 main.cpp:37] main begin
+I20251222 09:46:25.492147  5430 main.cpp:48] Server started on port 8080
+I20251222 09:46:25.492415  5430 main.cpp:55] begin
+I20251222 09:46:28.781522  5443 MainReactor.hpp:116] new connection
+I20251222 09:46:28.781876  5443 SubReactor.hpp:55] new fd:10
+I20251222 09:46:28.781913  5443 SubReactorManager.hpp:55] this connection is used by sub :0
+I20251222 09:46:28.781935  5443 MainReactor.hpp:177] Accepted connection from 192.168.29.1:59744
+W20251222 09:46:28.792115  5431 ConnectionHandler.hpp:134] URL: /login.html
+I20251222 09:46:28.792341  5431 ConnectionHandler.hpp:156] GET
+I20251222 09:46:28.792359  5431 ConnectionHandler.hpp:157] /login.html
+I20251222 09:46:28.792600  5431 Router.hpp:111] Read 23075 bytes from ../source/login.html
+I20251222 09:46:28.792704  5431 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 23075
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251222 09:46:28.792369  5431 ConnectionHandler.hpp:164] 1
+W20251222 09:46:28.793082  5431 ConnectionHandler.hpp:166] 23510
+I20251222 09:46:28.793118  5431 SubReactor.hpp:60] old fd:10
+I20251222 09:46:28.793223  5432 ConnectionHandler.hpp:185] handle_write called, buffer size: 23510
+I20251222 09:46:28.793460  5432 ConnectionHandler.hpp:198] Attempted to send 23510 bytes, actually sent: 23510
+I20251222 09:46:28.793498  5432 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251222 09:46:28.793509  5432 ConnectionHandler.hpp:239] All data sent successfully
+I20251222 09:46:28.793558  5432 SubReactor.hpp:60] old fd:10
+I20251222 09:46:28.801992  5443 MainReactor.hpp:116] new connection
+I20251222 09:46:28.802292  5443 SubReactor.hpp:55] new fd:12
+I20251222 09:46:28.802407  5443 SubReactorManager.hpp:55] this connection is used by sub :1
+I20251222 09:46:28.802428  5443 MainReactor.hpp:177] Accepted connection from 192.168.29.1:62705
+W20251222 09:46:35.150796  5433 ConnectionHandler.hpp:134] URL: /index.html
+I20251222 09:46:35.150925  5433 ConnectionHandler.hpp:156] GET
+I20251222 09:46:35.150947  5433 ConnectionHandler.hpp:157] /index.html
+I20251222 09:46:35.151326  5433 Router.hpp:111] Read 27918 bytes from ../source/index.html
+I20251222 09:46:35.151400  5433 Router.hpp:171] now head len:HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, OPTIONS, HEAD
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Access-Control-Expose-Headers: Content-Length, Content-Range
+Access-Control-Max-Age: 86400
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 27918
+Connection: keep-alive
+Server: CustomServer/1.0
+Date: Mon, 01 Jan 2024 12:00:00 GMT
+
+I20251222 09:46:35.150955  5433 ConnectionHandler.hpp:164] 1
+W20251222 09:46:35.151842  5433 ConnectionHandler.hpp:166] 28353
+I20251222 09:46:35.151870  5433 SubReactor.hpp:60] old fd:10
+I20251222 09:46:35.151988  5434 ConnectionHandler.hpp:185] handle_write called, buffer size: 28353
+I20251222 09:46:35.152273  5434 ConnectionHandler.hpp:198] Attempted to send 28353 bytes, actually sent: 28353
+I20251222 09:46:35.152318  5434 ConnectionHandler.hpp:206] Remaining buffer size: 0
+I20251222 09:46:35.152326  5434 ConnectionHandler.hpp:239] All data sent successfully
+I20251222 09:46:35.152340  5434 SubReactor.hpp:60] old fd:10
+W20251222 09:47:05.514991  5430 main.cpp:62] Shutting down server...
+I20251222 09:47:05.515130  5430 MainReactor.hpp:142] now at stop in main
+W20251222 09:47:05.516021  5430 main.cpp:64] main is closed
+I20251222 09:47:05.718387  5430 MainReactor.hpp:28] at ~MainReactor()
+I20251222 09:47:05.718515  5430 MainReactor.hpp:142] now at stop in main
+W20251222 09:47:05.718560  5430 main.cpp:72] Server stopped
+W20251222 09:47:05.718577  5430 main.cpp:73] main end()
+I20251222 09:47:05.718891  5430 GlobalMoudle.cpp:8] just only one class is ~()
